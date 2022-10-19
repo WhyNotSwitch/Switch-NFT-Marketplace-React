@@ -1,0 +1,7 @@
+.logo {
+  width: 142px;
+  height: 50px;
+}
+.navbar :active {
+  color: blue;
+}
