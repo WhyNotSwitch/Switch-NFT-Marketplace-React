@@ -1,13 +1,13 @@
 import React from "react";
 import "./theme.min.css";
-import heroBg from "./images/hero-bg.png";
+import "./styles.css";
+import Nft1 from "./images/n1.jpg";
+import Nft2 from "./images/n2.jpg";
+import Nft3 from "./images/n3.jpg";
 
 function Hero() {
   return (
-    <section
-      className="mb-lg-2 bg-faded-accent bg-size-cover"
-      style={{ paddingTop: "80px", backgroundImage: heroBg }}
-    >
+    <section id="hero" className="mb-lg-2 bg-faded-accent bg-size-cover">
       <div className="container py-4">
         <div className="row align-items-center justify-content-center gy-3 py-3 text-lg-start text-center">
           <div className="col-lg-5 col-md-8 col-sm-10">
@@ -36,23 +36,19 @@ function Hero() {
           </div>
           <div className="col-lg-6 col-md-8 offset-lg-1 col-sm-10">
             {/* -- Top auctions carousel-- */}
-            <div className="tns-carousel tns-nav-enabled mb-4 mx-n2">
+            <div className="carousel slide tns-nav-enabled mb-4 mx-n2">
               <div
                 className="tns-carousel-inner"
                 data-carousel-options='{"controls": false}'
               >
                 {/* -- Carousel item-- */}
-                <div className="px-2">
-                  <img
-                    className="rounded-3"
-                    src="././img/Switch/n1.jpg"
-                    alt="Product"
-                  />
+                <div className="px-2 carousel-item active">
+                  <img src={Nft1} className="d-block w-100" alt="Product" />
                   <div className="position-relative">
                     <div className="position-absolute start-0 bottom-0 w-100 p-md-5 p-sm-4 p-3">
                       <div className="pt-sm-0 pt-2 px-sm-4 px-2 bg-white rounded shadow">
                         <div className="row gx-5">
-                          <div className="col-sm-4 col-6 position-relative py-sm-3 py-2">
+                          <div className=" col-6 position-relative py-sm-3 py-2">
                             <h6 className="mb-1 fs-sm fw-normal text-muted">
                               Current bid:
                             </h6>
@@ -83,16 +79,12 @@ function Hero() {
                 </div>
                 {/* -- Carousel item-- */}
                 <div className="px-2">
-                  <img
-                    className="rounded-3"
-                    src="././img/Switch/n2.jpg"
-                    alt="Product"
-                  />
+                  <img className="rounded-3" src={Nft2} alt="Product" />
                   <div className="position-relative">
                     <div className="position-absolute start-0 bottom-0 w-100 p-md-5 p-sm-4 p-3">
                       <div className="pt-sm-0 pt-2 px-sm-4 px-2 bg-white rounded shadow">
                         <div className="row gx-5">
-                          <div className="col-sm-4 col-6 position-relative py-sm-3 py-2">
+                          <div className="">
                             <h6 className="mb-1 fs-sm fw-normal text-muted">
                               Current bid:
                             </h6>
@@ -123,11 +115,7 @@ function Hero() {
                 </div>
                 {/* -- Carousel item-- */}
                 <div className="px-2">
-                  <img
-                    className="rounded-3"
-                    src="././img/Switch/n2.jpg"
-                    alt="Product"
-                  />
+                  <img className="rounded-3" src={Nft3} alt="Product" />
                   <div className="position-relative">
                     <div className="position-absolute start-0 bottom-0 w-100 p-md-5 p-sm-4 p-3">
                       <div className="pt-sm-0 pt-2 px-sm-4 px-2 bg-white rounded shadow">
@@ -138,7 +126,7 @@ function Hero() {
                             </h6>
                             <span className="h6 mb-0">1.2 ETH</span>
                           </div>
-                          <div className="col-sm-4 col-6 position-relative py-sm-3 py-2">
+                          <div className="col-sm-4 col-6 position-relative">
                             <hr className="hr-vertical position-absolute start-0 top-0 ml-n4" />
                             <h6 className="mb-1 fs-sm fw-normal text-muted">
                               Ends in:
