@@ -2,6 +2,7 @@
   width: 142px;
   height: 50px;
 }
-.navbar :active {
-  color: blue;
+#hero {
+  background-image: url(./images/hero-bg.png);
+  padding-top: 80px;
 }
