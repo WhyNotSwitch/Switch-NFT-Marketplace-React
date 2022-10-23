@@ -1,6 +1,18 @@
 import React from "react";
 import "./styles.css";
 
+const cardElement = ProjData.map((item) => {
+  return (
+    <TheCard
+      key={item.title}
+      title={item.title}
+      image={item.img}
+      price={item.price}
+      logo={item.logo}
+    />
+  );
+});
+
 function TheCard(props) {
   return (
     <div className="card-element">
