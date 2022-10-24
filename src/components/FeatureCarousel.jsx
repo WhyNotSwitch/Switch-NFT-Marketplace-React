@@ -12,14 +12,14 @@ function FeatureCarousel() {
         Begin your SOLAR & NFT journey with us!
       </h2>
       {/* <!-- Features carousel--> */}
-      <div className="mb-4">
+      <div className="mb-4 ">
         <div
-          className="features"
+          className="features row row-cols-sm-1 row-cols-md-4"
           data-carousel-options='{"items": 2, "nav": true, "gutter": 30, "responsive": {"0":{"items":1,"controls": false},"500":{"items":2},"768":{"items":3}, "1100":{"items":4}, "1278":{"controls": true}}}'
         >
           {/* <!-- Carousel item--> */}
           <div>
-            <img className="mb-4" src={Wallet} width="60" alt="Icon" />
+            <img className="mb-4 col" src={Wallet} width="60" alt="Icon" />
             <h4 className="mb-2 fs-lg text-body">Set up your wallet</h4>
             <p className="mb-0 fs-sm text-muted">
               Quam nulla in id nibh. Morbi eget elit eget dui est pretium,
@@ -28,7 +28,7 @@ function FeatureCarousel() {
           </div>
           {/* <!-- Carousel item--> */}
           <div>
-            <img className="mb-4" src={Add} width="60" alt="Icon" />
+            <img className="mb-4 col" src={Add} width="60" alt="Icon" />
             <h4 className="mb-2 fs-lg text-body">
               Submit your project prospal
             </h4>
@@ -39,7 +39,7 @@ function FeatureCarousel() {
           </div>
           {/* <!-- Carousel item--> */}
           <div>
-            <img className="mb-4" src={Img} width="60" alt="Icon" />
+            <img className="mb-4 col" src={Img} width="60" alt="Icon" />
             <h4 className="mb-2 fs-lg text-body">
               List approved projects as NFTs
             </h4>
@@ -50,7 +50,7 @@ function FeatureCarousel() {
           </div>
           {/* <!-- Carousel item--> */}
           <div>
-            <img className="mb-4" src={Cart} width="60" alt="Icon" />
+            <img className="mb-4 col" src={Cart} width="60" alt="Icon" />
             <h4 className="mb-2 fs-lg text-body">
               Land Funding from Nfts collectors
             </h4>

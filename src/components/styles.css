@@ -27,26 +27,23 @@
   margin-left: 7px;
   font-size: medium;
 }
-.blogs {
-  display: flex;
-  align-items: center;
-  padding: 40px;
-  justify-content: space-between;
-}
 .products {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .article {
-  margin-right: 20px;
+  margin-right: 0;
 }
 .features {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.creators {
+.recent {
+  padding: 30px;
+}
+.blogs {
   display: flex;
   justify-content: space-between;
 }

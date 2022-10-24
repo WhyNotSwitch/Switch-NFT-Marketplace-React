@@ -9,7 +9,7 @@ function Blog() {
   return (
     <div className="pt-4 bg-secondary">
       {/* <!-- Blog recent posts--> */}
-      <section className="container py-lg-3 py-3">
+      <section className="container py-lg-3 py-3 ">
         <div className="d-flex align-items-center justify-content-between mb-sm-4 mb-2 pb-2">
           <h2 className="h3 mb-0">Resources for getting started</h2>
           <a className="btn btn-outline-accent ms-3" href="blog-grid.html">
@@ -17,15 +17,16 @@ function Blog() {
           </a>
         </div>
         {/* <!-- Blog (carousel)--> */}
-        <div className="">
-          <div
-            className="blogs"
-            data-carousel-options='{"items": 2, "controls": false, "nav": true, "gutter": 30, "responsive": {"0":{"items":1},"576":{"items":2},"992":{"items":3}}}'
-          >
-            {/* <!-- Carousel item--> */}
 
-            {/* <!-- Carousel item--> */}
-            <article className="article">
+        <div
+          className=""
+          data-carousel-options='{"items": 2, "controls": false, "nav": true, "gutter": 30, "responsive": {"0":{"items":1},"576":{"items":2},"992":{"items":3}}}'
+        >
+          {/* <!-- Carousel item--> */}
+
+          {/* <!-- Carousel item--> */}
+          <div className="row row-cols-md-3">
+            <article className="col col-sm-1">
               <a className="d-block mb-3" href="blog-single.html">
                 <img className="rounded-3" src={Blog2} alt="Blog" />
               </a>
@@ -44,10 +45,9 @@ function Blog() {
                 </a>
               </h2>
             </article>
-            {/* <!-- Carousel item--> */}
 
             {/* <!-- Carousel item--> */}
-            <article className="article">
+            <article className="col-sm-1">
               <a className="d-block mb-3" href="blog-single.html">
                 <img className="rounded-3" src={Blog1} alt="Blog" />
               </a>
@@ -66,10 +66,9 @@ function Blog() {
                 </a>
               </h2>
             </article>
-            {/* <!-- Carousel item--> */}
 
             {/* <!-- Carousel item--> */}
-            <article className="article">
+            <article className="col-sm-1">
               <a className="d-block mb-3" href="blog-single.html">
                 <img className="rounded-3" src={Blog3} alt="Blog" />
               </a>
@@ -89,9 +88,6 @@ function Blog() {
                 </a>
               </h2>
             </article>
-            {/* <!-- Carousel item--> */}
-
-            {/* <!-- Carousel item--> */}
           </div>
         </div>
       </section>
