@@ -19,13 +19,13 @@ function Blog() {
         {/* <!-- Blog (carousel)--> */}
 
         <div
-          className=""
+          className="my-5"
           data-carousel-options='{"items": 2, "controls": false, "nav": true, "gutter": 30, "responsive": {"0":{"items":1},"576":{"items":2},"992":{"items":3}}}'
         >
           {/* <!-- Carousel item--> */}
 
           {/* <!-- Carousel item--> */}
-          <div className="row row-cols-md-3">
+          <div className="row row-cols-md-3 ">
             <article className="col col-sm-1">
               <a className="d-block mb-3" href="blog-single.html">
                 <img className="rounded-3" src={Blog2} alt="Blog" />

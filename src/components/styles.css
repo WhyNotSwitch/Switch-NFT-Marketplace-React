@@ -47,3 +47,16 @@
   display: flex;
   justify-content: space-between;
 }
+#overlay-span {
+  background-image: conic-gradient(
+    from 207.95deg at 50% 50%,
+    #885cff -57.31deg,
+    #ff6b9b 44.14deg,
+    #dc86ff 78.21deg,
+    #885cff 123.94deg,
+    #dc86ff 186.36deg,
+    #ff6b9b 249.2deg,
+    #885cff 302.69deg,
+    #ff6b9b 404.14deg
+  );
+}

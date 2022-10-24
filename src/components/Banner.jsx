@@ -1,4 +1,5 @@
 import React from "react";
+import "./styles.css";
 import MobApp from "./img/nft/mobile-app.svg";
 
 function Banner() {
@@ -9,10 +10,7 @@ function Banner() {
         {/* <!-- Overlay bg--> */}
         <span
           className="d-block w-100 h-100 position-absolute top-0 start-0 zindex-1 bg-accent opacity-15"
-          style={{
-            backgroundImage:
-              "conic-gradient( from 207.95deg at 50% 50%, #885cff -57.31deg,ff6b9b 44.14deg, #dc86ff 78.21deg,#885cff 123.94deg, #dc86ff 186.36deg,#ff6b9b 249.2deg,#885cff 302.69deg,#ff6b9b 404.14deg)",
-          }}
+          id="overlay-span"
         ></span>
         {/* <!-- Overlay content--> */}
         <div className="card-body row py-0 px-sm-0 position-relative zindex-5">
