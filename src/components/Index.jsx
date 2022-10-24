@@ -7,14 +7,15 @@ import RecentDrops from "./RecentDrops";
 import TopCreators from "./TopCreators";
 import Banner from "./Banner";
 import FeatureCarousel from "./FeatureCarousel";
-import BgShape from "./BgShape";
+import Blog from "./Blog";
 import Footer from "./MainFooter";
+import BacktoTop from "./BacktoTop";
 import HandheldToolbar from "./HandheldToolbar";
 
 function Index() {
   return (
-    <div className="handheld-toolbar-enabled">
-      <main className="page-wrapper">
+    <div className="">
+      <main className="">
         {/* <!-- Navbar for NFT Marketplace demo-->
         <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page.--> */}
         <MainNav />
@@ -34,18 +35,13 @@ function Index() {
         <FeatureCarousel />
       </main>
       {/* <!-- Bg shape--> */}
-      <BgShape />
+      <Blog />
       {/* <!-- Footer--> */}
       <Footer />
       {/* <!-- Toolbar for handheld devices (NFT Marketplace)--> */}
       <HandheldToolbar />
       {/* <!-- Back To Top Button--> */}
-      <a className="btn-scroll-top" href="#top" data-scroll>
-        <span className="btn-scroll-top-tooltip text-muted fs-sm me-2">
-          Top
-        </span>
-        <i className="btn-scroll-top-icon ci-arrow-up"> </i>
-      </a>
+      <BacktoTop />
     </div>
   );
 }

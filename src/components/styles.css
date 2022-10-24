@@ -27,6 +27,26 @@
   margin-left: 7px;
   font-size: medium;
 }
-#blog {
+.blogs {
   display: flex;
+  align-items: center;
+  padding: 40px;
+  justify-content: space-between;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article {
+  margin-right: 20px;
+}
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.creators {
+  display: flex;
+  justify-content: space-between;
 }

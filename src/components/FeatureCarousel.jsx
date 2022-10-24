@@ -1,4 +1,9 @@
 import React from "react";
+import "./styles.css";
+import Wallet from "./img/nft/features/result.svg";
+import Cart from "./img/nft/features/shop-cart.svg";
+import Add from "./img/nft/features/addresult.svg";
+import Img from "./img/nft/features/result-1.svg";
 
 function FeatureCarousel() {
   return (
@@ -9,17 +14,12 @@ function FeatureCarousel() {
       {/* <!-- Features carousel--> */}
       <div className="mb-4">
         <div
-          className=""
+          className="features"
           data-carousel-options='{"items": 2, "nav": true, "gutter": 30, "responsive": {"0":{"items":1,"controls": false},"500":{"items":2},"768":{"items":3}, "1100":{"items":4}, "1278":{"controls": true}}}'
         >
           {/* <!-- Carousel item--> */}
           <div>
-            <img
-              className="mb-4"
-              src="img/nft/features/wallet.svg"
-              width="60"
-              alt="Icon"
-            />
+            <img className="mb-4" src={Wallet} width="60" alt="Icon" />
             <h4 className="mb-2 fs-lg text-body">Set up your wallet</h4>
             <p className="mb-0 fs-sm text-muted">
               Quam nulla in id nibh. Morbi eget elit eget dui est pretium,
@@ -28,12 +28,7 @@ function FeatureCarousel() {
           </div>
           {/* <!-- Carousel item--> */}
           <div>
-            <img
-              className="mb-4"
-              src="img/nft/features/add.svg"
-              width="60"
-              alt="Icon"
-            />
+            <img className="mb-4" src={Add} width="60" alt="Icon" />
             <h4 className="mb-2 fs-lg text-body">
               Submit your project prospal
             </h4>
@@ -44,12 +39,7 @@ function FeatureCarousel() {
           </div>
           {/* <!-- Carousel item--> */}
           <div>
-            <img
-              className="mb-4"
-              src="img/nft/features/image.svg"
-              width="60"
-              alt="Icon"
-            />
+            <img className="mb-4" src={Img} width="60" alt="Icon" />
             <h4 className="mb-2 fs-lg text-body">
               List approved projects as NFTs
             </h4>
@@ -60,12 +50,7 @@ function FeatureCarousel() {
           </div>
           {/* <!-- Carousel item--> */}
           <div>
-            <img
-              className="mb-4"
-              src="img/nft/features/shopping-cart.svg"
-              width="60"
-              alt="Icon"
-            />
+            <img className="mb-4" src={Cart} width="60" alt="Icon" />
             <h4 className="mb-2 fs-lg text-body">
               Land Funding from Nfts collectors
             </h4>

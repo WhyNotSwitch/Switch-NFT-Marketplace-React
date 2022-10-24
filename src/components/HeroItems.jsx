@@ -1,17 +1,11 @@
 import React from "react";
 import "./theme.min.css";
-import bgImg from "./img/hero-bg.png";
+import "./styles.css";
 import Nft1 from "./img/Switch/n1.jpg";
 
 function HeroItems() {
   return (
-    <section
-      className="mb-lg-2 bg-faded-accent bg-size-cover"
-      style={{
-        paddingTop: "80px",
-        backgroundImage: `${bgImg}`,
-      }}
-    >
+    <section className="mb-lg-2 bg-faded-accent bg-size-cover" id="hero">
       <div className="container py-4">
         <div className="row align-items-center justify-content-center gy-3 py-3 text-lg-start text-center">
           <div className="col-lg-5 col-md-8 col-sm-10">

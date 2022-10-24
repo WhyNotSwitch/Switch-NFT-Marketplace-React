@@ -9,9 +9,9 @@ function TopCreators() {
     <section className="container py-lg-5 py-4">
       <h2 className="h3 mb-4 pb-2">Top Projects Developers</h2>
       {/* <!-- Creators (carousel)--> */}
-      <div className="">
+      <div className="carousel-slide">
         <div
-          className=""
+          className="creators"
           data-carousel-options='{"items": 2, "controls": false, "nav": true, "gutter": 30, "responsive": {"0":{"items":1},"576":{"items":2},"992":{"items":3}}}'
         >
           {/* <!-- Carousel item--> */}
