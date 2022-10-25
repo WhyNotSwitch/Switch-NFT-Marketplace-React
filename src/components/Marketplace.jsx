@@ -1,12 +1,18 @@
 import React from "react";
-import NavBar from "./Nav";
+import "./theme.min.css";
+import "./styles.css";
 import ToolBar from "./Toolbar";
+import MartNav from "./MartNav";
+import FeatureCarousel from "./FeatureCarousel";
+import MartFooter from "./MartFooter";
 
 function MarketPlace() {
   return (
-    <div>
-      <NavBar />
+    <div className="market">
+      <MartNav />
       <ToolBar />
+      <FeatureCarousel />
+      <MartFooter />
     </div>
   );
 }
