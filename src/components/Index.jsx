@@ -3,6 +3,7 @@ import Hero from "./Hero";
 import NavBar from "./Nav";
 import ProductCarousel from "./ProductCarousel";
 import "./theme.min.css";
+import "./styles.css";
 import RecentDrops from "./RecentDrops";
 import TopCreators from "./TopCreators";
 import Banner from "./Banner";
@@ -14,7 +15,7 @@ import HandheldToolbar from "./HandheldToolbar";
 
 function Index() {
   return (
-    <div>
+    <div className="page">
       <main>
         <NavBar />
         {/* <!-- Hero--> */}

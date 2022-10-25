@@ -1,14 +1,15 @@
 import React from "react";
+import "./styles.css";
 import Button from "./Button";
 
 function Footer() {
   return (
-    <footer className="footer bg-darker">
+    <footer className="footer bg-darker" id="footer">
       <div className="mt-n10 pt-10 bg-dark">
         <div className="container py-5">
           <div className="row py-lg-4">
             <div className="col-lg-4 mb-lg-0 mb-4">
-              <div className="widget pb-3 mb-lg-4">
+              <div className="widget pb-0 mb-lg-4">
                 <h3 className="widget-title text-light pb-1">Stay informed</h3>
                 <form
                   className="subscription-form validate"
@@ -146,7 +147,7 @@ function Footer() {
                     </li>
                   </ul>
                 </div>
-                <div className="widget widget-links widget-light mt-4 px-lg-3 px-sm-n2">
+                <div className="widget widget-links widget-light mt-4 px-lg-0 px-sm-n2">
                   <h3 className="widget-title text-light">Help</h3>
                   <ul className="widget-list">
                     <li className="widget-list-item">
