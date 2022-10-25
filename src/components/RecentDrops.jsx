@@ -7,7 +7,6 @@ import Nft1 from "./img/Switch/n1.jpg";
 import Nft3 from "./img/Switch/n3.jpg";
 import Nft6 from "./img/Switch/n6.jpg";
 import Nft7 from "./img/Switch/n7.jpg";
-import Nft8 from "./img/Switch/n8.jpg";
 
 function RecentDrops() {
   return (

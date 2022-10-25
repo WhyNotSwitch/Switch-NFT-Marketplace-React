@@ -9,7 +9,7 @@ function Blog() {
   return (
     <div className="pt-4 bg-secondary">
       {/* <!-- Blog recent posts--> */}
-      <section className="container py-lg-3 py-3 ">
+      <section className="container py-lg-5 py-5 ">
         <div className="d-flex align-items-center justify-content-between mb-sm-4 mb-2 pb-2">
           <h2 className="h3 mb-0">Resources for getting started</h2>
           <a className="btn btn-outline-accent ms-3" href="blog-grid.html">

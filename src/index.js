@@ -4,6 +4,7 @@ import "./index.css";
 import "./components/theme.min.css";
 import Index from "./components/Index";
 import reportWebVitals from "./reportWebVitals";
+import MarketPlace from "./components/Marketplace";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 

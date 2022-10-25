@@ -3,7 +3,7 @@ import "./theme.min.css";
 import "./styles.css";
 import Nft1 from "./img/Switch/n1.jpg";
 
-function HeroItems() {
+function Hero() {
   return (
     <section className="mb-lg-2 bg-faded-accent bg-size-cover" id="hero">
       <div className="container py-4">
@@ -98,4 +98,4 @@ function HeroItems() {
   );
 }
 
-export default HeroItems;
+export default Hero;

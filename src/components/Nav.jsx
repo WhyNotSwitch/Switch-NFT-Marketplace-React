@@ -2,10 +2,14 @@ import React from "react";
 import Button from "./Button";
 import "./theme.min.css";
 import navLogo from "./img/Switch/switchlogo.png";
+import "./styles.css";
 
-function MainNav() {
+function NavBar() {
   return (
-    <header className="navbar d-block navbar-sticky navbar-expand-lg navbar-light position-absolute w-100">
+    <header
+      className="navbar d-block fixed-top navbar-expand-lg navbar-light w-100"
+      id="header"
+    >
       <div className="container">
         <a
           className="navbar-brand d-none d-sm-block me-4 order-lg-1"
@@ -117,4 +121,4 @@ function MainNav() {
   );
 }
 
-export default MainNav;
+export default NavBar;

@@ -60,3 +60,7 @@
     #ff6b9b 404.14deg
   );
 }
+#header {
+  backdrop-filter: blur(15px);
+  background-color: #fff7;
+}
