@@ -90,9 +90,9 @@ function NavBar(props) {
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#nav">
+              <Link className="nav-link" to="/collections">
                 Collections
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#nav">

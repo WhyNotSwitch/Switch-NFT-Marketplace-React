@@ -79,3 +79,6 @@
   display: flex;
   flex-direction: column;
 }
+#collBody {
+  padding-top: 90px;
+}
