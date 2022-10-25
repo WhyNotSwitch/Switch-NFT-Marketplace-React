@@ -4,7 +4,7 @@ import Button from "./Button";
 
 function Footer() {
   return (
-    <div>
+    <div className="footer">
       <section className="container">
         <div className="card py-5 border-0 shadow">
           <div className="card-body py-md-4 py-3 px-4 text-center">
