@@ -3,27 +3,25 @@ import Button from "./Button";
 import "./theme.min.css";
 import navLogo from "./img/Switch/switchlogo.png";
 import "./styles.css";
+import { Link } from "react-router-dom";
 
-function NavBar() {
+function NavBar(props) {
   return (
     <header
       className="navbar d-block fixed-top navbar-expand-lg navbar-light w-100"
       id="header"
     >
       <div className="container">
-        <a
-          className="navbar-brand d-none d-sm-block me-4 order-lg-1"
-          href="index.html"
-        >
+        <Link className="navbar-brand d-none d-sm-block me-4 order-lg-1" to="/">
           <img src={navLogo} width="142" alt="Switch" />
-        </a>
-        <a className="navbar-brand d-sm-none me-2 order-lg-1" href="index.html">
+        </Link>
+        <Link className="navbar-brand d-sm-none me-2 order-lg-1" to="/">
           <img
             src={require("./img/Switch/switchlogo.png")}
             width="74"
             alt="Switch"
           />
-        </a>
+        </Link>
         <div className="navbar-toolbar d-flex align-items-center order-lg-3">
           <Button
             className="navbar-toggler"
@@ -82,14 +80,14 @@ function NavBar() {
           {/* <!-- Primary menu--> */}
           <ul className="navbar-nav">
             <li className="nav-item active">
-              <a className="nav-link" href="index.html">
+              <Link className="nav-link" to="/">
                 Home
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="marketplace.html">
+              <Link className="nav-link" to="/marketplace">
                 Marketplace
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#nav">
@@ -98,7 +96,7 @@ function NavBar() {
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#nav">
-                Badges
+                Whitepaper
               </a>
             </li>
           </ul>

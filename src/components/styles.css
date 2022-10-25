@@ -71,3 +71,7 @@
 #toolbar {
   padding-top: 90px;
 }
+.market {
+  display: flex;
+  flex-direction: column;
+}

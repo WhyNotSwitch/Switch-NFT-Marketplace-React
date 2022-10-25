@@ -13,24 +13,22 @@ import Footer from "./Footer";
 import BacktoTop from "./BacktoTop";
 import HandheldToolbar from "./HandheldToolbar";
 
-function Index() {
+function Home() {
   return (
     <div className="page">
-      <main>
-        <NavBar />
-        {/* <!-- Hero--> */}
-        <Hero />
-        {/* <!-- Product carousel (Recent Drops)--> */}
-        <RecentDrops />
-        {/* <!-- Product carousel (Trending in)--> */}
-        <ProductCarousel />
-        {/* <!-- Top Creators--> */}
-        <TopCreators />
-        {/* <!-- Mobile app--> */}
-        <Banner />
-        {/* <!-- Features--> */}
-        <FeatureCarousel />
-      </main>
+      <NavBar />
+      {/* <!-- Hero--> */}
+      <Hero />
+      {/* <!-- Product carousel (Recent Drops)--> */}
+      <RecentDrops />
+      {/* <!-- Product carousel (Trending in)--> */}
+      <ProductCarousel />
+      {/* <!-- Top Creators--> */}
+      <TopCreators />
+      {/* <!-- Mobile app--> */}
+      <Banner />
+      {/* <!-- Features--> */}
+      <FeatureCarousel />
       {/* <!-- Bg shape--> */}
       <Blog />
       {/* <!-- Footer--> */}
@@ -43,4 +41,4 @@ function Index() {
   );
 }
 
-export default Index;
+export default Home;
