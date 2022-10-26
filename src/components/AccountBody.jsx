@@ -59,7 +59,7 @@ function AccountBody() {
                         className="form-control"
                         id="profile-name"
                         type="text"
-                        value="Robert Fox"
+                        placeholder="Robert Fox"
                       />
                     </div>
                     <div className="col-sm-6">
@@ -81,7 +81,7 @@ function AccountBody() {
                         className="form-control"
                         id="profile-uid"
                         type="text"
-                        value="374702749"
+                        placeholder="374702749"
                       />
                     </div>
                     <div className="col-sm-6">
@@ -92,7 +92,7 @@ function AccountBody() {
                         className="form-control"
                         id="profile-email"
                         type="email"
-                        value="example@gmail.com"
+                        placeholder="example@gmail.com"
                       />
                     </div>
                     <div className="col-12">

@@ -45,29 +45,29 @@ function SideBar() {
               </Link>
             </li>
             <li className="border-bottom mb-0">
-              <a
+              <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                href="nft-account-favorites.html"
+                to="/favorites"
               >
                 <i className="ci-heart opacity-60 me-2"></i>Favorites
                 <span className="fs-sm text-muted ms-auto">3</span>
-              </a>
+              </Link>
             </li>
             <li className="border-bottom mb-0">
-              <a
+              <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                href="nft-account-notifications.html"
+                to="/notifications"
               >
                 <i className="ci-bell opacity-60 me-2"></i>Notifications
-              </a>
+              </Link>
             </li>
             <li className="border-bottom mb-0">
-              <a
+              <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                href="wallet.html"
+                to="/signout"
               >
                 <i className="ci-sign-out opacity-60 me-2"></i>Sign out
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
