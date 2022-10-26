@@ -12,6 +12,7 @@ import Blog from "./Blog";
 import Footer from "./Footer";
 import BacktoTop from "./BacktoTop";
 import HandheldToolbar from "./HandheldToolbar";
+import JumboTron from "./JumboTron";
 
 function Home() {
   return (
@@ -30,9 +31,10 @@ function Home() {
       {/* <!-- Features--> */}
       <FeatureCarousel />
       {/* <!-- Bg shape--> */}
-      <Blog />
+      <Blog className="mb-n10 pb-10 bg-secondary" />
+      <JumboTron />
       {/* <!-- Footer--> */}
-      <Footer />
+      <Footer className="mt-n10 pt-10 bg-dark" />
       {/* <!-- Toolbar for handheld devices (NFT Marketplace)--> */}
       <HandheldToolbar />
       {/* <!-- Back To Top Button--> */}

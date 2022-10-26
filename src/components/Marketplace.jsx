@@ -5,6 +5,7 @@ import ToolBar from "./Toolbar";
 import FeatureCarousel from "./FeatureCarousel";
 import NavBar from "./Nav";
 import Footer from "./Footer";
+import JumboTron from "./JumboTron";
 
 function MarketPlace() {
   return (
@@ -12,7 +13,8 @@ function MarketPlace() {
       <NavBar />
       <ToolBar />
       <FeatureCarousel />
-      <Footer />
+      <JumboTron />
+      <Footer className="mt-n10 pt-10 bg-dark" />
     </div>
   );
 }

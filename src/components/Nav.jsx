@@ -45,16 +45,16 @@ function NavBar(props) {
               <i className="navbar-tool-icon ci-search"></i>
             </div>
           </a>
-          <a
+          <Link
             className="navbar-tool ms-lg-2"
-            href="#signin-modal"
+            to="/signin"
             data-bs-toggle="modal"
           >
             <span className="navbar-tool-tooltip">Account</span>
             <div className="navbar-tool-icon-box">
               <i className="navbar-tool-icon ci-user"></i>
             </div>
-          </a>
+          </Link>
           <a
             className="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2"
             href="wallet.html"

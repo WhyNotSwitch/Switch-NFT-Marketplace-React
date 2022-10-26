@@ -5,9 +5,9 @@ import Blog1 from "./img/nft/blog/01.jpg";
 import Blog2 from "./img/nft/blog/02.jpg";
 import Blog3 from "./img/nft/blog/03.jpg";
 
-function Blog() {
+function Blog(props) {
   return (
-    <div className="pt-4 bg-secondary">
+    <div className={`pt-4 bg-secondary ${props.className}`}>
       {/* <!-- Blog recent posts--> */}
       <section className="container py-lg-5 py-5 ">
         <div className="d-flex align-items-center justify-content-between mb-sm-4 mb-2 pb-2">
