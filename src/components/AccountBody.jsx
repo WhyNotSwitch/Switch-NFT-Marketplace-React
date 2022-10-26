@@ -1,6 +1,8 @@
 import React from "react";
 import Avatar from "./img/nft/vendor/avatar.png";
 import SquareAvatar from "./img/nft/vendor/avatar-square.jpg";
+import { Link } from "react-router-dom";
+import SideBar from "./SideBar";
 
 function AccountBody() {
   return (
@@ -52,78 +54,7 @@ function AccountBody() {
         <div className="bg-light shadow-lg rounded-3 overflow-hidden">
           <div className="row">
             {/* <!-- Sidebar--> */}
-            <aside className="col-lg-3 pe-xl-5">
-              {/* <!-- Account menu toggler (hidden on screens larger 992px)--> */}
-              <div className="d-block d-lg-none p-4">
-                <a
-                  className="btn btn-outline-accent d-block"
-                  href="#account-menu"
-                  data-bs-toggle="collapse"
-                >
-                  <i className="ci-menu me-2"></i>Account menu
-                </a>
-              </div>
-              {/* <!-- Actual menu--> */}
-              <div className="h-100 border-end mb-2">
-                <div className="d-lg-block collapse" id="account-menu">
-                  <ul className="list-unstyled mb-0">
-                    <li className="border-bottom mb-0">
-                      <a
-                        className="nav-link-style d-flex align-items-center px-4 py-3"
-                        href="nft-account-settings.html"
-                      >
-                        <i className="ci-settings opacity-60 me-2"></i>Profile
-                        Settings
-                      </a>
-                    </li>
-                    <li className="border-bottom mb-0">
-                      <a
-                        className="nav-link-style d-flex align-items-center px-4 py-3"
-                        href="nft-account-my-items.html"
-                      >
-                        <i className="ci-image opacity-60 me-2"></i>My Items
-                        <span className="fs-sm text-muted ms-auto">5</span>
-                      </a>
-                    </li>
-                    <li className="border-bottom mb-0">
-                      <a
-                        className="nav-link-style d-flex align-items-center px-4 py-3"
-                        href="nft-account-my-collections.html"
-                      >
-                        <i className="ci-view-list opacity-60 me-2"></i>My
-                        Collections
-                        <span className="fs-sm text-muted ms-auto">2</span>
-                      </a>
-                    </li>
-                    <li className="border-bottom mb-0">
-                      <a
-                        className="nav-link-style d-flex align-items-center px-4 py-3"
-                        href="nft-account-favorites.html"
-                      >
-                        <i className="ci-heart opacity-60 me-2"></i>Favorites
-                        <span className="fs-sm text-muted ms-auto">3</span>
-                      </a>
-                    </li>
-                    <li className="border-bottom mb-0">
-                      <a
-                        className="nav-link-style d-flex align-items-center px-4 py-3"
-                        href="nft-account-notifications.html"
-                      >
-                        <i className="ci-bell opacity-60 me-2"></i>Notifications
-                      </a>
-                    </li>
-                    <li className="border-bottom mb-0">
-                      <a
-                        className="nav-link-style d-flex align-items-center px-4 py-3"
-                        href="wallet.html"
-                      >
-                        <i className="ci-sign-out opacity-60 me-2"></i>Sign out
-                      </a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </aside>
+            <SideBar />
             {/* <!-- Content--> */}
             <section className="col-lg-9 pt-lg-4 pb-4 mb-3">
               <div className="pt-2 px-4 ps-lg-0 pe-xl-5">

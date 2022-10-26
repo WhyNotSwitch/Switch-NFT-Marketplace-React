@@ -1,21 +1,18 @@
 import React from "react";
 import "./styles.css";
+import Avatar from "./img/nft/vendor/avatar.png";
 import SwitchLg from "./img/Switch/switch.jpg";
-import Nft1 from "./img/Switch/n5.jpg";
-import Nft2 from "./img/Switch/n5.jpg";
-import Nft3 from "./img/Switch/n5.jpg";
-import Nft4 from "./img/Switch/n5.jpg";
-import Nft5 from "./img/Switch/n5.jpg";
+import Nft1 from "./img/Switch/n1.jpg";
+import Nft3 from "./img/Switch/n3.jpg";
 import Nft6 from "./img/Switch/n6.jpg";
 import Nft7 from "./img/Switch/n7.jpg";
 import Nft8 from "./img/Switch/n8.jpg";
-import Avatar from "./img/nft/vendor/avatar.png";
 import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 
-function SigninBody() {
+function MyItemsBody() {
   return (
-    <div id="signin">
+    <div id="my-items">
       <div className="page-title-overlap bg-accent pt-4">
         <div className="container d-flex flex-wrap flex-sm-nowrap justify-content-center justify-content-sm-between align-items-center mb-2 pt-2">
           <div className="d-flex align-items-center">
@@ -67,9 +64,30 @@ function SigninBody() {
             {/* <!-- Content--> */}
             <section className="col-lg-9 pt-lg-4 pb-4 mb-3">
               <div className="pt-2 px-4 ps-lg-0 pe-xl-5">
-                <h1 className="h3 mb-4 pb-2 text-sm-start text-center">
-                  Favorites
-                </h1>
+                <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-between mb-4">
+                  <h1 className="h3 mb-sm-0 mb-2 pb-1 text-sm-start text-center">
+                    My Items
+                  </h1>
+                  <div className="pb-1" style={{ overflowX: "auto" }}>
+                    <ul className="nav nav-tabs nav-fill flex-nowrap text-nowrap mb-0">
+                      <li className="nav-item">
+                        <a className="nav-link active" href="#">
+                          All <span className="opacity-70">(5)</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">
+                          Sold <span className="opacity-70">(3)</span>
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a className="nav-link" href="#">
+                          Live auctions <span className="opacity-70">(2)</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
                 {/* <!-- Items grid--> */}
                 <div className="row row-cols-md-3 row-cols-sm-2 row-cols-1 gy-sm-4 gy-3 gx-3 mb-4">
                   {/* <!-- Product--> */}
@@ -322,10 +340,69 @@ function SigninBody() {
                       </div>
                     </article>
                   </div>
+                  {/* <!-- Product--> */}
+                  <div className="col mb-2">
+                    <article className="card h-100 border-0 shadow">
+                      <div className="card-img-top position-relative overflow-hidden">
+                        <a className="d-block" href="nft-single-buy.html">
+                          <img src={Nft1} alt="Product image" />
+                        </a>
+                        {/* <!-- Wishlist button--> */}
+                        <button
+                          className="btn-wishlist btn-sm position-absolute top-0 end-0"
+                          type="button"
+                          data-bs-toggle="tooltip"
+                          data-bs-placement="left"
+                          title="Add to Favorites"
+                          style={{ margin: "12px" }}
+                        >
+                          <i className="ci-heart"></i>
+                        </button>
+                      </div>
+                      <div className="card-body">
+                        <h3 className="product-title mb-2 fs-base">
+                          <a
+                            className="d-block text-truncate"
+                            href="nft-single-auction-live.html"
+                          >
+                            Switch Project 1
+                          </a>
+                        </h3>
+                        <span className="fs-sm text-muted">Reserve price:</span>
+                        <div className="d-flex align-items-center flex-wrap">
+                          <h4 className="mt-1 mb-0 fs-base text-darker">
+                            0.6 ETH
+                          </h4>
+                          <span className="mt-1 ms-1 fs-xs text-muted">
+                            (≈ $ 2,400.65)
+                          </span>
+                        </div>
+                      </div>
+                      <div className="card-footer mt-n1 py-0 border-0">
+                        <div className="d-flex align-items-center position-relative mb-1 py-3 border-top">
+                          <img
+                            className="me-2 rounded-circle"
+                            src={SwitchLg}
+                            width="32"
+                            alt="Avatar"
+                          />
+                          <a
+                            className="nav-link-style fs-sm stretched-link"
+                            href="projectDeveloper.html"
+                          >
+                            @Switch Electric
+                          </a>
+                        </div>
+                      </div>
+                    </article>
+                  </div>
                 </div>
-                <button className="btn btn-outline-danger">
-                  <i className="ci-trash me-2"></i>Delete all
-                </button>
+                {/* <!-- Create new item--> */}
+                <div className="d-flex flex-sm-row flex-column">
+                  <a className="btn btn-accent" href="nft-create-item.html">
+                    Create new item
+                  </a>
+                </div>
               </div>
             </section>
           </div>
@@ -335,4 +412,4 @@ function SigninBody() {
   );
 }
 
-export default SigninBody;
+export default MyItemsBody;
