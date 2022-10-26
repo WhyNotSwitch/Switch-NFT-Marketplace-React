@@ -4,9 +4,10 @@ import NavBar from "./Nav";
 import SigninBody from "./SigninBody";
 
 function SigninModal() {
+  const myStyle = { paddingBottom: "90px" };
   return (
     <div>
-      <NavBar />
+      <NavBar style={myStyle} />
       <SigninBody />
       <Footer />
     </div>

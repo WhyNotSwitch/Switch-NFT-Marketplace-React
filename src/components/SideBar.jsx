@@ -36,13 +36,13 @@ function SideBar() {
               </Link>
             </li>
             <li className="border-bottom mb-0">
-              <a
+              <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                href="nft-account-my-collections.html"
+                to="/my-collections"
               >
                 <i className="ci-view-list opacity-60 me-2"></i>My Collections
                 <span className="fs-sm text-muted ms-auto">2</span>
-              </a>
+              </Link>
             </li>
             <li className="border-bottom mb-0">
               <a

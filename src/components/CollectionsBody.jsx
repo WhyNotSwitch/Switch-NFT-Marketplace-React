@@ -18,6 +18,7 @@ import Nft13 from "./img/Switch/n13.jpg";
 import Nft14 from "./img/Switch/n14.jpg";
 import Nft15 from "./img/Switch/n15.jpg";
 import Nft16 from "./img/Switch/n16.jpg";
+import SideBar from "./SideBar";
 
 function CollectionsBody() {
   return (
