@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./styles.css";
 import Nft11 from "./img/Switch/n11.jpg";
 import Nft12 from "./img/Switch/n12.jpg";
@@ -8,8 +8,39 @@ import Nft16 from "./img/Switch/n16.jpg";
 import Avatar13 from "./img/nft/catalog/avatars/13.png";
 import SwitchLg from "./img/Switch/switch.jpg";
 import { Link } from "react-router-dom";
+import MetaData from "./MetaData";
+import Asset from "./Asset";
+import Revenue from "./Revenue";
+import Details from "./Details";
+import Provenance from "./Provenance";
 
 function SinglebuyBody() {
+  const [activeTab, setActiveTab] = useState("provenance");
+  const theTab = function () {
+    if (activeTab === "metadata") return <MetaData />;
+    else if (activeTab === "asset") return <Asset />;
+    else if (activeTab === "revenue") return <Revenue />;
+    else if (activeTab === "details") return <Details />;
+    else if (activeTab === "provenance") return <Provenance />;
+  };
+
+  function handleClick1() {
+    setActiveTab("metadata");
+  }
+  function handleClick2() {
+    setActiveTab("asset");
+  }
+  function handleClick3() {
+    setActiveTab("revenue");
+    const ClassName = "active";
+  }
+  function handleClick4() {
+    setActiveTab("details");
+  }
+  function handleClick5() {
+    setActiveTab("provenance");
+  }
+
   return (
     <div>
       <div className="page-title-overlap bg-accent pt-4">
@@ -179,8 +210,8 @@ function SinglebuyBody() {
                         <li className="nav-item">
                           <a
                             id="metadata"
-                            className="nav-link active"
-                            to="#properties"
+                            className="nav-link "
+                            onClick={handleClick1}
                             data-bs-toggle="tab"
                             role="tab"
                           >
@@ -191,7 +222,7 @@ function SinglebuyBody() {
                           <a
                             id="asset"
                             className="nav-link"
-                            href="#asset"
+                            onClick={handleClick2}
                             data-bs-toggle="tab"
                             role="tab"
                           >
@@ -202,7 +233,7 @@ function SinglebuyBody() {
                           <a
                             id="revenues"
                             className="nav-link"
-                            href="#revenues"
+                            onClick={handleClick3}
                             data-bs-toggle="tab"
                             role="tab"
                           >
@@ -211,9 +242,9 @@ function SinglebuyBody() {
                         </li>
                         <li className="nav-item">
                           <a
+                            onClick={handleClick4}
                             id="details"
                             className="nav-link"
-                            href="#details"
                             data-bs-toggle="tab"
                             role="tab"
                           >
@@ -224,7 +255,7 @@ function SinglebuyBody() {
                           <a
                             id="provenance"
                             className="nav-link"
-                            href="#provenance"
+                            onClick={handleClick5}
                             data-bs-toggle="tab"
                             role="tab"
                           >
@@ -242,310 +273,7 @@ function SinglebuyBody() {
                       <div className="row ">
                         <div className="card">
                           <div className="card-body">
-                            <div className="tab-content">
-                              {/* <!-- Properties--> */}
-                              <ul className="list-unstyled row row-cols-sm-2 row-cols-1 gy-3 gx-4 mb-4 pb-md-2">
-                                <div className="col">
-                                  <li className="d-flex pb-3 border-bottom">
-                                    <i className="ci-battery fs-lg mt-2 mb-0 text-primary"></i>
-                                    <div className="ps-3">
-                                      <span className="fs-ms text-muted">
-                                        Capacity:
-                                      </span>
-                                      <a
-                                        to="#"
-                                        className="d-block text-heading fs-sm"
-                                      >
-                                        15kWp solar + 13.5kWh storage
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li className="d-flex pt-2 pb-3 border-bottom">
-                                    <i className="ci-sun fs-lg mt-2 mb-0 text-primary"></i>
-                                    <div className="ps-3">
-                                      <span className="fs-ms text-muted">
-                                        Peak Sunlight Hours:
-                                      </span>
-                                      <a
-                                        to="#"
-                                        className="d-block text-heading fs-sm"
-                                      >
-                                        8
-                                      </a>
-                                    </div>
-                                  </li>
-
-                                  <li className="d-flex pt-2 pb-3 border-bottom">
-                                    <i className="ci-target fs-lg mt-2 mb-0 text-primary"></i>
-                                    <div className="ps-3">
-                                      <span className="fs-ms text-muted">
-                                        Solar Irradiance:
-                                      </span>
-                                      <a
-                                        to="#"
-                                        className="d-block text-heading fs-sm"
-                                      >
-                                        4.5 kW/m²/day
-                                      </a>
-                                    </div>
-                                  </li>
-
-                                  <li className="d-flex pt-2 pb-3 border-bottom">
-                                    <i className="ci-key fs-lg mt-2 mb-0 text-primary"></i>
-                                    <div className="ps-3">
-                                      <span className="fs-ms text-muted">
-                                        Commissioned On:
-                                      </span>
-                                      <a
-                                        to="#"
-                                        className="d-block text-heading fs-sm"
-                                      >
-                                        15 - 04 - 2022
-                                      </a>
-                                    </div>
-                                  </li>
-                                </div>
-                                <div className="col">
-                                  <li className="d-flex pt-xs-2 pb-3 border-bottom">
-                                    <i className="ci-dollar fs-lg mt-2 mb-0 text-primary"></i>
-                                    <div className="ps-3">
-                                      <span className="fs-ms text-muted">
-                                        Total Revenue:
-                                      </span>
-                                      <a
-                                        to="#"
-                                        className="d-block text-heading fs-sm"
-                                      >
-                                        74250.15 IOTX
-                                      </a>
-                                    </div>
-                                  </li>
-
-                                  <li className="d-flex pt-2 pb-3 border-bottom">
-                                    <i className="ci-idea fs-lg mt-2 mb-0 text-primary"></i>
-                                    <div className="ps-3">
-                                      <span className="fs-ms text-muted">
-                                        Solar:
-                                      </span>
-                                      <a
-                                        to="#"
-                                        className="d-block text-heading fs-sm"
-                                      >
-                                        15kWh, Felicity solar
-                                      </a>
-                                    </div>
-                                  </li>
-
-                                  <li className="d-flex pt-2 pb-3 border-bottom">
-                                    <i className="ci-server-alt fs-lg mt-2 mb-0 text-primary"></i>
-                                    <div className="ps-3">
-                                      <span className="fs-ms text-muted">
-                                        Storage:
-                                      </span>
-                                      <a
-                                        to="#"
-                                        className="d-block text-heading fs-sm"
-                                      >
-                                        3.5kWh, Tesla powerwall
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li className="d-flex pt-2 pb-3 border-bottom">
-                                    <i className="ci-star-filled fs-lg mt-2 mb-0 text-primary"></i>
-                                    <div className="ps-3">
-                                      <span className="fs-ms text-muted">
-                                        Rating:
-                                      </span>
-                                      <a
-                                        to="#"
-                                        className="d-block text-heading fs-sm"
-                                      >
-                                        🌕🌕🌕🌗🌑
-                                      </a>
-                                    </div>
-                                  </li>
-                                </div>
-                              </ul>
-                              {/* <!-- Asset --> */}
-                              <div
-                                className="tab-pane fade"
-                                id="asset"
-                                role="tabpanel"
-                              >
-                                <div className="card-img-top overflow-hidden">
-                                  <iframe
-                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d386.565489235626!2d7.40626715979903!3d6.8621211261806145!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd54ce237d432b523!2zNsKwNTEnNDQuMiJOIDfCsDI0JzIyLjUiRQ!5e1!3m2!1sen!2sng!4v1666089690838!5m2!1sen!2sng"
-                                    width="400"
-                                    height="250"
-                                    style={{ border: "0" }}
-                                    allowFullScreen=""
-                                    loading="lazy"
-                                    referrerPolicy="no-referrer-when-downgrade"
-                                  ></iframe>
-                                </div>
-                              </div>
-                              {/* <!-- Revenue History--> */}
-                              <div
-                                className="tab-pane fade"
-                                id="revenues"
-                                role="tabpanel"
-                              >
-                                <canvas
-                                  id="myChart"
-                                  width="400"
-                                  height="230"
-                                ></canvas>
-                              </div>
-                              {/* <!-- Details--> */}
-                              <div
-                                className="tab-pane fade"
-                                id="details"
-                                role="tabpanel"
-                              >
-                                <ul className="list-unstyled mb-0">
-                                  <li className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-between mb-2 fs-sm">
-                                    <span>Contract Address</span>
-                                    <div>
-                                      <a
-                                        className="text-decoration-none"
-                                        to="#"
-                                      >
-                                        <span className="fw-medium text-body">
-                                          0x1dDB2C08s97...9Ec
-                                        </span>
-                                        <i className="ci-external-link ms-3 text-accent"></i>
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-between mb-2 fs-sm">
-                                    <span>Token ID</span>
-                                    <div>
-                                      <a
-                                        className="text-decoration-none"
-                                        to="#"
-                                      >
-                                        <span className="text-body">
-                                          8508550793340827...
-                                        </span>
-                                        <i className="ci-copy ms-3 text-accent"></i>
-                                      </a>
-                                    </div>
-                                  </li>
-                                  <li className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-between mb-2 fs-sm">
-                                    <span>Token Standard</span>
-                                    <div>
-                                      <span className="text-body">
-                                        ERC-1155
-                                      </span>
-                                    </div>
-                                  </li>
-                                  <li className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-between mb-2 fs-sm">
-                                    <span>Blockchain</span>
-                                    <div>
-                                      <span className="text-body">
-                                        Ethereum
-                                      </span>
-                                    </div>
-                                  </li>
-                                  <li className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-between mb-2 fs-sm">
-                                    <span>Metadata</span>
-                                    <div>
-                                      <span className="text-body">
-                                        Editable
-                                      </span>
-                                    </div>
-                                  </li>
-                                </ul>
-                              </div>
-                              {/* <!-- Provenance--> */}
-                              <div
-                                className="tab-pane fade"
-                                id="provenance"
-                                role="tabpanel"
-                              >
-                                <ul className="list-unstyled mb-4">
-                                  {/* <!-- Provenance item--> */}
-                                  <li className="position-relative mb-0 ps-4 pb-4 border-start">
-                                    <span
-                                      className="d-inline-block position-absolute start-0 top-0 mt-1 p-1 bg-primary rounded-circle"
-                                      style={{ transform: "translateX(-50%)" }}
-                                    ></span>
-                                    <h6 className="mb-1 fs-sm">
-                                      Listed by
-                                      <Link
-                                        to="/project-developer"
-                                        className="text-decoration-none text-accent"
-                                      >
-                                        @distrokid
-                                      </Link>
-                                    </h6>
-                                    <span className="fs-sm text-muted">
-                                      Oct 3 at 9:36 am
-                                    </span>
-                                  </li>
-                                  {/* <!-- Provenance item--> */}
-                                  <li className="position-relative mb-0 ps-4 pb-4 border-start">
-                                    <span
-                                      className="d-inline-block position-absolute start-0 top-0 mt-1 p-1 bg-primary rounded-circle"
-                                      style={{ transform: "translateX(-50%)" }}
-                                    ></span>
-                                    <h6 className="mb-1 fs-sm">
-                                      Purchased by{" "}
-                                      <Link
-                                        to="/project-developer"
-                                        className="text-decoration-none text-accent"
-                                      >
-                                        @distrokid
-                                      </Link>
-                                    </h6>
-                                    <span className="fs-sm text-muted">
-                                      Sept 15 at 11:20 am
-                                    </span>
-                                  </li>
-                                  {/* <!-- Provenance item--> */}
-                                  <li className="position-relative mb-0 ps-4 pb-4 border-start">
-                                    <span
-                                      className="d-inline-block position-absolute start-0 top-0 mt-1 p-1 bg-primary rounded-circle"
-                                      style={{ transform: "translateX(-50%)" }}
-                                    ></span>
-                                    <h6 className="mb-1 fs-sm">
-                                      Listed by{" "}
-                                      <Link
-                                        to="/project-developer"
-                                        className="text-decoration-none text-accent"
-                                      >
-                                        @Switch Electric
-                                      </Link>
-                                    </h6>
-                                    <span className="fs-sm text-muted">
-                                      Aug 29 at 6:29 pm
-                                    </span>
-                                  </li>
-                                  {/* <!-- Provenance item--> */}
-                                  <li className="position-relative mb-0 ps-4 border-start">
-                                    <span
-                                      className="d-inline-block position-absolute start-0 top-0 mt-1 p-1 bg-primary rounded-circle"
-                                      style={{ transform: "translateX(-50%)" }}
-                                    ></span>
-                                    <h6 className="mb-1 fs-sm">
-                                      Minted by{" "}
-                                      <Link
-                                        to="/project-developer"
-                                        className="text-decoration-none text-accent"
-                                      >
-                                        @Switch Electric
-                                      </Link>
-                                    </h6>
-                                    <span className="fs-sm text-muted">
-                                      Aug 29 at 3:41 pm
-                                    </span>
-                                  </li>
-                                </ul>
-                                <button className="btn btn-outline-accent d-block w-100">
-                                  <i className="ci-loading me-2"></i>Load more
-                                </button>
-                              </div>
-                            </div>
+                            <div className="tab-content">{theTab()}</div>
                           </div>
                         </div>
                       </div>
