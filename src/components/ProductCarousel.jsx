@@ -6,6 +6,7 @@ import Nft2 from "./img/Switch/n2.jpg";
 import Nft3 from "./img/Switch/n3.jpg";
 import Nft4 from "./img/Switch/n4.jpg";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function ProductCarousel() {
   return (
@@ -24,9 +25,9 @@ function ProductCarousel() {
             <div className="col py-3">
               <article className="card h-100 border-0">
                 <div className="card-img-top position-relative overflow-hidden">
-                  <a className="d-block" href="nft-single-buy.html">
+                  <Link className="d-block" to="/single-buy">
                     <img src={Nft1} alt="Product" />
-                  </a>
+                  </Link>
                   {/* <!-- Wishlist button--> */}
                   <Button
                     className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -41,12 +42,9 @@ function ProductCarousel() {
                 </div>
                 <div className="card-body">
                   <h3 className="product-title mb-2 fs-base">
-                    <a
-                      className="d-block text-truncate"
-                      href="nft-single-auction-live.html"
-                    >
+                    <Link className="d-block text-truncate" to="/single-buy">
                       Switch Project 1
-                    </a>
+                    </Link>
                   </h3>
                   <span className="fs-sm text-muted">Reserve price:</span>
                   <div className="d-flex align-items-center flex-wrap">
@@ -64,12 +62,12 @@ function ProductCarousel() {
                       width="32"
                       alt="Avatar"
                     />
-                    <a
+                    <Link
                       className="nav-link-style fs-sm stretched-link"
-                      href="projectDeveloper.html"
+                      to="/project-developer"
                     >
                       @Switch Electric
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -78,9 +76,9 @@ function ProductCarousel() {
             <div className="col py-3">
               <article className="card h-100 border-0">
                 <div className="card-img-top position-relative overflow-hidden">
-                  <a className="d-block" href="nft-single-auction-live.html">
+                  <Link className="d-block" to="/single-buy">
                     <img src={Nft2} alt="Product" />
-                  </a>
+                  </Link>
                   {/* <!-- Countdown timer--> */}
                   <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
                     <i className="ci-time me-1"></i>
@@ -115,12 +113,9 @@ function ProductCarousel() {
                 </div>
                 <div className="card-body">
                   <h3 className="product-title mb-2 fs-base">
-                    <a
-                      className="d-block text-truncate"
-                      href="nft-single-auction-live.html"
-                    >
+                    <Link className="d-block text-truncate" to="/single-buy">
                       Switch Project 2
-                    </a>
+                    </Link>
                   </h3>
                   <span className="fs-sm text-muted">Current bid:</span>
                   <div className="d-flex align-items-center flex-wrap">
@@ -138,12 +133,12 @@ function ProductCarousel() {
                       width="32"
                       alt="Avatar"
                     />
-                    <a
+                    <Link
                       className="nav-link-style fs-sm stretched-link"
-                      href="projectDeveloper.html"
+                      to="/project-developer"
                     >
                       @Switch Electric
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -152,9 +147,9 @@ function ProductCarousel() {
             <div className="col py-3">
               <article className="card h-100 border-0">
                 <div className="card-img-top position-relative overflow-hidden">
-                  <a className="d-block" href="nft-single-auction-live.html">
+                  <Link className="d-block" to="/single-buy">
                     <img src={Nft4} alt="Product" />
-                  </a>
+                  </Link>
                   {/* <!-- Countdown timer--> */}
                   <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
                     <i className="ci-time me-1"></i>
@@ -189,12 +184,9 @@ function ProductCarousel() {
                 </div>
                 <div className="card-body">
                   <h3 className="product-title mb-2 fs-base">
-                    <a
-                      className="d-block text-truncate"
-                      href="nft-single-auction-live.html"
-                    >
+                    <Link className="d-block text-truncate" to="/single-buy">
                       Switch Project 4
-                    </a>
+                    </Link>
                   </h3>
                   <span className="fs-sm text-muted">Current bid:</span>
                   <div className="d-flex align-items-center flex-wrap">
@@ -212,12 +204,12 @@ function ProductCarousel() {
                       width="32"
                       alt="Avatar"
                     />
-                    <a
+                    <Link
                       className="nav-link-style fs-sm stretched-link"
-                      href="projectDeveloper.html"
+                      to="project-developer"
                     >
                       @Switch Electric
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -226,9 +218,9 @@ function ProductCarousel() {
             <div className="col py-3">
               <article className="card h-100 border-0">
                 <div className="card-img-top position-relative overflow-hidden">
-                  <a className="d-block" href="nft-single-auction-live.html">
+                  <Link className="d-block" to="/single-buy">
                     <img src={Nft3} alt="Product" />
-                  </a>
+                  </Link>
                   {/* <!-- Wishlist button--> */}
                   <Button
                     className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -243,12 +235,9 @@ function ProductCarousel() {
                 </div>
                 <div className="card-body">
                   <h3 className="product-title mb-2 fs-base">
-                    <a
-                      className="d-block text-truncate"
-                      href="nft-single-auction-live.html"
-                    >
+                    <Link className="d-block text-truncate" to="/single-buy">
                       Switch Project 3
-                    </a>
+                    </Link>
                   </h3>
                   <span className="fs-sm text-muted">Reserve price:</span>
                   <div className="d-flex align-items-center flex-wrap">
@@ -266,12 +255,12 @@ function ProductCarousel() {
                       width="32"
                       alt="Avatar"
                     />
-                    <a
+                    <Link
                       className="nav-link-style fs-sm stretched-link"
-                      href="projectDeveloper.html"
+                      to="/project-developer"
                     >
                       @Switch Electric
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </article>
@@ -279,9 +268,9 @@ function ProductCarousel() {
           </div>
         </div>
         <div className="d-flex flex-sm-row flex-column justify-content-center pt-4">
-          <a className="btn btn-outline-accent" href="marketplace.html">
+          <Link className="btn btn-outline-accent" to="/marketplace">
             Browse marketplace
-          </a>
+          </Link>
         </div>
       </div>
     </section>

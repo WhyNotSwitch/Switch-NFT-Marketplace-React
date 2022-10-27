@@ -9,6 +9,8 @@ import Notifications from "./Notifications";
 import Favorites from "./Favorites";
 import SigninModal from "./SigninModal";
 import SignOut from "./SignOut";
+import SingleBuy from "./SingleBuy";
+import ProjectDeveloper from "./ProjectDeveloper";
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
       <Route path="notifications" element={<Notifications />} />
       <Route path="favorites" element={<Favorites />} />
       <Route path="signout" element={<SignOut />}></Route>
+      <Route path="single-buy" element={<SingleBuy />}></Route>
+      <Route path="project-developer" element={<ProjectDeveloper />} />
     </Routes>
   );
 }
