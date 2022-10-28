@@ -19,6 +19,8 @@ import Nft14 from "./img/Switch/n14.jpg";
 import Nft15 from "./img/Switch/n15.jpg";
 import Nft16 from "./img/Switch/n16.jpg";
 import SideBar from "./SideBar";
+import { Dropdown } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 function CollectionsBody() {
   return (
@@ -30,12 +32,12 @@ function CollectionsBody() {
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                   <li className="breadcrumb-item">
-                    <a className="text-nowrap" href="index.html">
+                    <Link className="text-nowrap" to="index.html">
                       <i className="ci-home"></i>Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="breadcrumb-item text-nowrap">
-                    <a href="home-nft.html">NFT Collections</a>
+                    <Link to="home-nft.html">NFT Collections</Link>
                   </li>
                   <li
                     className="breadcrumb-item text-nowrap active"
@@ -73,36 +75,45 @@ function CollectionsBody() {
               </div>
             </div>
             {/* <!-- Sorting-->*/}
-            <div className="flex-shrink-0 border-start">
-              <div className="dropdown">
-                <button
-                  className="btn border-0 p-4 fw-medium"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  <span className="d-sm-inline d-none">Recently added</span>
-                  <i className="ci-arrow-down ms-sm-2 fs-sm"></i>
-                </button>
-                <div className="dropdown-menu w-100">
-                  <a
-                    className="dropdown-item active"
-                    href="#"
-                    style={{ whiteSpace: "normal" }}
+            <Dropdown>
+              <div className="flex-shrink-0 border-start">
+                <div className="dropdown">
+                  <Dropdown.Toggle
+                    className="btn border-0 p-4 fw-medium bg-light "
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
                   >
-                    Recently added
-                  </a>
-                  <a
-                    className="dropdown-item"
-                    href="#"
-                    style={{ whiteSpace: "normal" }}
-                  >
-                    Oldest
-                  </a>
+                    <span className="d-sm-inline d-none text-dark">
+                      Recently added
+                    </span>
+                    <i className="ci-arrow-down ms-sm-2 fs-sm"></i>
+                  </Dropdown.Toggle>
+                  <Dropdown.Menu>
+                    <Dropdown.Item>
+                      <Link
+                        className="dropdown-item active"
+                        to="#"
+                        style={{ whiteSpace: "normal" }}
+                      >
+                        Recently added
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        className="dropdown-item"
+                        to="#"
+                        style={{ whiteSpace: "normal" }}
+                      >
+                        Oldest
+                      </Link>
+                    </Dropdown.Item>
+                  </Dropdown.Menu>
                 </div>
               </div>
-            </div>
+            </Dropdown>
+
             <div className="d-md-flex d-none">
               {/* <!-- Pages-->*/}
               <div className="border-start">
@@ -110,26 +121,28 @@ function CollectionsBody() {
               </div>
               {/* <!-- Back-->*/}
               <div className="border-start">
-                <a className="btn border-0 p-4 fw-medium" href="#">
+                <Link className="btn border-0 p-4 fw-medium" to="#">
                   <i className="ci-arrow-left"></i>
-                </a>
+                </Link>
               </div>
               {/* <!-- Forward-->*/}
               <div className="border-start">
-                <a className="btn border-0 p-4 fw-medium" href="#">
+                <Link className="btn border-0 p-4 fw-medium" to="#">
                   <i className="ci-arrow-right"></i>
-                </a>
+                </Link>
               </div>
             </div>
           </div>
         </div>
         {/* <!-- Filters-->*/}
+
         <div className="d-flex flex-lg-row flex-column align-items-lg-center justify-content-between pt-lg-3">
           <div className="d-flex flex-wrap">
             {/* <!-- Categories-->*/}
-            <div className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
-              <button
-                className="btn btn-outline-accent dropdown-toggle w-100"
+            <Dropdown className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
+              <Dropdown.Toggle
+                id="purple"
+                className="btn btn-outline-accent w-100"
                 type="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -137,15 +150,15 @@ function CollectionsBody() {
                 aria-expanded="false"
               >
                 Categories
-              </button>
-              <div
-                className="dropdown-menu mt-lg-2 mt-1"
+              </Dropdown.Toggle>
+              <Dropdown.Menu
+                className=" mt-lg-2 mt-1 dropdown-toggle"
                 style={{ minWidth: "260px" }}
               >
                 <div className="widget px-3">
                   <ul className="widget-list list-unstyled">
                     <li className="d-flex justify-content-between align-items-center mb-1">
-                      <div className="form-check">
+                      <div className="form-check ">
                         <input
                           className="form-check-input"
                           type="checkbox"
@@ -269,12 +282,13 @@ function CollectionsBody() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
+              </Dropdown.Menu>
+            </Dropdown>
             {/* <!-- Sale Types-->*/}
-            <div className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
-              <button
-                className="btn btn-outline-accent dropdown-toggle w-100"
+            <Dropdown className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
+              <Dropdown.Toggle
+                id="purple"
+                className="w-100"
                 type="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -282,8 +296,8 @@ function CollectionsBody() {
                 aria-expanded="false"
               >
                 Sale Types
-              </button>
-              <div
+              </Dropdown.Toggle>
+              <Dropdown.Menu
                 className="dropdown-menu mt-lg-2 mt-1"
                 style={{ minWidth: "260px" }}
               >
@@ -321,11 +335,13 @@ function CollectionsBody() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
+              </Dropdown.Menu>
+            </Dropdown>
+
             {/* <!-- Price range-->*/}
-            <div className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
-              <button
+            <Dropdown className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
+              <Dropdown.Toggle
+                id="purple"
                 className="btn btn-outline-accent dropdown-toggle w-100"
                 type="button"
                 data-bs-toggle="dropdown"
@@ -334,8 +350,8 @@ function CollectionsBody() {
                 aria-expanded="false"
               >
                 Price range
-              </button>
-              <div
+              </Dropdown.Toggle>
+              <Dropdown.Menu
                 className="dropdown-menu mt-lg-2 mt-1 p-3"
                 style={{ minWidth: "260px" }}
               >
@@ -363,12 +379,14 @@ function CollectionsBody() {
                     </div>
                   </div>
                 </form>
-              </div>
-            </div>
+              </Dropdown.Menu>
+            </Dropdown>
+
             {/* <!-- Collections-->*/}
-            <div className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
-              <button
-                className="btn btn-outline-accent dropdown-toggle w-100"
+            <Dropdown className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
+              <Dropdown.Toggle
+                id="purple"
+                className="btn btn-primary dropdown-toggle w-100"
                 type="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -376,8 +394,8 @@ function CollectionsBody() {
                 aria-expanded="false"
               >
                 Collections
-              </button>
-              <div
+              </Dropdown.Toggle>
+              <Dropdown.Menu
                 className="dropdown-menu mt-lg-2 mt-1"
                 style={{ minWidth: "260px" }}
               >
@@ -460,12 +478,14 @@ function CollectionsBody() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
+              </Dropdown.Menu>
+            </Dropdown>
+
             {/* <!-- Creators-->*/}
-            <div className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
-              <button
-                className="btn btn-outline-accent dropdown-toggle w-100"
+            <Dropdown className="dropdown mb-lg-3 mb-2 me-lg-3 me-2">
+              <Dropdown.Toggle
+                id="purple"
+                className="btn btn-outline-dark dropdown-toggle w-100 "
                 type="button"
                 data-bs-toggle="dropdown"
                 data-bs-auto-close="outside"
@@ -473,8 +493,8 @@ function CollectionsBody() {
                 aria-expanded="false"
               >
                 Creators
-              </button>
-              <div
+              </Dropdown.Toggle>
+              <Dropdown.Menu
                 className="dropdown-menu mt-lg-2 mt-1"
                 style={{ minWidth: "260px" }}
               >
@@ -581,12 +601,13 @@ function CollectionsBody() {
                     </li>
                   </ul>
                 </div>
-              </div>
-            </div>
+              </Dropdown.Menu>
+            </Dropdown>
           </div>
           {/* <!-- Total-->*/}
           <div className="mb-3 fs-sm text-muted">1240 results</div>
         </div>
+
         {/* <!-- Products grid-->*/}
         <div className="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 gy-sm-4 gy-3 pt-lg-4 pt-2">
           {/* <!-- Product-->*/}
@@ -604,16 +625,16 @@ function CollectionsBody() {
                     />
                     <div className="fs-sm">
                       by
-                      <a
+                      <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* <!-- Collage-->*/}
-                  <a className="d-block" href="nft-catalog-v2.html">
+                  <Link className="d-block" to="nft-catalog-v2.html">
                     <div className="row row-cols-2 g-2">
                       <div className="col">
                         <img
@@ -637,14 +658,14 @@ function CollectionsBody() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- Collection title-->*/}
               <h3 className="h5 mb-1">
-                <a className="nav-link-style" href="nft-catalog-v2.html">
+                <Link className="nav-link-style" to="nft-catalog-v2.html">
                   Lagos, Nigeria
-                </a>
+                </Link>
               </h3>
               <span className="fs-sm text-muted">$ 12180.95</span>
             </article>
@@ -664,16 +685,16 @@ function CollectionsBody() {
                     />
                     <div className="fs-sm">
                       by
-                      <a
+                      <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* <!-- Collage-->*/}
-                  <a className="d-block" href="nft-catalog-v2.html">
+                  <Link className="d-block" to="nft-catalog-v2.html">
                     <div className="row row-cols-2 g-2">
                       <div className="col">
                         <img
@@ -697,14 +718,14 @@ function CollectionsBody() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- Collection title-->*/}
               <h3 className="h5 mb-1">
-                <a className="nav-link-style" href="nft-catalog-v2.html">
+                <Link className="nav-link-style" to="nft-catalog-v2.html">
                   Anambra, Nigeria
-                </a>
+                </Link>
               </h3>
               <span className="fs-sm text-muted">$ 1520.18</span>
             </article>
@@ -724,16 +745,16 @@ function CollectionsBody() {
                     />
                     <div className="fs-sm">
                       by
-                      <a
+                      <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* <!-- Collage-->*/}
-                  <a className="d-block" href="nft-catalog-v2.html">
+                  <Link className="d-block" to="nft-catalog-v2.html">
                     <div className="row row-cols-2 g-2">
                       <div className="col">
                         <img
@@ -757,14 +778,14 @@ function CollectionsBody() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- Collection title-->*/}
               <h3 className="h5 mb-1">
-                <a className="nav-link-style" href="nft-catalog-v2.html">
+                <Link className="nav-link-style" to="nft-catalog-v2.html">
                   Kano, Nigeria
-                </a>
+                </Link>
               </h3>
               <span className="fs-sm text-muted">$ 1520.18</span>
             </article>
@@ -784,16 +805,16 @@ function CollectionsBody() {
                     />
                     <div className="fs-sm">
                       by
-                      <a
+                      <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* <!-- Collage-->*/}
-                  <a className="d-block" href="nft-catalog-v2.html">
+                  <Link className="d-block" to="nft-catalog-v2.html">
                     <div className="row row-cols-2 g-2">
                       <div className="col">
                         <img
@@ -817,14 +838,14 @@ function CollectionsBody() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- Collection title-->*/}
               <h3 className="h5 mb-1">
-                <a className="nav-link-style" href="nft-catalog-v2.html">
+                <Link className="nav-link-style" to="nft-catalog-v2.html">
                   Benin, Nigeria
-                </a>
+                </Link>
               </h3>
               <span className="fs-sm text-muted">$ 1520.18</span>
             </article>
@@ -844,16 +865,16 @@ function CollectionsBody() {
                     />
                     <div className="fs-sm">
                       by
-                      <a
+                      <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* <!-- Collage-->*/}
-                  <a className="d-block" href="nft-catalog-v2.html">
+                  <Link className="d-block" to="nft-catalog-v2.html">
                     <div className="row row-cols-2 g-2">
                       <div className="col">
                         <img
@@ -877,14 +898,14 @@ function CollectionsBody() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- Collection title-->*/}
               <h3 className="h5 mb-1">
-                <a className="nav-link-style" href="nft-catalog-v2.html">
+                <Link className="nav-link-style" to="nft-catalog-v2.html">
                   Enugu, Nigeria
-                </a>
+                </Link>
               </h3>
               <span className="fs-sm text-muted">$ 1520.18</span>
             </article>
@@ -904,16 +925,16 @@ function CollectionsBody() {
                     />
                     <div className="fs-sm">
                       by
-                      <a
+                      <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* <!-- Collage-->*/}
-                  <a className="d-block" href="nft-catalog-v2.html">
+                  <Link className="d-block" to="nft-catalog-v2.html">
                     <div className="row row-cols-2 g-2">
                       <div className="col">
                         <img
@@ -937,14 +958,14 @@ function CollectionsBody() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- Collection title-->*/}
               <h3 className="h5 mb-1">
-                <a className="nav-link-style" href="nft-catalog-v2.html">
+                <Link className="nav-link-style" to="nft-catalog-v2.html">
                   Imo, Nigeria
-                </a>
+                </Link>
               </h3>
               <span className="fs-sm text-muted">$ 1520.18</span>
             </article>
@@ -964,16 +985,16 @@ function CollectionsBody() {
                     />
                     <div className="fs-sm">
                       by
-                      <a
+                      <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* <!-- Collage-->*/}
-                  <a className="d-block" href="nft-catalog-v2.html">
+                  <Link className="d-block" to="nft-catalog-v2.html">
                     <div className="row row-cols-2 g-2">
                       <div className="col">
                         <img
@@ -997,14 +1018,14 @@ function CollectionsBody() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- Collection title-->*/}
               <h3 className="h5 mb-1">
-                <a className="nav-link-style" href="nft-catalog-v2.html">
+                <Link className="nav-link-style" to="nft-catalog-v2.html">
                   Kaduna, Nigeria
-                </a>
+                </Link>
               </h3>
               <span className="fs-sm text-muted">$ 1520.18</span>
             </article>
@@ -1024,16 +1045,16 @@ function CollectionsBody() {
                     />
                     <div className="fs-sm">
                       by
-                      <a
+                      <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </div>
                   </div>
                   {/* <!-- Collage-->*/}
-                  <a className="d-block" href="nft-catalog-v2.html">
+                  <Link className="d-block" to="nft-catalog-v2.html">
                     <div className="row row-cols-2 g-2">
                       <div className="col">
                         <img
@@ -1057,14 +1078,14 @@ function CollectionsBody() {
                         </div>
                       </div>
                     </div>
-                  </a>
+                  </Link>
                 </div>
               </div>
               {/* <!-- Collection title-->*/}
               <h3 className="h5 mb-1">
-                <a className="nav-link-style" href="nft-catalog-v2.html">
+                <Link className="nav-link-style" to="nft-catalog-v2.html">
                   Ekiti, Nigeria
-                </a>
+                </Link>
               </h3>
               <span className="fs-sm text-muted">$ 1520.18</span>
             </article>
@@ -1078,9 +1099,9 @@ function CollectionsBody() {
         >
           <ul className="pagination">
             <li className="page-item">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 <i className="ci-arrow-left me-2"></i>Prev
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="pagination">
@@ -1096,31 +1117,31 @@ function CollectionsBody() {
               </span>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 2
-              </a>
+              </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 3
-              </a>
+              </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 4
-              </a>
+              </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 5
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="pagination">
             <li className="page-item">
-              <a className="page-link" href="#" aria-label="Next">
+              <Link className="page-link" to="#" aria-label="Next">
                 Next<i className="ci-arrow-right ms-2"></i>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

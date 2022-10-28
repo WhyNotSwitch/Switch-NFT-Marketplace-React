@@ -91,3 +91,12 @@
 #single-buy {
   padding: 8px;
 }
+#purple:hover {
+  background-color: #4e54c8 !important;
+  color: white !important;
+}
+#purple {
+  color: #4e54c8 !important;
+  border-color: #4e54c8 !important;
+  background-color: white !important;
+}
