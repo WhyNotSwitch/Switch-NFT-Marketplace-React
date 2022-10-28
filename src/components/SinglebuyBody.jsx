@@ -32,7 +32,6 @@ function SinglebuyBody() {
   }
   function handleClick3() {
     setActiveTab("revenue");
-    const ClassName = "active";
   }
   function handleClick4() {
     setActiveTab("details");

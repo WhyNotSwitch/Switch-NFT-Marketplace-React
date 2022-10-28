@@ -35,12 +35,9 @@ function SigninBody() {
                   <div className="col mb-2">
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
-                        <a
-                          className="d-block"
-                          href="nft-single-auction-live.html"
-                        >
+                        <Link className="d-block" to="/single-buy">
                           <img src={Nft3} alt="Product image" />
-                        </a>
+                        </Link>
                         {/* <!-- Countdown timer--> */}
                         <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
                           <i className="ci-time me-1"></i>
@@ -75,12 +72,12 @@ function SigninBody() {
                       </div>
                       <div className="card-body">
                         <h3 className="product-title mb-2 fs-base">
-                          <a
+                          <Link
                             className="d-block text-truncate"
-                            href="nft-single-auction-live.html"
+                            to="/single-buy"
                           >
                             Switch Project 3
-                          </a>
+                          </Link>
                         </h3>
                         <span className="fs-sm text-muted">Current bid:</span>
                         <div className="d-flex align-items-center flex-wrap">
@@ -100,12 +97,12 @@ function SigninBody() {
                             width="32"
                             alt="Avatar"
                           />
-                          <a
+                          <Link
                             className="nav-link-style fs-sm stretched-link"
-                            href="projectDeveloper.html"
+                            to="/project-developer"
                           >
                             @Switch Electric
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </article>
@@ -114,9 +111,9 @@ function SigninBody() {
                   <div className="col mb-2">
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
-                        <a className="d-block" href="nft-single-buy.html">
+                        <Link className="d-block" to="/single-buy">
                           <img src={Nft6} alt="Product image" />
-                        </a>
+                        </Link>
                         {/* <!-- Wishlist button--> */}
                         <button
                           className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -131,12 +128,12 @@ function SigninBody() {
                       </div>
                       <div className="card-body">
                         <h3 className="product-title mb-2 fs-base">
-                          <a
+                          <Link
                             className="d-block text-truncate"
-                            href="nft-single-auction-live.html"
+                            to="/single-buy"
                           >
                             Switch Project 6
-                          </a>
+                          </Link>
                         </h3>
                         <span className="fs-sm text-muted">Reserve price:</span>
                         <div className="d-flex align-items-center flex-wrap">
@@ -156,12 +153,12 @@ function SigninBody() {
                             width="32"
                             alt="Avatar"
                           />
-                          <a
+                          <Link
                             className="nav-link-style fs-sm stretched-link"
-                            href="projectDeveloper.html"
+                            to="/project-developer"
                           >
                             @Switch Electric
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </article>
@@ -170,9 +167,9 @@ function SigninBody() {
                   <div className="col mb-2">
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
-                        <a className="d-block" href="nft-single-buy.html">
+                        <Link className="d-block" to="/single-buy">
                           <img src={Nft7} alt="Product image" />
-                        </a>
+                        </Link>
                         {/* <!-- Wishlist button--> */}
                         <button
                           className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -187,12 +184,12 @@ function SigninBody() {
                       </div>
                       <div className="card-body">
                         <h3 className="product-title mb-2 fs-base">
-                          <a
+                          <Link
                             className="d-block text-truncate"
-                            href="nft-single-auction-live.html"
+                            to="/single-buy"
                           >
                             Switch Project 7
-                          </a>
+                          </Link>
                         </h3>
                         <span className="fs-sm text-muted">Reserve price:</span>
                         <div className="d-flex align-items-center flex-wrap">
@@ -212,12 +209,12 @@ function SigninBody() {
                             width="32"
                             alt="Avatar"
                           />
-                          <a
+                          <Link
                             className="nav-link-style fs-sm stretched-link"
-                            href="projectDeveloper.html"
+                            to="/project-developer"
                           >
                             @Switch Electric
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </article>
@@ -226,12 +223,9 @@ function SigninBody() {
                   <div className="col mb-2">
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
-                        <a
-                          className="d-block"
-                          href="nft-single-auction-live.html"
-                        >
+                        <Link className="d-block" to="/single-buy">
                           <img src={Nft8} alt="Product image" />
-                        </a>
+                        </Link>
                         {/* <!-- Wishlist button--> */}
                         <button
                           className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -246,12 +240,12 @@ function SigninBody() {
                       </div>
                       <div className="card-body">
                         <h3 className="product-title mb-2 fs-base">
-                          <a
+                          <Link
                             className="d-block text-truncate"
-                            href="nft-single-auction-live.html"
+                            to="/single-buy"
                           >
                             Switch Project 8
-                          </a>
+                          </Link>
                         </h3>
                         <span className="fs-sm text-muted">Current bid:</span>
                         <div className="d-flex align-items-center flex-wrap">
@@ -271,12 +265,12 @@ function SigninBody() {
                             width="32"
                             alt="Avatar"
                           />
-                          <a
+                          <Link
                             className="nav-link-style fs-sm stretched-link"
-                            href="projectDeveloper.html"
+                            to="/project-developer"
                           >
                             @Switch Electric
-                          </a>
+                          </Link>
                         </div>
                       </div>
                     </article>

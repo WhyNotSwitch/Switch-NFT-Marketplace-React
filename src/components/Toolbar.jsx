@@ -18,6 +18,7 @@ import Nft14 from "./img/Switch/n14.jpg";
 import Nft15 from "./img/Switch/n15.jpg";
 import Nft16 from "./img/Switch/n16.jpg";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 
 function ToolBar() {
   return (
@@ -29,12 +30,15 @@ function ToolBar() {
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                   <li className="breadcrumb-item">
-                    <a className="text-nowrap" href="index.html">
+                    <Link
+                      className="text-nowrap"
+                      to="/Switch-NFT-Marketplace-React"
+                    >
                       <i className="ci-home"></i>Home
-                    </a>
+                    </Link>
                   </li>
                   <li className="breadcrumb-item text-nowrap">
-                    <a href="marketplace.html">NFT Marketplace</a>
+                    <Link to="/marketplace">NFT Marketplace</Link>
                   </li>
                   <li
                     className="breadcrumb-item text-nowrap active"
@@ -59,13 +63,13 @@ function ToolBar() {
           <div className="row gy-3 gx-4 justify-content-between">
             <div className="col-lg-2 col-md-3 col-sm-5 col-12 order-md-1 order-sm-2 order-3">
               <div className="dropdown">
-                <a
+                <Link
                   className="btn btn-outline-secondary dropdown-toggle w-100"
-                  href="#shop-filters"
+                  to="#shop-filters"
                   data-bs-toggle="collapse"
                 >
                   <i className="ci-filter me-2"></i>Filters
-                </a>
+                </Link>
               </div>
             </div>
             <div className="col-md col-12 order-md-2 order-sm-1 order-1">
@@ -357,12 +361,12 @@ function ToolBar() {
                                 ETH
                               </Button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <Link className="dropdown-item" to="#">
                                   BNB
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </Link>
+                                <Link className="dropdown-item" to="#">
                                   BUSD
-                                </a>
+                                </Link>
                               </div>
                               <input
                                 className="form-control range-slider-value-min"
@@ -380,12 +384,12 @@ function ToolBar() {
                                 ETH
                               </Button>
                               <div className="dropdown-menu">
-                                <a className="dropdown-item" href="#">
+                                <Link className="dropdown-item" to="#">
                                   BNB
-                                </a>
-                                <a className="dropdown-item" href="#">
+                                </Link>
+                                <Link className="dropdown-item" to="#">
                                   BUSD
-                                </a>
+                                </Link>
                               </div>
                               <input
                                 className="form-control range-slider-value-max"
@@ -408,9 +412,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-auction-ended.html">
+                <Link className="d-block" to="nft-single-auction-ended.html">
                   <img src={Nft1} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Countdown timer--> */}
                 <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
                   <i className="ci-time me-1"></i>
@@ -445,12 +449,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-auction-live.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 1
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Current bid:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -468,12 +469,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -483,9 +484,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-auction-live.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft2} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Countdown timer--> */}
                 <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
                   <i className="ci-time me-1"></i>
@@ -520,12 +521,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-auction-live.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 2
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Current bid:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -543,12 +541,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -558,9 +556,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-auction-live.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft3} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Countdown timer--> */}
                 <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
                   <i className="ci-time me-1"></i>
@@ -595,12 +593,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-auction-live.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 3
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Current bid:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -618,12 +613,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -632,9 +627,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft4} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -649,12 +644,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 4
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -672,12 +664,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -687,9 +679,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft5} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -704,12 +696,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 5
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -727,12 +716,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -742,9 +731,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft6} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -759,12 +748,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 6
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -782,12 +768,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -797,9 +783,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft7} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -814,12 +800,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 7
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -837,12 +820,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -852,9 +835,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft8} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -869,12 +852,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 8
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -892,12 +872,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -906,9 +886,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft9} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -923,12 +903,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 9
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -946,12 +923,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -961,9 +938,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft10} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -978,12 +955,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 10
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -1001,12 +975,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -1016,9 +990,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft11} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -1033,12 +1007,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 11
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -1056,12 +1027,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -1071,9 +1042,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft12} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -1088,12 +1059,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 12
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -1111,12 +1079,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -1126,9 +1094,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft13} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -1143,12 +1111,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 13
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -1166,12 +1131,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -1181,9 +1146,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft14} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -1198,12 +1163,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 14
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -1221,12 +1183,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -1236,9 +1198,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-buy.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft15} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -1253,12 +1215,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-buy.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 15
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -1276,12 +1235,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -1291,9 +1250,9 @@ function ToolBar() {
           <div className="col mb-2">
             <article className="card h-100 border-0 shadow">
               <div className="card-img-top position-relative overflow-hidden">
-                <a className="d-block" href="nft-single-auction-live.html">
+                <Link className="d-block" to="/single-buy">
                   <img src={Nft16} alt="Product image" />
-                </a>
+                </Link>
                 {/*<!-- Wishlist button--> */}
                 <Button
                   className="btn-wishlist btn-sm position-absolute top-0 end-0"
@@ -1308,12 +1267,9 @@ function ToolBar() {
               </div>
               <div className="card-body">
                 <h3 className="product-title mb-2 fs-base">
-                  <a
-                    className="d-block text-truncate"
-                    href="nft-single-auction-live.html"
-                  >
+                  <Link className="d-block text-truncate" to="/single-buy">
                     Switch Project 16
-                  </a>
+                  </Link>
                 </h3>
                 <span className="fs-sm text-muted">Reserve price:</span>
                 <div className="d-flex align-items-center flex-wrap">
@@ -1331,12 +1287,12 @@ function ToolBar() {
                     width="32"
                     alt="Avatar"
                   />
-                  <a
+                  <Link
                     className="nav-link-style fs-sm stretched-link"
-                    href="projectDeveloper.html"
+                    to="/project-developer"
                   >
                     @Switch Electric
-                  </a>
+                  </Link>
                 </div>
               </div>
             </article>
@@ -1350,9 +1306,9 @@ function ToolBar() {
         >
           <ul className="pagination">
             <li className="page-item">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 <i className="ci-arrow-left me-2"></i>Prev
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="pagination">
@@ -1368,31 +1324,31 @@ function ToolBar() {
               </span>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 2
-              </a>
+              </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 3
-              </a>
+              </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 4
-              </a>
+              </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <a className="page-link" href="#">
+              <Link className="page-link" to="#">
                 5
-              </a>
+              </Link>
             </li>
           </ul>
           <ul className="pagination">
             <li className="page-item">
-              <a className="page-link" href="#" aria-label="Next">
+              <Link className="page-link" to="#" aria-label="Next">
                 Next<i className="ci-arrow-right ms-2"></i>
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>

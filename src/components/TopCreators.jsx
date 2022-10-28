@@ -1,6 +1,7 @@
 import React from "react";
 import "./theme.min.css";
 import Button from "./Button";
+import { Link } from "react-router-dom";
 import switchLg from "./img/Switch/switch.jpg";
 import Cr1 from "./img/nft/home/creators/03.png";
 
@@ -29,12 +30,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Switch Electric
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       50 successful projects
@@ -58,12 +59,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       25 successful projects{" "}
@@ -87,12 +88,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       22 successful projects{" "}
@@ -121,12 +122,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       33 successful projects
@@ -150,12 +151,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       25 successful projects{" "}
@@ -179,12 +180,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       22 successful projects
@@ -213,12 +214,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developers Name
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       50 successful projects
@@ -242,12 +243,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       25 successful projects{" "}
@@ -271,12 +272,12 @@ function TopCreators() {
                   />
                   <div className="ms-2">
                     <h4 className="mb-1 fs-base text-body">
-                      <a
+                      <Link
                         className="nav-link-style stretched-link"
-                        href="projectDeveloper.html"
+                        to="/project-developer"
                       >
                         @Developer's name
-                      </a>
+                      </Link>
                     </h4>
                     <span className="fs-xs text-muted">
                       22 successful projects{" "}
