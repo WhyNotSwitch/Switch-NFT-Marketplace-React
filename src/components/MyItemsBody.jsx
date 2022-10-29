@@ -29,17 +29,17 @@ function MyItemsBody() {
                   <div className="pb-1" style={{ overflowX: "auto" }}>
                     <ul className="nav nav-tabs nav-fill flex-nowrap text-nowrap mb-0">
                       <li className="nav-item">
-                        <a className="nav-link active" href="#empty">
+                        <a className="nav-link active" href="/">
                           All <span className="opacity-70">(5)</span>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#empty">
+                        <a className="nav-link" href="/">
                           Sold <span className="opacity-70">(3)</span>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#empty">
+                        <a className="nav-link" href="/">
                           Live auctions <span className="opacity-70">(2)</span>
                         </a>
                       </li>
@@ -316,6 +316,7 @@ function MyItemsBody() {
                           <a
                             className="d-block text-truncate"
                             to="/single-auction-live.html"
+                            href="/single-auction-live.html"
                           >
                             Switch Project 1
                           </a>
@@ -351,7 +352,7 @@ function MyItemsBody() {
                 </div>
                 {/* <!-- Create new item--> */}
                 <div className="d-flex flex-sm-row flex-column">
-                  <a className="btn btn-accent" href="#empty">
+                  <a className="btn btn-accent" href="/">
                     Create new item
                   </a>
                 </div>
