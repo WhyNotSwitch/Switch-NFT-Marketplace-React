@@ -1,6 +1,5 @@
 import React from "react";
 import "./styles.css";
-import Avatar from "./img/nft/vendor/avatar.png";
 import SwitchLg from "./img/Switch/switch.jpg";
 import Nft1 from "./img/Switch/n1.jpg";
 import Nft3 from "./img/Switch/n3.jpg";
@@ -30,17 +29,17 @@ function MyItemsBody() {
                   <div className="pb-1" style={{ overflowX: "auto" }}>
                     <ul className="nav nav-tabs nav-fill flex-nowrap text-nowrap mb-0">
                       <li className="nav-item">
-                        <a className="nav-link active" href="#">
+                        <a className="nav-link active" href="#empty">
                           All <span className="opacity-70">(5)</span>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="#empty">
                           Sold <span className="opacity-70">(3)</span>
                         </a>
                       </li>
                       <li className="nav-item">
-                        <a className="nav-link" href="#">
+                        <a className="nav-link" href="#empty">
                           Live auctions <span className="opacity-70">(2)</span>
                         </a>
                       </li>
@@ -54,7 +53,7 @@ function MyItemsBody() {
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
                         <Link className="d-block" to="/single-buy">
-                          <img src={Nft3} alt="Product image" />
+                          <img src={Nft3} alt="Product" />
                         </Link>
                         {/* <!-- Countdown timer--> */}
                         <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
@@ -130,7 +129,7 @@ function MyItemsBody() {
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
                         <Link className="d-block" to="/single-buy">
-                          <img src={Nft6} alt="Product image" />
+                          <img src={Nft6} alt="Product" />
                         </Link>
                         {/* <!-- Wishlist button--> */}
                         <button
@@ -186,7 +185,7 @@ function MyItemsBody() {
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
                         <Link className="d-block" to="/single-buy">
-                          <img src={Nft7} alt="Product image" />
+                          <img src={Nft7} alt="Product" />
                         </Link>
                         {/* <!-- Wishlist button--> */}
                         <button
@@ -242,7 +241,7 @@ function MyItemsBody() {
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
                         <Link className="d-block" to="/single-buy">
-                          <img src={Nft8} alt="Product image" />
+                          <img src={Nft8} alt="Product" />
                         </Link>
                         {/* <!-- Wishlist button--> */}
                         <button
@@ -298,7 +297,7 @@ function MyItemsBody() {
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
                         <Link className="d-block" to="single-buy">
-                          <img src={Nft1} alt="Product image" />
+                          <img src={Nft1} alt="Product" />
                         </Link>
                         {/* <!-- Wishlist button--> */}
                         <button
@@ -352,7 +351,7 @@ function MyItemsBody() {
                 </div>
                 {/* <!-- Create new item--> */}
                 <div className="d-flex flex-sm-row flex-column">
-                  <a className="btn btn-accent" href="nft-create-item.html">
+                  <a className="btn btn-accent" href="#empty">
                     Create new item
                   </a>
                 </div>

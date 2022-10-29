@@ -1,15 +1,10 @@
 import React from "react";
 import "./styles.css";
 import SwitchLg from "./img/Switch/switch.jpg";
-import Nft1 from "./img/Switch/n5.jpg";
-import Nft2 from "./img/Switch/n5.jpg";
 import Nft3 from "./img/Switch/n5.jpg";
-import Nft4 from "./img/Switch/n5.jpg";
-import Nft5 from "./img/Switch/n5.jpg";
 import Nft6 from "./img/Switch/n6.jpg";
 import Nft7 from "./img/Switch/n7.jpg";
 import Nft8 from "./img/Switch/n8.jpg";
-import Avatar from "./img/nft/vendor/avatar.png";
 import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 import PageTitle from "./PageTitle";

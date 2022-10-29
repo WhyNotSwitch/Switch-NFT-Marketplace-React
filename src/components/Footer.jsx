@@ -15,6 +15,7 @@ function Footer(props) {
                     Stay informed
                   </h3>
                   <form
+                    rel="noreferrer"
                     className="subscription-form validate"
                     action="https://studio.us12.list-manage.com/subscribe/post?u=c7103e2c981361a6639545bd5&amp;amp;id=29ca296126"
                     method="post"

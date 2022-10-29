@@ -290,9 +290,9 @@ function SinglebuyBody() {
       <section className="container mb-5 pb-md-4">
         <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-sm-between mb-sm-4 mb-3">
           <h2 className="h3 mb-sm-0">More from this Location</h2>
-          <a className="btn btn-outline-accent ms-sm-3" to="/single-buy">
+          <Link className="btn btn-outline-accent ms-sm-3" to="/single-buy">
             View collection<i className="ci-arrow-right ms-2"></i>
-          </a>
+          </Link>
         </div>
         {/* <!-- Product carousel--> */}
         <div className=" tns-controls-static tns-controls-outside mx-xl-n4 mx-n2 px-xl-4 px-0 ">

@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 import "./styles.css";
 import Blog1 from "./img/nft/blog/01.jpg";
 import Blog2 from "./img/nft/blog/02.jpg";
@@ -12,7 +11,10 @@ function Blog(props) {
       <section className="container py-lg-5 py-5 ">
         <div className="d-flex align-items-center justify-content-between mb-sm-4 mb-2 pb-2">
           <h2 className="h3 mb-0">Resources for getting started</h2>
-          <a className="btn btn-outline-accent ms-3" href="blog-grid.html">
+          <a
+            className="btn btn-outline-accent ms-3"
+            href="/Switch-NFT-Marketplace-React"
+          >
             All articles<i className="ci-arrow-right ms-2"></i>
           </a>
         </div>
@@ -27,7 +29,7 @@ function Blog(props) {
           {/* <!-- Carousel item--> */}
           <div className="row row-cols-md-3 ">
             <article className="col col-sm-1">
-              <a className="d-block mb-3" href="blog-single.html">
+              <a className="d-block mb-3" href="/Switch-NFT-Marketplace-React">
                 <img className="rounded-3" src={Blog2} alt="Blog" />
               </a>
               <div className="d-flex align-items-center fs-sm pb-2">
@@ -48,7 +50,7 @@ function Blog(props) {
 
             {/* <!-- Carousel item--> */}
             <article className="col-sm-1">
-              <a className="d-block mb-3" href="blog-single.html">
+              <a className="d-block mb-3" href="Switch-NFT-Marketplace-React">
                 <img className="rounded-3" src={Blog1} alt="Blog" />
               </a>
               <div className="d-flex align-items-center fs-sm pb-2">
@@ -69,7 +71,7 @@ function Blog(props) {
 
             {/* <!-- Carousel item--> */}
             <article className="col-sm-1">
-              <a className="d-block mb-3" href="blog-single.html">
+              <a className="d-block mb-3" href="Switch-NFT-Marketplace-React">
                 <img className="rounded-3" src={Blog3} alt="Blog" />
               </a>
               <div className="d-flex align-items-center fs-sm pb-2">

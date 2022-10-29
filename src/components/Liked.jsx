@@ -15,7 +15,7 @@ function Liked() {
           <article className="card h-100 border-0 shadow">
             <div className="card-img-top position-relative overflow-hidden">
               <Link className="d-block" to="nft-single-buy.html">
-                <img src={Nft7} alt="Product image" />
+                <img src={Nft7} alt="Product" />
               </Link>
               {/* <!-- Wishlist button--> */}
               <button
@@ -64,7 +64,7 @@ function Liked() {
           <article className="card h-100 border-0 shadow">
             <div className="card-img-top position-relative overflow-hidden">
               <Link className="d-block" to="/single-buy">
-                <img src={Nft8} alt="Product image" />
+                <img src={Nft8} alt="Product" />
               </Link>
               {/* <!-- Wishlist button--> */}
               <button
@@ -113,7 +113,7 @@ function Liked() {
           <article className="card h-100 border-0 shadow">
             <div className="card-img-top position-relative overflow-hidden">
               <Link className="d-block" to="/single-buy">
-                <img src={Nft4} alt="Product image" />
+                <img src={Nft4} alt="Product" />
               </Link>
               {/* <!-- Countdown timer--> */}
               <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">

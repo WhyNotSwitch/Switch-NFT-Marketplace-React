@@ -35,7 +35,7 @@ function PageTitle() {
               <span className="text-white opacity-70">following</span>
             </div>
           </div>
-          <a className="text-light" href="#">
+          <a className="text-light" href="#empty">
             0x1dDB2C08s97...9Ecd
             <i
               className="ci-copy ms-2 fs-sm"

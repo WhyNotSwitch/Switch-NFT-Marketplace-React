@@ -1,7 +1,6 @@
 import React from "react";
 import "./styles.css";
 import SquareAvatar from "./img/nft/vendor/avatar-square.jpg";
-import { Link } from "react-router-dom";
 import SideBar from "./SideBar";
 import PageTitle from "./PageTitle";
 
@@ -44,7 +43,7 @@ function AccountBody() {
                       </button>
                       <div className="pt-1 mb-0 fs-sm text-muted">
                         We recommend an image of at least 400x400. Gifs work too
-                        :)
+                        :
                       </div>
                     </div>
                   </div>
@@ -157,7 +156,7 @@ function AccountBody() {
                       />
                     </div>
                     <div className="col-12">
-                      <a href="#">
+                      <a href="/account-settings">
                         <i className="ci-add me-2"></i>
                         <ins>Add more</ins>
                       </a>

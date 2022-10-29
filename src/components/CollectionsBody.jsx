@@ -18,7 +18,6 @@ import Nft13 from "./img/Switch/n13.jpg";
 import Nft14 from "./img/Switch/n14.jpg";
 import Nft15 from "./img/Switch/n15.jpg";
 import Nft16 from "./img/Switch/n16.jpg";
-import SideBar from "./SideBar";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
@@ -94,7 +93,7 @@ function CollectionsBody() {
                     <Dropdown.Item>
                       <Link
                         className="dropdown-item active"
-                        to="#"
+                        to="/my-collections"
                         style={{ whiteSpace: "normal" }}
                       >
                         Recently added
@@ -103,7 +102,7 @@ function CollectionsBody() {
                     <Dropdown.Item>
                       <Link
                         className="dropdown-item"
-                        to="#"
+                        to="/my-collections"
                         style={{ whiteSpace: "normal" }}
                       >
                         Oldest
@@ -121,13 +120,19 @@ function CollectionsBody() {
               </div>
               {/* <!-- Back-->*/}
               <div className="border-start">
-                <Link className="btn border-0 p-4 fw-medium" to="#">
+                <Link
+                  className="btn border-0 p-4 fw-medium"
+                  to="/my-collections"
+                >
                   <i className="ci-arrow-left"></i>
                 </Link>
               </div>
               {/* <!-- Forward-->*/}
               <div className="border-start">
-                <Link className="btn border-0 p-4 fw-medium" to="#">
+                <Link
+                  className="btn border-0 p-4 fw-medium"
+                  to="/my-collections"
+                >
                   <i className="ci-arrow-right"></i>
                 </Link>
               </div>
@@ -1099,7 +1104,7 @@ function CollectionsBody() {
         >
           <ul className="pagination">
             <li className="page-item">
-              <Link className="page-link" to="#">
+              <Link className="page-link" to="/my-collections">
                 <i className="ci-arrow-left me-2"></i>Prev
               </Link>
             </li>
@@ -1117,29 +1122,33 @@ function CollectionsBody() {
               </span>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to="#">
+              <Link className="page-link" to="/my-collections">
                 2
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to="#">
+              <Link className="page-link" to="/my-collections">
                 3
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to="#">
+              <Link className="page-link" to="/my-collections">
                 4
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to="#">
+              <Link className="page-link" to="/my-collections">
                 5
               </Link>
             </li>
           </ul>
           <ul className="pagination">
             <li className="page-item">
-              <Link className="page-link" to="#" aria-label="Next">
+              <Link
+                className="page-link"
+                to="/my-collections"
+                aria-label="Next"
+              >
                 Next<i className="ci-arrow-right ms-2"></i>
               </Link>
             </li>

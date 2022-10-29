@@ -30,7 +30,7 @@ function FavoritesBody() {
                           className="d-block"
                           href="nft-single-auction-live.html"
                         >
-                          <img src={Nft3} alt="Product image" />
+                          <img src={Nft3} alt="Product" />
                         </a>
                         {/* <!-- Countdown timer--> */}
                         <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
@@ -106,7 +106,7 @@ function FavoritesBody() {
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
                         <a className="d-block" href="nft-single-buy.html">
-                          <img src={Nft6} alt="Product image" />
+                          <img src={Nft6} alt="Product" />
                         </a>
                         {/* <!-- Wishlist button--> */}
                         <button
@@ -162,7 +162,7 @@ function FavoritesBody() {
                     <article className="card h-100 border-0 shadow">
                       <div className="card-img-top position-relative overflow-hidden">
                         <a className="d-block" href="nft-single-buy.html">
-                          <img src={Nft7} alt="Product image" />
+                          <img src={Nft7} alt="Product" />
                         </a>
                         {/* <!-- Wishlist button--> */}
                         <button
@@ -221,7 +221,7 @@ function FavoritesBody() {
                           className="d-block"
                           href="nft-single-auction-live.html"
                         >
-                          <img src={Nft8} alt="Product image" />
+                          <img src={Nft8} alt="Product" />
                         </a>
                         {/* <!-- Wishlist button--> */}
                         <button
