@@ -82,7 +82,7 @@ function SinglebuyBody() {
               {/* <!-- Product image--> */}
               <div className="col-lg-6">
                 <div className="position-relative rounded-3 overflow-hidden mb-lg-4 mb-2">
-                  <img className="image-zoom" src={Nft6} alt="Product image" />
+                  <img className="image-zoom" src={Nft6} alt="Product" />
                   <div className="image-zoom-pane"></div>
                 </div>
                 <div className="pt-2 text-lg-start text-center">
@@ -182,21 +182,24 @@ function SinglebuyBody() {
                               width="32"
                               alt="Avatar"
                             />
-                            <a
+                            <Link
                               className="nav-link-style stretched-link fs-sm"
-                              to="#"
+                              to="/single-buy"
                             >
                               Enugu, Nigeria
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div className="col">
-                    <a className="btn btn-lg btn-accent d-block w-100" to="#">
+                    <Link
+                      className="btn btn-lg btn-accent d-block w-100"
+                      to="/single-buy"
+                    >
                       Purchase NFT
-                    </a>
+                    </Link>
                   </div>
                   {/* <!-- Product info--> */}
                   <div className="pt-3">
@@ -287,7 +290,7 @@ function SinglebuyBody() {
       <section className="container mb-5 pb-md-4">
         <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-sm-between mb-sm-4 mb-3">
           <h2 className="h3 mb-sm-0">More from this Location</h2>
-          <a className="btn btn-outline-accent ms-sm-3" to="#">
+          <a className="btn btn-outline-accent ms-sm-3" to="/single-buy">
             View collection<i className="ci-arrow-right ms-2"></i>
           </a>
         </div>

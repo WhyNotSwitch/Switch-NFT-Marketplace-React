@@ -5,6 +5,7 @@ import Coinbase from "./img/nft/connect-wallet/coinbasemin.svg";
 import Portis from "./img/nft/connect-wallet/portismin.svg";
 import Formatic from "./img/nft/connect-wallet/formaticmin.svg";
 import Metamask from "./img/nft/connect-wallet/metamaskmin.svg";
+import { Link } from "react-router-dom";
 
 function SignoutBody() {
   return (
@@ -16,12 +17,15 @@ function SignoutBody() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                 <li className="breadcrumb-item">
-                  <a className="text-nowrap" href="index.html">
+                  <Link
+                    className="text-nowrap"
+                    to="/Switch-NFT-Marketplace-React"
+                  >
                     <i className="ci-home"></i>Home
-                  </a>
+                  </Link>
                 </li>
                 <li className="breadcrumb-item text-nowrap">
-                  <a href="marketplace.html">NFT Marketplace</a>
+                  <Link to="/marketplace">NFT Marketplace</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-nowrap active"
@@ -43,9 +47,9 @@ function SignoutBody() {
           <p className="mb-2 fs-lg">
             Choose the most suitable blockchain wallet for your needs.
           </p>
-          <a href="#">
+          <Link to="/signout">
             <ins>Learn more about wallets</ins>
-          </a>
+          </Link>
         </div>
         {/* <!-- Payment items grid--> */}
         <div className="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-sm-grid-gutter gy-3">
@@ -58,9 +62,9 @@ function SignoutBody() {
                   <span className="badge bg-success ms-3">Popular</span>
                 </div>
                 <h2 className="h5 mb-2">
-                  <a className="nav-link-style stretched-link" href="#">
+                  <Link className="nav-link-style stretched-link" to="/signout">
                     Meta Mask
-                  </a>
+                  </Link>
                 </h2>
                 <p className="mb-0 fs-sm text-muted">
                   MetaMask provides an essential utility for blockchain
@@ -77,9 +81,9 @@ function SignoutBody() {
                   <img src={Coinbase} width="60" alt="Coinbase" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <a className="nav-link-style stretched-link" href="#">
+                  <Link className="nav-link-style stretched-link" to="/signout">
                     Coinbase Wallet
-                  </a>
+                  </Link>
                 </h2>
                 <p className="mb-0 fs-sm text-muted">
                   Coinbase Wallet is your passport to the decentralized web.
@@ -97,9 +101,9 @@ function SignoutBody() {
                   <img src={WalletConnect} width="60" alt="Wallet connect" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <a className="nav-link-style stretched-link" href="#">
+                  <Link className="nav-link-style stretched-link" to="/signout">
                     Wallet Connect
-                  </a>
+                  </Link>
                 </h2>
                 <p className="mb-0 fs-sm text-muted">
                   WalletConnect is the web3 standard to connect blockchain
@@ -117,9 +121,9 @@ function SignoutBody() {
                   <img src={Formatic} width="60" alt="Fortmatic" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <a className="nav-link-style stretched-link" href="#">
+                  <Link className="nav-link-style stretched-link" to="/signout">
                     Fortmatic
-                  </a>
+                  </Link>
                 </h2>
                 <p className="mb-0 fs-sm text-muted">
                   Fortmatic is SOC 2 Type 1 compliant with a non-custodial HSM
@@ -137,9 +141,9 @@ function SignoutBody() {
                   <img src={Portis} width="60" alt="Portis" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <a className="nav-link-style stretched-link" href="#">
+                  <Link className="nav-link-style stretched-link" to="/signout">
                     Portis
-                  </a>
+                  </Link>
                 </h2>
                 <p className="mb-0 fs-sm text-muted">
                   Portis is non-sustodial blockchain wallet that makes apps
@@ -157,9 +161,9 @@ function SignoutBody() {
                   <img src={Torus} width="60" alt="Torus" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <a className="nav-link-style stretched-link" href="#">
+                  <Link className="nav-link-style stretched-link" to="/signout">
                     Torus
-                  </a>
+                  </Link>
                 </h2>
                 <p className="mb-0 fs-sm text-muted">
                   Torus is built and designed to be trustless, users' identities
