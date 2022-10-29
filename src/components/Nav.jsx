@@ -62,12 +62,12 @@ function NavBar(props) {
                 <i className="navbar-tool-icon ci-user"></i>
               </div>
             </Link>
-            <a
+            <Link
               className="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2"
-              href="wallet.html"
+              to="/signout"
             >
               Connect Wallet
-            </a>
+            </Link>
           </div>
           <div
             className="collapse navbar-collapse me-auto order-lg-2"

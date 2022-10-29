@@ -2,6 +2,7 @@ import React from "react";
 import "./theme.min.css";
 import "./styles.css";
 import Nft1 from "./img/Switch/n1.jpg";
+import { Link } from "react-router-dom";
 
 function Hero() {
   return (
@@ -18,12 +19,12 @@ function Hero() {
               collectibles and non-fungible tokens (NFTs) for Solar projects.
             </p>
             <div className="d-lg-flex d-none flex-sm-row flex-column justify-content-lg-start justify-content-center">
-              <a
+              <Link
                 className="btn btn-lg btn-accent me-sm-3 mb-sm-3 mb-2"
-                href="marketplace.html"
+                to="/marketplace"
               >
                 Explore marketplace
-              </a>
+              </Link>
               <a
                 className="btn btn-lg btn-outline-dark mb-sm-3 mb-2"
                 href="nft-create-item.html"
