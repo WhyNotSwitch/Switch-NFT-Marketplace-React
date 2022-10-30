@@ -1,10 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
-import Nft11 from "./img/Switch/n11.jpg";
-import Nft12 from "./img/Switch/n12.jpg";
+import MyCard from "./MyCard";
 import Nft6 from "./img/Switch/n6.jpg";
-import Nft15 from "./img/Switch/n15.jpg";
-import Nft16 from "./img/Switch/n16.jpg";
 import Avatar13 from "./img/nft/catalog/avatars/13.png";
 import SwitchLg from "./img/Switch/switch.jpg";
 import { Link } from "react-router-dom";
@@ -15,7 +12,20 @@ import Details from "./Details";
 import Provenance from "./Provenance";
 
 function SinglebuyBody() {
-  const [activeTab, setActiveTab] = useState("provenance");
+  const nums = [11, 12, 15, 16];
+  const CardElement = nums.map((num) => {
+    return (
+      <MyCard
+        className={"col py-3 mx-2"}
+        artClass={"card h-100 border-0 shadow"}
+        key={num}
+        id={num}
+        img={require(`./img/Switch/n${num}.jpg`)}
+        lg={require("./img/Switch/switch.jpg")}
+      />
+    );
+  });
+  const [activeTab, setActiveTab] = useState("metadata");
   const theTab = function () {
     if (activeTab === "metadata") return <MetaData />;
     else if (activeTab === "asset") return <Asset />;
@@ -210,64 +220,59 @@ function SinglebuyBody() {
                         role="tablist"
                       >
                         <li className="nav-item">
-                          <a
+                          <Link
                             id="metadata"
                             className="nav-link "
                             onClick={handleClick1}
                             data-bs-toggle="tab"
                             role="tab"
-                            href="/"
                           >
                             Metadata
-                          </a>
+                          </Link>
                         </li>
                         <li className="nav-item">
-                          <a
+                          <Link
                             id="asset"
                             className="nav-link"
                             onClick={handleClick2}
                             data-bs-toggle="tab"
                             role="tab"
-                            href="/"
                           >
                             Asset
-                          </a>
+                          </Link>
                         </li>
                         <li className="nav-item">
-                          <a
+                          <Link
                             id="revenues"
                             className="nav-link"
                             onClick={handleClick3}
                             data-bs-toggle="tab"
                             role="tab"
-                            href="/"
                           >
                             Revenues
-                          </a>
+                          </Link>
                         </li>
                         <li className="nav-item">
-                          <a
+                          <Link
                             onClick={handleClick4}
                             id="details"
                             className="nav-link"
                             data-bs-toggle="tab"
                             role="tab"
-                            href="/"
                           >
                             Details
-                          </a>
+                          </Link>
                         </li>
                         <li className="nav-item">
-                          <a
+                          <Link
                             id="provenance"
                             className="nav-link"
                             onClick={handleClick5}
                             data-bs-toggle="tab"
                             role="tab"
-                            href="/"
                           >
                             Provenance
-                          </a>
+                          </Link>
                         </li>
                       </ul>
                     </div>
@@ -306,249 +311,7 @@ function SinglebuyBody() {
             data-carousel-options='{"items": 2, "nav": true, "responsive": {"0":{"items":1,"controls": false, "gutter": 0},"500":{"items":2},"768":{"items":3}, "1100":{"items":4}, "1278":{"controls": true, "gutter": 30}}}'
           >
             {/* <!-- Product item--> */}
-            <div className="col py-3" id="single-buy">
-              <article className="card h-100 border-0 shadow">
-                <div className="card-img-top position-relative overflow-hidden">
-                  <Link className="d-block" to="/single-buy">
-                    <img src={Nft15} alt="Product" />
-                  </Link>
-                  {/* <!-- Wishlist button--> */}
-                  <button
-                    className="btn-wishlist btn-sm position-absolute top-0 end-0"
-                    type="button"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    title="Add to Favorites"
-                    style={{ margin: "12px" }}
-                  >
-                    <i className="ci-heart"></i>
-                  </button>
-                </div>
-                <div className="card-body">
-                  <h3 className="product-title mb-2 fs-base">
-                    <Link className="d-block text-truncate" to="/single-buy">
-                      Switch Project 15
-                    </Link>
-                  </h3>
-                  <span className="fs-sm text-muted">Reserve price:</span>
-                  <div className="d-flex align-items-center flex-wrap">
-                    <h4 className="mt-1 mb-0 fs-base text-darker">0.6 ETH</h4>
-                    <span className="mt-1 ms-1 fs-xs text-muted">
-                      (≈ $ 2,400.65)
-                    </span>
-                  </div>
-                </div>
-                <div className="card-footer mt-n1 py-0 border-0">
-                  <div className="d-flex align-items-center position-relative mb-1 py-3 border-top">
-                    <img
-                      className="me-2 rounded-circle"
-                      src={SwitchLg}
-                      width="32"
-                      alt="Avatar"
-                    />
-                    <Link
-                      className="nav-link-style fs-sm stretched-link"
-                      to="project-developer"
-                    >
-                      @Switch Electric
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            </div>
-            {/* <!-- Product item--> */}
-            <div className="col py-3" id="single-buy">
-              <article className="card h-100 border-0 shadow">
-                <div className="card-img-top position-relative overflow-hidden">
-                  <Link className="d-block" to="/single-buy">
-                    <img src={Nft16} alt="Product" />
-                  </Link>
-                  {/* <!-- Countdown timer--> */}
-                  <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
-                    <i className="ci-time me-1"></i>
-                    <div
-                      className="countdown d-inline"
-                      data-countdown="12/31/2022 12:00:00 PM"
-                    >
-                      <span className="countdown-hours mb-0 me-0">
-                        <span className="countdown-value">0</span>
-                        <span className="countdown-label fs-lg">:</span>
-                      </span>
-                      <span className="countdown-minutes mb-0 me-0">
-                        <span className="countdown-value">0</span>
-                        <span className="countdown-label fs-lg">:</span>
-                      </span>
-                      <span className="countdown-seconds mb-0 me-0">
-                        <span className="countdown-value">0</span>
-                      </span>
-                    </div>
-                  </div>
-                  {/* <!-- Wishlist button--> */}
-                  <button
-                    className="btn-wishlist btn-sm position-absolute top-0 end-0"
-                    type="button"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    title="Add to Favorites"
-                    style={{ margin: "12px" }}
-                  >
-                    <i className="ci-heart"></i>
-                  </button>
-                </div>
-                <div className="card-body">
-                  <h3 className="product-title mb-2 fs-base">
-                    <Link className="d-block text-truncate" to="/single-buy">
-                      Switch Project 16
-                    </Link>
-                  </h3>
-                  <span className="fs-sm text-muted">Current bid:</span>
-                  <div className="d-flex align-items-center flex-wrap">
-                    <h4 className="mt-1 mb-0 fs-base text-darker">0.5 ETH</h4>
-                    <span className="mt-1 ms-1 fs-xs text-muted">
-                      (≈ $ 2,000.55)
-                    </span>
-                  </div>
-                </div>
-                <div className="card-footer mt-n1 py-0 border-0">
-                  <div className="d-flex align-items-center position-relative mb-1 py-3 border-top">
-                    <img
-                      className="me-2 rounded-circle"
-                      src={SwitchLg}
-                      width="32"
-                      alt="Avatar"
-                    />
-                    <Link
-                      className="nav-link-style fs-sm stretched-link"
-                      to="/project-developer"
-                    >
-                      @Switch Electric
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            </div>
-            {/* <!-- Product item--> */}
-            <div className="col py-3" id="single-buy">
-              <article className="card h-100 border-0 shadow">
-                <div className="card-img-top position-relative overflow-hidden">
-                  <Link className="d-block" to="single-buy">
-                    <img src={Nft12} alt="Product" />
-                  </Link>
-                  {/* <!-- Countdown timer--> */}
-                  <div className="badge bg-dark m-3 fs-sm position-absolute top-0 start-0 zindex-5">
-                    <i className="ci-time me-1"></i>
-                    <div
-                      className="countdown d-inline"
-                      data-countdown="12/31/2022 12:00:00 PM"
-                    >
-                      <span className="countdown-hours mb-0 me-0">
-                        <span className="countdown-value">0</span>
-                        <span className="countdown-label fs-lg">:</span>
-                      </span>
-                      <span className="countdown-minutes mb-0 me-0">
-                        <span className="countdown-value">0</span>
-                        <span className="countdown-label fs-lg">:</span>
-                      </span>
-                      <span className="countdown-seconds mb-0 me-0">
-                        <span className="countdown-value">0</span>
-                      </span>
-                    </div>
-                  </div>
-                  {/* <!-- Wishlist button--> */}
-                  <button
-                    className="btn-wishlist btn-sm position-absolute top-0 end-0"
-                    type="button"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    title="Add to Favorites"
-                    style={{ margin: "12px" }}
-                  >
-                    <i className="ci-heart"></i>
-                  </button>
-                </div>
-                <div className="card-body">
-                  <h3 className="product-title mb-2 fs-base">
-                    <Link className="d-block text-truncate" to="/single-buy">
-                      Switch Project 12
-                    </Link>
-                  </h3>
-                  <span className="fs-sm text-muted">Current bid:</span>
-                  <div className="d-flex align-items-center flex-wrap">
-                    <h4 className="mt-1 mb-0 fs-base text-darker">0.156 ETH</h4>
-                    <span className="mt-1 ms-1 fs-xs text-muted">
-                      (≈ $ 595.76)
-                    </span>
-                  </div>
-                </div>
-                <div className="card-footer mt-n1 py-0 border-0">
-                  <div className="d-flex align-items-center position-relative mb-1 py-3 border-top">
-                    <img
-                      className="me-2 rounded-circle"
-                      src={SwitchLg}
-                      width="32"
-                      alt="Avatar"
-                    />
-                    <Link
-                      className="nav-link-style fs-sm stretched-link"
-                      to="/project-developer"
-                    >
-                      @Switch Electric
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            </div>
-            {/* <!-- Product item--> */}
-            <div className="col py-3" id="single-buy">
-              <article className="card h-100 border-0 shadow">
-                <div className="card-img-top position-relative overflow-hidden">
-                  <Link className="d-block" to="/single-buy">
-                    <img src={Nft11} alt="Product" />
-                  </Link>
-                  {/* <!-- Wishlist button--> */}
-                  <button
-                    className="btn-wishlist btn-sm position-absolute top-0 end-0"
-                    type="button"
-                    data-bs-toggle="tooltip"
-                    data-bs-placement="left"
-                    title="Add to Favorites"
-                    style={{ margin: "12px" }}
-                  >
-                    <i className="ci-heart"></i>
-                  </button>
-                </div>
-                <div className="card-body">
-                  <h3 className="product-title mb-2 fs-base">
-                    <Link className="d-block text-truncate" to="/single-buy">
-                      Switch Project 11
-                    </Link>
-                  </h3>
-                  <span className="fs-sm text-muted">Reserve price:</span>
-                  <div className="d-flex align-items-center flex-wrap">
-                    <h4 className="mt-1 mb-0 fs-base text-darker">0.1 ETH</h4>
-                    <span className="mt-1 ms-1 fs-xs text-muted">
-                      (≈ $ 400.19)
-                    </span>
-                  </div>
-                </div>
-                <div className="card-footer mt-n1 py-0 border-0">
-                  <div className="d-flex align-items-center position-relative mb-1 py-3 border-top">
-                    <img
-                      className="me-2 rounded-circle"
-                      src={SwitchLg}
-                      width="32"
-                      alt="Avatar"
-                    />
-                    <Link
-                      className="nav-link-style fs-sm stretched-link"
-                      to="/project-developer"
-                    >
-                      @Switch Electric
-                    </Link>
-                  </div>
-                </div>
-              </article>
-            </div>
+            {CardElement}
           </div>
         </div>
       </section>
