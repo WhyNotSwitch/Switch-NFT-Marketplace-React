@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button";
 import "./theme.min.css";
-import navLogo from "./img/Switch/switchlogo.png";
+import navLogo from "./img/Switch/Switch Electric PNG croped.png";
 import "./styles.css";
 import { Link } from "react-router-dom";
 
@@ -24,7 +24,7 @@ function NavBar(props) {
             to="/Switch-NFT-Marketplace-React"
           >
             <img
-              src={require("./img/Switch/switchlogo.png")}
+              src={require("./img/Switch/Switch Electric PNG croped.png")}
               width="74"
               alt="Switch"
             />

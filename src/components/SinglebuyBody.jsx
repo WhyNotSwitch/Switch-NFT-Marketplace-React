@@ -216,6 +216,7 @@ function SinglebuyBody() {
                             onClick={handleClick1}
                             data-bs-toggle="tab"
                             role="tab"
+                            href="/"
                           >
                             Metadata
                           </a>
@@ -227,6 +228,7 @@ function SinglebuyBody() {
                             onClick={handleClick2}
                             data-bs-toggle="tab"
                             role="tab"
+                            href="/"
                           >
                             Asset
                           </a>
@@ -238,6 +240,7 @@ function SinglebuyBody() {
                             onClick={handleClick3}
                             data-bs-toggle="tab"
                             role="tab"
+                            href="/"
                           >
                             Revenues
                           </a>
@@ -249,6 +252,7 @@ function SinglebuyBody() {
                             className="nav-link"
                             data-bs-toggle="tab"
                             role="tab"
+                            href="/"
                           >
                             Details
                           </a>
@@ -260,6 +264,7 @@ function SinglebuyBody() {
                             onClick={handleClick5}
                             data-bs-toggle="tab"
                             role="tab"
+                            href="/"
                           >
                             Provenance
                           </a>

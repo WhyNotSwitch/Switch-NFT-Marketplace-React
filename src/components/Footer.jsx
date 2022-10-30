@@ -85,32 +85,32 @@ function Footer(props) {
                     <h3 className="widget-title text-light">Company</h3>
                     <ul className="widget-list">
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           About Us
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           How It Works
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Transform Projects into NFTs
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Support
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Blog
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           My Account
                         </a>
                       </li>
@@ -122,32 +122,32 @@ function Footer(props) {
                     </h3>
                     <ul className="widget-list">
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Enugu, Nigeria
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Anambra, Nigeria
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Lagos, Nigeria
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Abuja, Nigeria
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Imo, Nigeria
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Kaduna, Nigeria
                         </a>
                       </li>
@@ -157,17 +157,17 @@ function Footer(props) {
                     <h3 className="widget-title text-light">Help</h3>
                     <ul className="widget-list">
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Terms and Conditions
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           Privacy Policy
                         </a>
                       </li>
                       <li className="widget-list-item">
-                        <a className="widget-list-link" href="empty">
+                        <a className="widget-list-link" href="/">
                           FAQ
                         </a>
                       </li>
@@ -186,7 +186,7 @@ function Footer(props) {
                 className="text-light"
                 href="https://www.whynotswitch.com/"
                 target="_blank"
-                rel="noopener"
+                rel="noreferrer"
               >
                 Switch Electric Ltd
               </a>

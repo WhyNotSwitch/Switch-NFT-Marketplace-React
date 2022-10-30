@@ -8,7 +8,7 @@ function MetaData() {
           <i className="ci-battery fs-lg mt-2 mb-0 text-primary"></i>
           <div className="ps-3">
             <span className="fs-ms text-muted">Capacity:</span>
-            <a to="#" className="d-block text-heading fs-sm">
+            <a to="/" className="d-block text-heading fs-sm" href="/">
               15kWp solar + 13.5kWh storage
             </a>
           </div>
@@ -17,7 +17,7 @@ function MetaData() {
           <i className="ci-sun fs-lg mt-2 mb-0 text-primary"></i>
           <div className="ps-3">
             <span className="fs-ms text-muted">Peak Sunlight Hours:</span>
-            <a to="#" className="d-block text-heading fs-sm">
+            <a to="/" className="d-block text-heading fs-sm" href="/">
               8
             </a>
           </div>
@@ -27,7 +27,7 @@ function MetaData() {
           <i className="ci-target fs-lg mt-2 mb-0 text-primary"></i>
           <div className="ps-3">
             <span className="fs-ms text-muted">Solar Irradiance:</span>
-            <a to="#" className="d-block text-heading fs-sm">
+            <a to="/" className="d-block text-heading fs-sm" href="/">
               4.5 kW/m²/day
             </a>
           </div>
@@ -37,7 +37,7 @@ function MetaData() {
           <i className="ci-key fs-lg mt-2 mb-0 text-primary"></i>
           <div className="ps-3">
             <span className="fs-ms text-muted">Commissioned On:</span>
-            <a to="#" className="d-block text-heading fs-sm">
+            <a to="/" className="d-block text-heading fs-sm" href="/">
               15 - 04 - 2022
             </a>
           </div>
@@ -48,7 +48,7 @@ function MetaData() {
           <i className="ci-dollar fs-lg mt-2 mb-0 text-primary"></i>
           <div className="ps-3">
             <span className="fs-ms text-muted">Total Revenue:</span>
-            <a to="#" className="d-block text-heading fs-sm">
+            <a to="/" className="d-block text-heading fs-sm" href="/">
               74250.15 IOTX
             </a>
           </div>
@@ -58,7 +58,7 @@ function MetaData() {
           <i className="ci-idea fs-lg mt-2 mb-0 text-primary"></i>
           <div className="ps-3">
             <span className="fs-ms text-muted">Solar:</span>
-            <a to="#" className="d-block text-heading fs-sm">
+            <a to="/" className="d-block text-heading fs-sm" href="/">
               15kWh, Felicity solar
             </a>
           </div>
@@ -68,7 +68,7 @@ function MetaData() {
           <i className="ci-server-alt fs-lg mt-2 mb-0 text-primary"></i>
           <div className="ps-3">
             <span className="fs-ms text-muted">Storage:</span>
-            <a to="#" className="d-block text-heading fs-sm">
+            <a to="/" className="d-block text-heading fs-sm" href="/">
               3.5kWh, Tesla powerwall
             </a>
           </div>
@@ -77,7 +77,7 @@ function MetaData() {
           <i className="ci-star-filled fs-lg mt-2 mb-0 text-primary"></i>
           <div className="ps-3">
             <span className="fs-ms text-muted">Rating:</span>
-            <a to="#" className="d-block text-heading fs-sm">
+            <a to="/" className="d-block text-heading fs-sm" href="/">
               🌕🌕🌕🌗🌑
             </a>
           </div>
