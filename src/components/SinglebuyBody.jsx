@@ -220,7 +220,7 @@ function SinglebuyBody() {
                         role="tablist"
                       >
                         <li className="nav-item">
-                          <Link
+                          <div
                             id="metadata"
                             className="nav-link "
                             onClick={handleClick1}
@@ -228,10 +228,10 @@ function SinglebuyBody() {
                             role="tab"
                           >
                             Metadata
-                          </Link>
+                          </div>
                         </li>
                         <li className="nav-item">
-                          <Link
+                          <div
                             id="asset"
                             className="nav-link"
                             onClick={handleClick2}
@@ -239,10 +239,10 @@ function SinglebuyBody() {
                             role="tab"
                           >
                             Asset
-                          </Link>
+                          </div>
                         </li>
                         <li className="nav-item">
-                          <Link
+                          <div
                             id="revenues"
                             className="nav-link"
                             onClick={handleClick3}
@@ -250,10 +250,10 @@ function SinglebuyBody() {
                             role="tab"
                           >
                             Revenues
-                          </Link>
+                          </div>
                         </li>
                         <li className="nav-item">
-                          <Link
+                          <div
                             onClick={handleClick4}
                             id="details"
                             className="nav-link"
@@ -261,10 +261,10 @@ function SinglebuyBody() {
                             role="tab"
                           >
                             Details
-                          </Link>
+                          </div>
                         </li>
                         <li className="nav-item">
-                          <Link
+                          <div
                             id="provenance"
                             className="nav-link"
                             onClick={handleClick5}
@@ -272,7 +272,7 @@ function SinglebuyBody() {
                             role="tab"
                           >
                             Provenance
-                          </Link>
+                          </div>
                         </li>
                       </ul>
                     </div>

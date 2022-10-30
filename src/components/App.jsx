@@ -15,7 +15,7 @@ import ProjectDeveloper from "./ProjectDeveloper";
 function App() {
   return (
     <Routes>
-      <Route path="/Switch-NFT-Marketplace-React" element={<Home />}></Route>
+      <Route path="/Switch-NFT-Marketplace-React" element={<Home />} />
       <Route path="marketplace" element={<MarketPlace />} />
       <Route path="collections" element={<Collections />} />
       <Route path="signin" element={<SigninModal />}></Route>

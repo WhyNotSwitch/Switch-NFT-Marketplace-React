@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function HandheldToolbar() {
   return (
@@ -14,16 +15,16 @@ function HandheldToolbar() {
           </span>
           <span className="handheld-toolbar-label">Sidebar</span>
         </a>
-        <a
+        <Link
           className="d-table-cell handheld-toolbar-item"
-          href="#signin-modal"
+          to="/signin"
           data-bs-toggle="modal"
         >
           <span className="handheld-toolbar-icon">
             <i className="ci-user"></i>
           </span>
           <span className="handheld-toolbar-label">Account</span>
-        </a>
+        </Link>
         <a
           className="d-table-cell handheld-toolbar-item"
           href="empty"
@@ -36,14 +37,14 @@ function HandheldToolbar() {
           </span>
           <span className="handheld-toolbar-label">Menu</span>
         </a>
-        <a className="d-table-cell handheld-toolbar-item" href="wallet.html">
+        <Link className="d-table-cell handheld-toolbar-item" to="/signout">
           <span className="handheld-toolbar-icon">
             <i className="ci-wallet"></i>
           </span>
           <span className="handheld-toolbar-label text-nowrap">
             Connect wallet
           </span>
-        </a>
+        </Link>
       </div>
     </div>
   );
