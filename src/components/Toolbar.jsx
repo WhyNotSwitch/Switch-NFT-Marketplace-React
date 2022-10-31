@@ -382,46 +382,54 @@ function ToolBar() {
                               <div className="range-slider-ui"></div>
                               <div className="d-flex pb-1">
                                 <div className="w-50 pe-2 me-2">
-                                  <div className="input-group input-group-sm">
-                                    <Button
-                                      className="btn btn-secondary dropdown-toggle"
-                                      type="button"
-                                      data-bs-toggle="dropdown"
-                                    >
-                                      ETH
-                                    </Button>
-                                    <div className="dropdown-menu">
-                                      <Link className="dropdown-item">BNB</Link>
-                                      <Link className="dropdown-item">
-                                        BUSD
-                                      </Link>
+                                  <Dropdown>
+                                    <div className="input-group input-group-sm">
+                                      <Dropdown.Toggle
+                                        className="btn btn-secondary dropdown-toggle"
+                                        type="button"
+                                        data-bs-toggle="dropdown"
+                                      >
+                                        ETH
+                                      </Dropdown.Toggle>
+                                      <Dropdown.Menu className="dropdown-menu">
+                                        <Link className="dropdown-item">
+                                          BNB
+                                        </Link>
+                                        <Link className="dropdown-item">
+                                          BUSD
+                                        </Link>
+                                      </Dropdown.Menu>
+                                      <input
+                                        className="form-control range-slider-value-min"
+                                        type="text"
+                                      />
                                     </div>
-                                    <input
-                                      className="form-control range-slider-value-min"
-                                      type="text"
-                                    />
-                                  </div>
+                                  </Dropdown>
                                 </div>
                                 <div className="w-50 ps-2">
-                                  <div className="input-group input-group-sm">
-                                    <Button
-                                      className="btn btn-secondary dropdown-toggle"
-                                      type="button"
-                                      data-bs-toggle="dropdown"
-                                    >
-                                      ETH
-                                    </Button>
-                                    <div className="dropdown-menu">
-                                      <Link className="dropdown-item">BNB</Link>
-                                      <Link className="dropdown-item">
-                                        BUSD
-                                      </Link>
+                                  <Dropdown>
+                                    <div className="input-group input-group-sm">
+                                      <Dropdown.Toggle
+                                        className="btn btn-secondary dropdown-toggle"
+                                        type="button"
+                                        data-bs-toggle="dropdown"
+                                      >
+                                        ETH
+                                      </Dropdown.Toggle>
+                                      <Dropdown.Menu className="dropdown-menu">
+                                        <Link className="dropdown-item">
+                                          BNB
+                                        </Link>
+                                        <Link className="dropdown-item">
+                                          BUSD
+                                        </Link>
+                                      </Dropdown.Menu>
+                                      <input
+                                        className="form-control range-slider-value-max"
+                                        type="text"
+                                      />
                                     </div>
-                                    <input
-                                      className="form-control range-slider-value-max"
-                                      type="text"
-                                    />
-                                  </div>
+                                  </Dropdown>
                                 </div>
                               </div>
                             </div>

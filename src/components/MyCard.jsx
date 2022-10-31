@@ -25,7 +25,7 @@ function MyCard(props) {
         </div>
         <div className="card-body">
           <h3 className="product-title mb-2 fs-base">
-            <Link className="d-block text-truncate" to="/single-buy">
+            <Link className="d-block text-truncate" to={`${BaseUrl}/marketplace/single-buy`}>
               {`Switch Project ${props.id}`}
             </Link>
           </h3>

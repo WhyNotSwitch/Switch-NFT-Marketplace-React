@@ -3,6 +3,7 @@ import "./theme.min.css";
 import "./styles.css";
 import Nft1 from "./img/Switch/n1.jpg";
 import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function Hero() {
   return (
@@ -21,7 +22,7 @@ function Hero() {
             <div className="d-lg-flex d-none flex-sm-row flex-column justify-content-lg-start justify-content-center">
               <Link
                 className="btn btn-lg btn-accent me-sm-3 mb-sm-3 mb-2"
-                to="/marketplace"
+                to={`${BaseUrl}/marketplace`}
               >
                 Explore marketplace
               </Link>

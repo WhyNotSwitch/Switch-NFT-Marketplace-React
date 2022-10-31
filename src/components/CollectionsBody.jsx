@@ -20,6 +20,7 @@ import Nft15 from "./img/Switch/n15.jpg";
 import Nft16 from "./img/Switch/n16.jpg";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function CollectionsBody() {
   return (
@@ -31,7 +32,7 @@ function CollectionsBody() {
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                   <li className="breadcrumb-item">
-                    <Link className="text-nowrap" to="index.html">
+                    <Link className="text-nowrap" to={BaseUrl}>
                       <i className="ci-home"></i>Home
                     </Link>
                   </li>
@@ -93,7 +94,7 @@ function CollectionsBody() {
                     <Dropdown.Item>
                       <Link
                         className="dropdown-item active"
-                        to="/my-collections"
+                        to={`${BaseUrl}/my-collections`}
                         style={{ whiteSpace: "normal" }}
                       >
                         Recently added
@@ -102,7 +103,7 @@ function CollectionsBody() {
                     <Dropdown.Item>
                       <Link
                         className="dropdown-item"
-                        to="/my-collections"
+                        to={`${BaseUrl}/my-collections`}
                         style={{ whiteSpace: "normal" }}
                       >
                         Oldest
@@ -122,7 +123,7 @@ function CollectionsBody() {
               <div className="border-start">
                 <Link
                   className="btn border-0 p-4 fw-medium"
-                  to="/my-collections"
+                  to={`${BaseUrl}/my-collections`}
                 >
                   <i className="ci-arrow-left"></i>
                 </Link>
@@ -131,7 +132,7 @@ function CollectionsBody() {
               <div className="border-start">
                 <Link
                   className="btn border-0 p-4 fw-medium"
-                  to="/my-collections"
+                  to={`${BaseUrl}/my-collections`}
                 >
                   <i className="ci-arrow-right"></i>
                 </Link>
@@ -632,7 +633,7 @@ function CollectionsBody() {
                       by
                       <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -692,7 +693,7 @@ function CollectionsBody() {
                       by
                       <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -752,7 +753,7 @@ function CollectionsBody() {
                       by
                       <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -812,7 +813,7 @@ function CollectionsBody() {
                       by
                       <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -872,7 +873,7 @@ function CollectionsBody() {
                       by
                       <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -932,7 +933,7 @@ function CollectionsBody() {
                       by
                       <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -992,7 +993,7 @@ function CollectionsBody() {
                       by
                       <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -1052,7 +1053,7 @@ function CollectionsBody() {
                       by
                       <Link
                         className="ms-1 fw-medium text-accent stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -1104,7 +1105,7 @@ function CollectionsBody() {
         >
           <ul className="pagination">
             <li className="page-item">
-              <Link className="page-link" to="/my-collections">
+              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
                 <i className="ci-arrow-left me-2"></i>Prev
               </Link>
             </li>
@@ -1122,22 +1123,22 @@ function CollectionsBody() {
               </span>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to="/my-collections">
+              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
                 2
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to="/my-collections">
+              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
                 3
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to="/my-collections">
+              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
                 4
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to="/my-collections">
+              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
                 5
               </Link>
             </li>
@@ -1146,7 +1147,7 @@ function CollectionsBody() {
             <li className="page-item">
               <Link
                 className="page-link"
-                to="/my-collections"
+                to={`${BaseUrl}/my-collections`}
                 aria-label="Next"
               >
                 Next<i className="ci-arrow-right ms-2"></i>

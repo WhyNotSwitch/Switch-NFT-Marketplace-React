@@ -3,6 +3,7 @@ import "./theme.min.css";
 
 import MyCard from "./MyCard";
 import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function ProductCarousel() {
   const nums = [1, 2, 3, 4];
@@ -36,7 +37,10 @@ function ProductCarousel() {
           </div>
         </div>
         <div className="d-flex flex-sm-row flex-column justify-content-center pt-4">
-          <Link className="btn btn-outline-accent" to="/marketplace">
+          <Link
+            className="btn btn-outline-accent"
+            to={`${BaseUrl}/marketplace`}
+          >
             Browse marketplace
           </Link>
         </div>
