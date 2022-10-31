@@ -4,6 +4,7 @@ import Button from "./Button";
 import { Link } from "react-router-dom";
 import switchLg from "./img/Switch/switch.jpg";
 import Cr1 from "./img/nft/home/creators/03.png";
+import BaseUrl from "./BaseUrl";
 
 function TopCreators() {
   return (
@@ -32,7 +33,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                       to={`${BaseUrl}/project-developer`}
                       >
                         @Switch Electric
                       </Link>
@@ -61,7 +62,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                        to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -90,7 +91,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                       to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -124,7 +125,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                       to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -153,7 +154,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                       to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -182,7 +183,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                       to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -216,7 +217,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                       to={`${BaseUrl}/project-developer`}
                       >
                         @Developers Name
                       </Link>
@@ -245,7 +246,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                       to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>
@@ -274,7 +275,7 @@ function TopCreators() {
                     <h4 className="mb-1 fs-base text-body">
                       <Link
                         className="nav-link-style stretched-link"
-                        to="/project-developer"
+                       to={`${BaseUrl}/project-developer`}
                       >
                         @Developer's name
                       </Link>

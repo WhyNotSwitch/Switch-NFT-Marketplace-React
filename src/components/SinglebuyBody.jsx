@@ -10,6 +10,7 @@ import Asset from "./Asset";
 import Revenue from "./Revenue";
 import Details from "./Details";
 import Provenance from "./Provenance";
+import BaseUrl from "./BaseUrl";
 
 function SinglebuyBody() {
   const nums = [11, 12, 15, 16];
@@ -58,15 +59,12 @@ function SinglebuyBody() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                 <li className="breadcrumb-item">
-                  <Link
-                    className="text-nowrap"
-                    to="/Switch-NFT-Marketplace-React"
-                  >
+                  <Link className="text-nowrap" to={BaseUrl}>
                     <i className="ci-home"></i>Home
                   </Link>
                 </li>
                 <li className="breadcrumb-item text-nowrap">
-                  <Link to="/marketplace">Marketplace</Link>
+                  <Link to={`${BaseUrl}/marketplace`}>Marketplace</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-nowrap active"
@@ -170,7 +168,7 @@ function SinglebuyBody() {
                             />
                             <Link
                               className="nav-link-style stretched-link fs-sm"
-                              to="/project-developer"
+                              to={`${BaseUrl}/project-developer`}
                             >
                               Switch Electric
                             </Link>
@@ -194,7 +192,7 @@ function SinglebuyBody() {
                             />
                             <Link
                               className="nav-link-style stretched-link fs-sm"
-                              to="/single-buy"
+                              to={`${BaseUrl}/single-buy`}
                             >
                               Enugu, Nigeria
                             </Link>
@@ -206,7 +204,7 @@ function SinglebuyBody() {
                   <div className="col">
                     <Link
                       className="btn btn-lg btn-accent d-block w-100"
-                      to="/single-buy"
+                      to={`${BaseUrl}/single-buy`}
                     >
                       Purchase NFT
                     </Link>
@@ -300,7 +298,10 @@ function SinglebuyBody() {
       <section className="container mb-5 pb-md-4">
         <div className="d-flex flex-sm-row flex-column align-items-sm-center justify-content-sm-between mb-sm-4 mb-3">
           <h2 className="h3 mb-sm-0">More from this Location</h2>
-          <Link className="btn btn-outline-accent ms-sm-3" to="/single-buy">
+          <Link
+            className="btn btn-outline-accent ms-sm-3"
+            to={`${BaseUrl}/single-buy`}
+          >
             View collection<i className="ci-arrow-right ms-2"></i>
           </Link>
         </div>

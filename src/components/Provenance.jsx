@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function Provenance() {
   return (
@@ -14,7 +15,7 @@ function Provenance() {
           <h6 className="mb-1 fs-sm">
             Listed by
             <Link
-              to="/project-developer"
+              to={`${BaseUrl}/project-developer`}
               className="text-decoration-none text-accent"
             >
               @distrokid
@@ -31,7 +32,7 @@ function Provenance() {
           <h6 className="mb-1 fs-sm">
             Purchased by{" "}
             <Link
-              to="/project-developer"
+              to={`${BaseUrl}/project-developer`}
               className="text-decoration-none text-accent"
             >
               @distrokid
@@ -48,7 +49,7 @@ function Provenance() {
           <h6 className="mb-1 fs-sm">
             Listed by{" "}
             <Link
-              to="/project-developer"
+              to={`${BaseUrl}/project-developer`}
               className="text-decoration-none text-accent"
             >
               @Switch Electric
@@ -65,7 +66,7 @@ function Provenance() {
           <h6 className="mb-1 fs-sm">
             Minted by{" "}
             <Link
-              to="/project-developer"
+              to={`${BaseUrl}/project-developer`}
               className="text-decoration-none text-accent"
             >
               @Switch Electric

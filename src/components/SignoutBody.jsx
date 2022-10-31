@@ -6,6 +6,7 @@ import Portis from "./img/nft/connect-wallet/portismin.svg";
 import Formatic from "./img/nft/connect-wallet/formaticmin.svg";
 import Metamask from "./img/nft/connect-wallet/metamaskmin.svg";
 import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function SignoutBody() {
   return (
@@ -17,15 +18,12 @@ function SignoutBody() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                 <li className="breadcrumb-item">
-                  <Link
-                    className="text-nowrap"
-                    to="/Switch-NFT-Marketplace-React"
-                  >
+                  <Link className="text-nowrap" to={BaseUrl}>
                     <i className="ci-home"></i>Home
                   </Link>
                 </li>
                 <li className="breadcrumb-item text-nowrap">
-                  <Link to="/marketplace">NFT Marketplace</Link>
+                  <Link to={`${BaseUrl}/marketplace`}>NFT Marketplace</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-nowrap active"
@@ -47,7 +45,7 @@ function SignoutBody() {
           <p className="mb-2 fs-lg">
             Choose the most suitable blockchain wallet for your needs.
           </p>
-          <Link to="/signout">
+          <Link to={`${BaseUrl}/signout`}>
             <ins>Learn more about wallets</ins>
           </Link>
         </div>
@@ -62,7 +60,10 @@ function SignoutBody() {
                   <span className="badge bg-success ms-3">Popular</span>
                 </div>
                 <h2 className="h5 mb-2">
-                  <Link className="nav-link-style stretched-link" to="/signout">
+                  <Link
+                    className="nav-link-style stretched-link"
+                    to={`${BaseUrl}/signout`}
+                  >
                     Meta Mask
                   </Link>
                 </h2>
@@ -81,7 +82,10 @@ function SignoutBody() {
                   <img src={Coinbase} width="60" alt="Coinbase" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <Link className="nav-link-style stretched-link" to="/signout">
+                  <Link
+                    className="nav-link-style stretched-link"
+                    to={`${BaseUrl}/signout`}
+                  >
                     Coinbase Wallet
                   </Link>
                 </h2>
@@ -101,7 +105,10 @@ function SignoutBody() {
                   <img src={WalletConnect} width="60" alt="Wallet connect" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <Link className="nav-link-style stretched-link" to="/signout">
+                  <Link
+                    className="nav-link-style stretched-link"
+                    to={`${BaseUrl}/signout`}
+                  >
                     Wallet Connect
                   </Link>
                 </h2>
@@ -121,7 +128,10 @@ function SignoutBody() {
                   <img src={Formatic} width="60" alt="Fortmatic" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <Link className="nav-link-style stretched-link" to="/signout">
+                  <Link
+                    className="nav-link-style stretched-link"
+                    to={`${BaseUrl}/signout`}
+                  >
                     Fortmatic
                   </Link>
                 </h2>
@@ -141,7 +151,10 @@ function SignoutBody() {
                   <img src={Portis} width="60" alt="Portis" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <Link className="nav-link-style stretched-link" to="/signout">
+                  <Link
+                    className="nav-link-style stretched-link"
+                    to={`${BaseUrl}/signout`}
+                  >
                     Portis
                   </Link>
                 </h2>
@@ -161,7 +174,10 @@ function SignoutBody() {
                   <img src={Torus} width="60" alt="Torus" />
                 </div>
                 <h2 className="h5 mb-2">
-                  <Link className="nav-link-style stretched-link" to="/signout">
+                  <Link
+                    className="nav-link-style stretched-link"
+                    to={`${BaseUrl}/signout`}
+                  >
                     Torus
                   </Link>
                 </h2>

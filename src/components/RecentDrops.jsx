@@ -3,6 +3,7 @@ import "./theme.min.css";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import MyCard from "./MyCard";
+import BaseUrl from "./BaseUrl";
 
 function RecentDrops() {
   const nums = [3, 6, 7, 1];
@@ -23,7 +24,10 @@ function RecentDrops() {
       <section className="mx-xl-auto mx-n2 px-xl-auto px-1">
         <div className="d-flex align-items-center justify-content-between mb-sm-3 mb-2">
           <h2 className="h3 mb-0 mx-5">Recently Projects </h2>
-          <Link className="btn btn-outline-accent ms-3" to="/marketplace">
+          <Link
+            className="btn btn-outline-accent ms-3"
+            to={`${BaseUrl}/marketplace`}
+          >
             Explore more<i className="ci-arrow-right ms-2"></i>
           </Link>
         </div>

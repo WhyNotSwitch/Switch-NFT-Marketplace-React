@@ -7,6 +7,7 @@ import Nft13 from "./img/Switch/n13.jpg";
 import Nft14 from "./img/Switch/n14.jpg";
 import ThmbNl3 from "./img/nft/thumbnails/03.png";
 import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function DevCollections() {
   return (
@@ -30,7 +31,7 @@ function DevCollections() {
                     by
                     <Link
                       className="ms-1 fw-medium text-accent stretched-link"
-                      to="/project-developer"
+                      to={`${BaseUrl}/project-developer`}
                     >
                       @Developer's name
                     </Link>
@@ -90,7 +91,7 @@ function DevCollections() {
                     by
                     <Link
                       className="ms-1 fw-medium text-accent stretched-link"
-                      to="/project-developer"
+                      to={`${BaseUrl}/project-developer`}
                     >
                       @Developer's name
                     </Link>

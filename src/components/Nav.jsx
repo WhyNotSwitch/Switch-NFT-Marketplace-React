@@ -16,14 +16,11 @@ function NavBar(props) {
         <div className="container">
           <Link
             className="navbar-brand d-none d-sm-block me-4 order-lg-1"
-            to="/Switch-NFT-Marketplace-React"
+            to={BaseUrl}
           >
             <img src={navLogo} width="142" alt="Switch" />
           </Link>
-          <Link
-            className="navbar-brand d-sm-none me-2 order-lg-1"
-            to="/Switch-NFT-Marketplace-React"
-          >
+          <Link className="navbar-brand d-sm-none me-2 order-lg-1" to={BaseUrl}>
             <img
               src={require("./img/Switch/Switch Electric PNG croped.png")}
               width="74"
@@ -88,7 +85,7 @@ function NavBar(props) {
             {/* <!-- Primary menu--> */}
             <ul className="navbar-nav">
               <li className="nav-item active">
-                <Link className="nav-link" to="/Switch-NFT-Marketplace-React">
+                <Link className="nav-link" to={BaseUrl}>
                   Home
                 </Link>
               </li>

@@ -7,6 +7,7 @@ import Created from "./Created";
 import DevCollections from "./DevCollections";
 import Liked from "./Liked";
 import Activity from "./Activity";
+import BaseUrl from "./BaseUrl";
 
 function ProjectdeveloperBody() {
   const [activeTab, setActiveTab] = useState("created");
@@ -38,13 +39,13 @@ function ProjectdeveloperBody() {
                 <li className="breadcrumb-item">
                   <Link
                     className="text-nowrap"
-                    to="/Switch-NFT-Marketplace-React"
+                    to={BaseUrl}
                   >
                     <i className="ci-home"></i>Home
                   </Link>
                 </li>
                 <li className="breadcrumb-item text-nowrap">
-                  <Link to="marketplace.html">Marketplace</Link>
+                  <Link to={`${BaseUrl}/marketplace`}>Marketplace</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-nowrap active"
