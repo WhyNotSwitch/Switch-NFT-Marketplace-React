@@ -10,23 +10,33 @@ import Favorites from "./Favorites";
 import SigninModal from "./SigninModal";
 import SignOut from "./SignOut";
 import SingleBuy from "./SingleBuy";
+import BaseUrl from "./BaseUrl";
 import ProjectDeveloper from "./ProjectDeveloper";
 
 function App() {
   return (
     <Routes>
-      <Route path="/Switch-NFT-Marketplace-React" element={<Home />} />
-      <Route path="marketplace" element={<MarketPlace />} />
-      <Route path="collections" element={<Collections />} />
-      <Route path="signin" element={<SigninModal />}></Route>
-      <Route path="account-settings" element={<AccountSettings />} />
-      <Route path="my-items" element={<MyItems />}></Route>
-      <Route path="my-collections" element={<MyCollections />} />
-      <Route path="notifications" element={<Notifications />} />
-      <Route path="favorites" element={<Favorites />} />
-      <Route path="signout" element={<SignOut />}></Route>
-      <Route path="single-buy" element={<SingleBuy />}></Route>
-      <Route path="project-developer" element={<ProjectDeveloper />} />
+      <Route path={BaseUrl} element={<Home />} />
+      <Route path={`${BaseUrl}/marketplace`} element={<MarketPlace />} />
+      <Route path={`${BaseUrl}/collections`} element={<Collections />} />
+      <Route path={`${BaseUrl}/signin`} element={<SigninModal />}></Route>
+      <Route
+        path={`${BaseUrl}/account-settings`}
+        element={<AccountSettings />}
+      />
+      <Route path={`${BaseUrl}/my-items`} element={<MyItems />}></Route>
+      <Route path={`${BaseUrl}/my-collections`} element={<MyCollections />} />
+      <Route path={`${BaseUrl}/notifications`} element={<Notifications />} />
+      <Route path={`${BaseUrl}/favorites`} element={<Favorites />} />
+      <Route path={`${BaseUrl}/signout`} element={<SignOut />}></Route>
+      <Route
+        path={`${BaseUrl}/marketplace/single-buy`}
+        element={<SingleBuy />}
+      ></Route>
+      <Route
+        path={`${BaseUrl}/project-developer`}
+        element={<ProjectDeveloper />}
+      />
     </Routes>
   );
 }

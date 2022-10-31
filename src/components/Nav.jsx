@@ -3,6 +3,7 @@ import Button from "./Button";
 import "./theme.min.css";
 import navLogo from "./img/Switch/Switch Electric PNG croped.png";
 import "./styles.css";
+import BaseUrl from "./BaseUrl";
 import { Link } from "react-router-dom";
 
 function NavBar(props) {
@@ -54,7 +55,7 @@ function NavBar(props) {
             </a>
             <Link
               className="navbar-tool ms-lg-2"
-              to="/signin"
+              to={`${BaseUrl}/signin`}
               data-bs-toggle="modal"
             >
               <span className="navbar-tool-tooltip">Account</span>
@@ -64,7 +65,7 @@ function NavBar(props) {
             </Link>
             <Link
               className="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2"
-              to="/signout"
+              to={`${BaseUrl}/signout`}
             >
               Connect Wallet
             </Link>
@@ -92,12 +93,12 @@ function NavBar(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/marketplace">
+                <Link className="nav-link" to={`${BaseUrl}/marketplace`}>
                   Marketplace
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/collections">
+                <Link className="nav-link" to={`${BaseUrl}/collections`}>
                   Collections
                 </Link>
               </li>

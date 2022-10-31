@@ -18,6 +18,7 @@ function Home() {
   return (
     <div className="page">
       <NavBar />
+
       {/* <!-- Hero--> */}
       <Hero />
       {/* <!-- Product carousel (Recent Drops)--> */}

@@ -1,13 +1,14 @@
 import React from "react";
 import Button from "./Button";
 import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function MyCard(props) {
   return (
     <div className={props.className}>
       <article className={props.artClass}>
         <div className="card-img-top position-relative overflow-hidden">
-          <Link className="d-block" to="/single-buy">
+          <Link className="d-block" to={`${BaseUrl}/marketplace/single-buy`}>
             <img src={props.img} alt="Product" />
           </Link>
           {/* <!-- Wishlist button--> */}

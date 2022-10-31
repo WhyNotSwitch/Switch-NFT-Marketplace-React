@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import BaseUrl from "./BaseUrl";
 
 function HandheldToolbar() {
   return (
@@ -17,7 +18,7 @@ function HandheldToolbar() {
         </a>
         <Link
           className="d-table-cell handheld-toolbar-item"
-          to="/signin"
+          to={`${BaseUrl}/signin`}
           data-bs-toggle="modal"
         >
           <span className="handheld-toolbar-icon">
@@ -30,14 +31,17 @@ function HandheldToolbar() {
           href="empty"
           data-bs-toggle="collapse"
           data-bs-target="#navbarCollapse"
-          //onClick="window.scrollTo(0, 0)"
+          onClick={window.scrollTo(0, 0)}
         >
           <span className="handheld-toolbar-icon">
             <i className="ci-menu"></i>
           </span>
           <span className="handheld-toolbar-label">Menu</span>
         </a>
-        <Link className="d-table-cell handheld-toolbar-item" to="/signout">
+        <Link
+          className="d-table-cell handheld-toolbar-item"
+          to={`${BaseUrl}/signout`}
+        >
           <span className="handheld-toolbar-icon">
             <i className="ci-wallet"></i>
           </span>
