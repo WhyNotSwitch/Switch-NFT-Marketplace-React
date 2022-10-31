@@ -25,7 +25,10 @@ function MyCard(props) {
         </div>
         <div className="card-body">
           <h3 className="product-title mb-2 fs-base">
-            <Link className="d-block text-truncate" to={`${BaseUrl}/marketplace/single-buy`}>
+            <Link
+              className="d-block text-truncate"
+              to={`${BaseUrl}/marketplace/single-buy`}
+            >
               {`Switch Project ${props.id}`}
             </Link>
           </h3>
@@ -45,7 +48,7 @@ function MyCard(props) {
             />
             <Link
               className="nav-link-style fs-sm stretched-link"
-              to="/project-developer"
+              to={`${BaseUrl}/project-developer`}
             >
               @Switch Electric
             </Link>
