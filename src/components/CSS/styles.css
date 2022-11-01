@@ -1,0 +1,102 @@
+.logo {
+  width: 142px;
+  height: 50px;
+}
+#hero {
+  background-image: url(../img/nft/home/hero-bg.png);
+  padding-top: 80px;
+}
+.nft-card {
+  display: flex;
+}
+.card-element {
+  margin-left: 50px;
+  margin-top: 30px;
+  border-radius: 8px;
+  box-shadow: 1px 1px 10px rgb(212, 210, 210);
+}
+.switch-logo {
+  height: 40px;
+}
+.card-element p {
+  font-size: small;
+  margin-left: 7px;
+}
+.card-element h5 {
+  margin-top: 15px;
+  margin-left: 7px;
+  font-size: medium;
+}
+.products {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.article {
+  margin-right: 0;
+}
+.features {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.recent {
+  padding: 30px;
+}
+.blogs {
+  display: flex;
+  justify-content: space-between;
+}
+#overlay-span {
+  background-image: conic-gradient(
+    from 207.95deg at 50% 50%,
+    #885cff -57.31deg,
+    #ff6b9b 44.14deg,
+    #dc86ff 78.21deg,
+    #885cff 123.94deg,
+    #dc86ff 186.36deg,
+    #ff6b9b 249.2deg,
+    #885cff 302.69deg,
+    #ff6b9b 404.14deg
+  );
+}
+#header {
+  backdrop-filter: blur(15px);
+  background-color: #fff7;
+}
+.page {
+  display: flex;
+  flex-direction: column;
+}
+#toolbar {
+  padding-top: 90px;
+}
+.market {
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+#collBody {
+  padding-top: 90px;
+}
+#page {
+  padding-top: 90px;
+}
+#my-items {
+  padding-top: 90px;
+}
+#single-buy {
+  padding: 8px;
+}
+#purple:hover {
+  background-color: #4e54c8 !important;
+  color: white !important;
+}
+#purple {
+  color: #4e54c8 !important;
+  border-color: #4e54c8 !important;
+  background-color: white !important;
+}
