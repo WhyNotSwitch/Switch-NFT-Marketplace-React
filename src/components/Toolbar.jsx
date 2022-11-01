@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import { Dropdown } from "react-bootstrap";
 import MyCard from "./MyCard";
-import Button from "./Button";
+
 import { Link } from "react-router-dom";
 
 function ToolBar() {
@@ -78,7 +78,7 @@ function ToolBar() {
                     type="text"
                     placeholder="Search collection, title or user..."
                   />
-                  <i className="ci-search position-absolute top-50 end-0 translate-middle-y zindex-5 me-3"></i>
+                  <i className="ci-search position-absolute top-50 end-0 translate-middle-y z index-5 me-3"></i>
                 </div>
               </div>
               <div className="col-lg-3 col-md-4 col-sm-7 col-12 order-md-3 order-sm-3 order-2">

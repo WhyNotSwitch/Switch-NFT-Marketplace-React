@@ -35,20 +35,20 @@ function SinglebuyBody() {
     else if (activeTab === "provenance") return <Provenance />;
   };
 
-  function handleClick1() {
-    setActiveTab("metadata");
-  }
-  function handleClick2() {
-    setActiveTab("asset");
-  }
-  function handleClick3() {
-    setActiveTab("revenue");
-  }
-  function handleClick4() {
-    setActiveTab("details");
-  }
-  function handleClick5() {
-    setActiveTab("provenance");
+  function handleClick(e) {
+    setActiveTab((PreActiveTab) => {
+      if (e.myTab === 1) {
+        return "metadata";
+      } else if (e.myTab === 2) {
+        return "asset";
+      } else if (e.myTab === 3) {
+        return "revenue";
+      } else if (e.myTab === 4) {
+        return "details";
+      } else if (e.myTab === 5) {
+        return "provenance";
+      } else return { ...PreActiveTab };
+    });
   }
 
   return (
@@ -221,7 +221,7 @@ function SinglebuyBody() {
                           <div
                             id="metadata"
                             className="nav-link "
-                            onClick={handleClick1}
+                            onClick={() => handleClick({ myTab: 1 })}
                             data-bs-toggle="tab"
                             role="tab"
                           >
@@ -232,7 +232,7 @@ function SinglebuyBody() {
                           <div
                             id="asset"
                             className="nav-link"
-                            onClick={handleClick2}
+                            onClick={() => handleClick({ myTab: 2 })}
                             data-bs-toggle="tab"
                             role="tab"
                           >
@@ -243,7 +243,7 @@ function SinglebuyBody() {
                           <div
                             id="revenues"
                             className="nav-link"
-                            onClick={handleClick3}
+                            onClick={() => handleClick({ myTab: 3 })}
                             data-bs-toggle="tab"
                             role="tab"
                           >
@@ -252,7 +252,7 @@ function SinglebuyBody() {
                         </li>
                         <li className="nav-item">
                           <div
-                            onClick={handleClick4}
+                            onClick={() => handleClick({ myTab: 4 })}
                             id="details"
                             className="nav-link"
                             data-bs-toggle="tab"
@@ -265,7 +265,7 @@ function SinglebuyBody() {
                           <div
                             id="provenance"
                             className="nav-link"
-                            onClick={handleClick5}
+                            onClick={() => handleClick({ myTab: 5 })}
                             data-bs-toggle="tab"
                             role="tab"
                           >
