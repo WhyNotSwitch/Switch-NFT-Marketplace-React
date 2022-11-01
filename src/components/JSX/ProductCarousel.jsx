@@ -1,8 +1,8 @@
 import React from "react";
 import "../CSS/theme.min.css";
-import MyCard from "./MyCard";
+import MyCard from "../Common/MyCard";
 import { Link } from "react-router-dom";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function ProductCarousel() {
   const nums = [1, 2, 3, 4];

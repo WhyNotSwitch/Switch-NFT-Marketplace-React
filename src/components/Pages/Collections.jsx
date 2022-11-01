@@ -1,9 +1,9 @@
 import React from "react";
 import CollectionsBody from "../JSX/CollectionsBody";
 import FeatureCarousel from "../JSX/FeatureCarousel";
-import Footer from "../JSX/Footer";
+import Footer from "../Common/Footer";
 import JumboTron from "../JSX/JumboTron";
-import NavBar from "../JSX/Nav";
+import NavBar from "../Common/Nav";
 
 function Collections() {
   return (

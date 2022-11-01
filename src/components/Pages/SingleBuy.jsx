@@ -1,8 +1,8 @@
 import React from "react";
 import FeatureCarousel from "../JSX/FeatureCarousel";
-import Footer from "../JSX/Footer";
+import Footer from "../Common/Footer";
 import JumboTron from "../JSX/JumboTron";
-import NavBar from "../JSX/Nav";
+import NavBar from "../Common/Nav";
 import SinglebuyBody from "../JSX/SinglebuyBody";
 
 function SingleBuy() {

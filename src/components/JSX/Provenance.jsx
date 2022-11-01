@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function Provenance() {
   return (

@@ -2,7 +2,7 @@ import React from "react";
 import "../CSS/styles.css";
 import SquareAvatar from "../img/nft/vendor/avatar-square.jpg";
 import SideBar from "./SideBar";
-import PageTitle from "./PageTitle";
+import PageTitle from "../Common/PageTitle";
 
 function AccountBody() {
   return (

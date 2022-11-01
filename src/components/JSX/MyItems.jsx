@@ -1,7 +1,7 @@
 import React from "react";
-import Footer from "./Footer";
+import Footer from "../Common/Footer";
 import MyItemsBody from "./MyItemsBody";
-import NavBar from "./Nav";
+import NavBar from "../Common/Nav";
 
 function MyItems() {
   return (

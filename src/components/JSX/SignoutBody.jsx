@@ -6,7 +6,7 @@ import Portis from "../img/nft/connect-wallet/portismin.svg";
 import Formatic from "../img/nft/connect-wallet/formaticmin.svg";
 import Metamask from "../img/nft/connect-wallet/metamaskmin.svg";
 import { Link } from "react-router-dom";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function SignoutBody() {
   return (

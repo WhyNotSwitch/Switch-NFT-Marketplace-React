@@ -7,7 +7,7 @@ import Nft13 from "../img/Switch/n13.jpg";
 import Nft14 from "../img/Switch/n14.jpg";
 import ThmbNl3 from "../img/nft/thumbnails/03.png";
 import { Link } from "react-router-dom";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function DevCollections() {
   return (

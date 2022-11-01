@@ -1,6 +1,6 @@
 import React from "react";
 import "../CSS/styles.css";
-import Button from "./Button";
+import Button from "../Common/Button";
 
 function JumboTron() {
   return (

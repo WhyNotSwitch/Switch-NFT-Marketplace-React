@@ -1,8 +1,8 @@
 import React from "react";
 import FavoritesBody from "./FavoritesBody";
-import Footer from "./Footer";
-import NavBar from "./Nav";
-import PageTitle from "./PageTitle";
+import Footer from "../Common/Footer";
+import NavBar from "../Common/Nav";
+import PageTitle from "../Common/PageTitle";
 
 function Favorites() {
   const myStyle = { paddingBottom: "90px" };

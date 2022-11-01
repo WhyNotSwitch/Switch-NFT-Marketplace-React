@@ -1,5 +1,5 @@
 import React from "react";
-import MyCard from "./MyCard";
+import MyCard from "../Common/MyCard";
 import SideBar from "./SideBar";
 
 function FavoritesBody() {

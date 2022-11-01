@@ -1,10 +1,10 @@
 import React from "react";
 import "../CSS/theme.min.css";
-import Button from "./Button";
+import Button from "../Common/Button";
 import { Link } from "react-router-dom";
 import switchLg from "../img/Switch/switch.jpg";
 import Cr1 from "../img/nft/home/creators/03.png";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function TopCreators() {
   return (

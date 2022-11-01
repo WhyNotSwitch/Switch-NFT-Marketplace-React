@@ -1,8 +1,8 @@
 import React from "react";
 import "../CSS/styles.css";
-import MyCard from "./MyCard";
+import MyCard from "../Common/MyCard";
 import SideBar from "./SideBar";
-import PageTitle from "./PageTitle";
+import PageTitle from "../Common/PageTitle";
 
 function MyItemsBody() {
   const nums = [1, 3, 6, 7, 8];

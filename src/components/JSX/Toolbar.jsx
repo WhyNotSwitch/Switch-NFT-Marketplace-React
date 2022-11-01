@@ -1,7 +1,7 @@
 import React from "react";
 import "../CSS/styles.css";
 import { Dropdown } from "react-bootstrap";
-import MyCard from "./MyCard";
+import MyCard from "../Common/MyCard";
 
 import { Link } from "react-router-dom";
 

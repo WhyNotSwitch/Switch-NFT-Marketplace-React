@@ -1,8 +1,8 @@
 import React from "react";
 import Banner from "../JSX/Banner";
-import NavBar from "../JSX/Nav";
+import NavBar from "../Common/Nav";
 import JumboTron from "../JSX/JumboTron";
-import Footer from "../JSX/Footer";
+import Footer from "../Common/Footer";
 import FeatureCarousel from "../JSX/FeatureCarousel";
 import ProjectdeveloperBody from "../JSX/ProjectdeveloperBody";
 

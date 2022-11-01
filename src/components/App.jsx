@@ -1,17 +1,17 @@
 import { Route, Routes } from "react-router-dom";
-import AccountSettings from "./AccountSettings";
-import Collections from "./Collections";
-import Home from "./Home";
-import MarketPlace from "./Marketplace";
-import MyCollections from "./MyCollections";
-import MyItems from "./MyItems";
-import Notifications from "./Notifications";
-import Favorites from "./Favorites";
-import SigninModal from "./SigninModal";
-import SignOut from "./SignOut";
-import SingleBuy from "./SingleBuy";
-import BaseUrl from "./BaseUrl";
-import ProjectDeveloper from "./ProjectDeveloper";
+import AccountSettings from "./Pages/AccountSettings";
+import Collections from "./Pages/Collections";
+import Home from "./Pages/Home";
+import MarketPlace from "./Pages/Marketplace";
+import MyCollections from "./JSX/MyCollections";
+import MyItems from "./JSX/MyItems";
+import Notifications from "./JSX/Notifications";
+import Favorites from "./JSX/Favorites";
+import SigninModal from "./Pages/SigninModal";
+import SignOut from "./Pages/SignOut";
+import SingleBuy from "./Pages/SingleBuy";
+import BaseUrl from "./Common/BaseUrl";
+import ProjectDeveloper from "./Pages/ProjectDeveloper";
 
 function App() {
   return (

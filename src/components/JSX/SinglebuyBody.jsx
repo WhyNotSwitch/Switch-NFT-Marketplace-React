@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../CSS/styles.css";
-import MyCard from "./MyCard";
+import MyCard from "../Common/MyCard";
 import Nft6 from "../img/Switch/n6.jpg";
 import Avatar13 from "../img/nft/catalog/avatars/13.png";
 import SwitchLg from "../img/Switch/switch.jpg";
@@ -10,7 +10,7 @@ import Asset from "./Asset";
 import Revenue from "./Revenue";
 import Details from "./Details";
 import Provenance from "./Provenance";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function SinglebuyBody() {
   const nums = [11, 12, 15, 16];

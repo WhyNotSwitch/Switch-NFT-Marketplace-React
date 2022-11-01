@@ -7,7 +7,7 @@ import Created from "./Created";
 import DevCollections from "./DevCollections";
 import Liked from "./Liked";
 import Activity from "./Activity";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function ProjectdeveloperBody() {
   const [activeTab, setActiveTab] = useState("created");

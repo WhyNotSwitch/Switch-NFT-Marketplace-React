@@ -3,7 +3,7 @@ import "../CSS/theme.min.css";
 import "../CSS/styles.css";
 import Nft1 from "../img/Switch/n1.jpg";
 import { Link } from "react-router-dom";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function Hero() {
   return (

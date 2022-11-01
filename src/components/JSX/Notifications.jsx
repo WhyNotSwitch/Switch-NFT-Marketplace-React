@@ -1,8 +1,8 @@
 import React from "react";
-import Footer from "./Footer";
-import NavBar from "./Nav";
+import Footer from "../Common/Footer";
+import NavBar from "../Common/Nav";
 import NotificationsBody from "./NotificationsBody";
-import PageTitle from "./PageTitle";
+import PageTitle from "../Common/PageTitle";
 
 function Notifications() {
   const myStyle = { paddingBottom: "90px" };

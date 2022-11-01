@@ -1,5 +1,5 @@
 import React from "react";
-import MyCard from "./MyCard";
+import MyCard from "../Common/MyCard";
 
 function Created() {
   const nums = [1, 2, 3, 6, 7, 8];

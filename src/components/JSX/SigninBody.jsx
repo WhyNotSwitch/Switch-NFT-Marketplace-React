@@ -1,8 +1,8 @@
 import React from "react";
 import "../CSS/styles.css";
 import SideBar from "./SideBar";
-import PageTitle from "./PageTitle";
-import MyCard from "./MyCard";
+import PageTitle from "../Common/PageTitle";
+import MyCard from "../Common/MyCard";
 
 function SigninBody() {
   const nums = [3, 6, 7, 8];

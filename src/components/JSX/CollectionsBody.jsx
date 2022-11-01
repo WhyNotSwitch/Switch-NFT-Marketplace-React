@@ -20,7 +20,7 @@ import Nft15 from "../img/Switch/n15.jpg";
 import Nft16 from "../img/Switch/n16.jpg";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import BaseUrl from "./BaseUrl";
+import BaseUrl from "../Common/BaseUrl";
 
 function CollectionsBody() {
   return (

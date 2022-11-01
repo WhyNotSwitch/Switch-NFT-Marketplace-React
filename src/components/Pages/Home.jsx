@@ -1,6 +1,6 @@
 import React from "react";
 import Hero from "../JSX/Hero";
-import NavBar from "../JSX/Nav";
+import NavBar from "../Common/Nav";
 import ProductCarousel from "../JSX/ProductCarousel";
 import "../CSS/theme.min.css";
 import "../CSS/styles.css";
@@ -9,7 +9,7 @@ import TopCreators from "../JSX/TopCreators";
 import Banner from "../JSX/Banner";
 import FeatureCarousel from "../JSX/FeatureCarousel";
 import Blog from "../JSX/Blog";
-import Footer from "../JSX/Footer";
+import Footer from "../Common/Footer";
 import BacktoTop from "../JSX/BacktoTop";
 import HandheldToolbar from "../JSX/HandheldToolbar";
 import JumboTron from "../JSX/JumboTron";

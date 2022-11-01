@@ -1,5 +1,5 @@
 import React from "react";
-import MyCard from "./MyCard";
+import MyCard from "../Common/MyCard";
 
 function Liked() {
   const nums = [4, 7, 8];

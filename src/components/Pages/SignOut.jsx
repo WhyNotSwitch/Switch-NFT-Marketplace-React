@@ -1,6 +1,6 @@
 import React from "react";
-import Footer from "../JSX/Footer";
-import NavBar from "../JSX/Nav";
+import Footer from "../Common/Footer";
+import NavBar from "../Common/Nav";
 import SignoutBody from "../JSX/SignoutBody";
 
 function SignOut() {

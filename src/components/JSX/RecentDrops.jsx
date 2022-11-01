@@ -2,8 +2,8 @@ import React from "react";
 import "../CSS/theme.min.css";
 import "../CSS/styles.css";
 import { Link } from "react-router-dom";
-import MyCard from "./MyCard";
-import BaseUrl from "./BaseUrl";
+import MyCard from "../Common/MyCard";
+import BaseUrl from "../Common/BaseUrl";
 
 function RecentDrops() {
   const nums = [3, 6, 7, 1];

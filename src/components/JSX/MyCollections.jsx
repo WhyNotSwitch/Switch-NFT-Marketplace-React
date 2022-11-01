@@ -1,8 +1,8 @@
 import React from "react";
 import MyCollectionsBody from "./MyCollectionsBody";
-import NavBar from "./Nav";
-import PageTitle from "./PageTitle";
-import Footer from "./Footer";
+import NavBar from "../Common/Nav";
+import PageTitle from "../Common/PageTitle";
+import Footer from "../Common/Footer";
 
 function MyCollections() {
   const myStyle = { paddingBottom: "90px" };
