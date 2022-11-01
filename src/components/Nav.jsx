@@ -1,4 +1,3 @@
-import React from "react";
 import Button from "./Button";
 import "./theme.min.css";
 import navLogo from "./img/Switch/Switch Electric PNG croped.png";
@@ -6,7 +5,45 @@ import "./styles.css";
 import BaseUrl from "./BaseUrl";
 import { Link } from "react-router-dom";
 
+import { useEffect, useState, React } from "react";
+import Web3 from "web3";
+import detectEthereumProvider from "@metamask/detect-provider";
+
 function NavBar(props) {
+  const [account, setAccount] = useState(null);
+  const [web3Api, setWeb3Api] = useState({
+    provider: null,
+    web3: null,
+  });
+
+  useEffect(() => {
+    const loadProvider = async () => {
+      const provider = await detectEthereumProvider();
+
+      if (provider) {
+        const web3 = new Web3(provider);
+        setWeb3Api({
+          web3,
+          provider,
+        });
+      } else {
+        console.log("Please install Metamask");
+      }
+    };
+
+    loadProvider();
+  }, []);
+
+  useEffect(() => {
+    const getAccount = async () => {
+      const accounts = await web3Api.web3.eth.getAccounts();
+      setAccount(accounts[0] ?? null);
+    };
+    web3Api.web3 && getAccount();
+    web3Api.provider &&
+      web3Api.provider.on("accountsChanged", async () => getAccount());
+  }, [web3Api.web3, web3Api.provider]);
+
   return (
     <div style={props.style}>
       <header
@@ -62,9 +99,12 @@ function NavBar(props) {
             </Link>
             <Link
               className="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2"
-              to={`${BaseUrl}/signout`}
+              //to={`${BaseUrl}/signout`}
+              onClick={() =>
+                web3Api.provider.request({ method: "eth_requestAccounts" })
+              }
             >
-              Connect Wallet
+              {account ? account : "Connect Metamask"}
             </Link>
           </div>
           <div
