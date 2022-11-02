@@ -8,10 +8,14 @@ import { Link } from "react-router-dom";
 import { useEffect, useState, React } from "react";
 import Web3 from "web3";
 import detectEthereumProvider from "@metamask/detect-provider";
+import { loadNFTContract, loadMarketContract } from "../Web3/useContract";
+
 
 function NavBar(props) {
   const [account, setAccount] = useState(null);
   const [web3Api, setWeb3Api] = useState({
+    MarketContract: null,
+    NFTContract: null,
     provider: null,
     web3: null,
   });
@@ -22,9 +26,14 @@ function NavBar(props) {
 
       if (provider) {
         const web3 = new Web3(provider);
+        const MarketContract = await loadMarketContract(web3);
+        const NFTContract = await loadNFTContract(web3);
+
         setWeb3Api({
-          web3,
+          MarketContract,
+          NFTContract,
           provider,
+          web3,
         });
       } else {
         console.log("Please install Metamask");
@@ -39,11 +48,14 @@ function NavBar(props) {
       const accounts = await web3Api.web3.eth.getAccounts();
       setAccount(accounts[0] ?? null);
     };
-    web3Api.web3 && getAccount();
-    web3Api.provider &&
-      web3Api.provider.on("accountsChanged", async () => getAccount());
-  }, [web3Api.web3, web3Api.provider]);
 
+    if (web3Api.web3 && web3Api.provider) {
+      getAccount();
+      web3Api.provider.on("accountsChanged", getAccount);
+    }
+  }, [web3Api.web3, web3Api.provider]);
+  
+  
   return (
     <div style={props.style}>
       <header
