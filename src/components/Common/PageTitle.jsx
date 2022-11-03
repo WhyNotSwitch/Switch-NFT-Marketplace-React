@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/styles.css";
 import Avatar from "../img/nft/vendor/avatar.png";
 

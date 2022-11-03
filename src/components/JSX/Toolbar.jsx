@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/styles.css";
 import { Dropdown } from "react-bootstrap";
 import MyCard from "../Common/MyCard";

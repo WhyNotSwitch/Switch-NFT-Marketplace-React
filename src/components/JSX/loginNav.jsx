@@ -1,5 +1,3 @@
-import React from "react";
-
 function LoginNav() {
   return (
     <div className="modal fade" id="signin-modal" tabIndex="-1" role="dialog">

@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import SwitchLg from "../img/Switch/switch.jpg";
 import Avatar from "../img/nft/vendor/avatar.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/styles.css";
 import ThmbNl1 from "../img/nft/thumbnails/01.png";
 import ThmbNl3 from "../img/nft/thumbnails/03.png";

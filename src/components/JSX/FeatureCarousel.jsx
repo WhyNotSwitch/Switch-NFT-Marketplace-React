@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/styles.css";
 import Wallet from "../img/nft/features/result.svg";
 import Cart from "../img/nft/features/shop-cart.svg";

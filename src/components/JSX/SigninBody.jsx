@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/styles.css";
 import SideBar from "./SideBar";
 import PageTitle from "../Common/PageTitle";
