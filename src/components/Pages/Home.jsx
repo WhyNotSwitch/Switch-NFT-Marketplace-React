@@ -17,7 +17,7 @@ import JumboTron from "../JSX/JumboTron";
 function Home() {
   return (
     <div className="page">
-      <NavBar />
+      <NavBar className={"active"} />
 
       {/* <!-- Hero--> */}
       <Hero />

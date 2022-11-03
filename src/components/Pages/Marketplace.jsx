@@ -11,7 +11,7 @@ import BacktoTop from "../JSX/BacktoTop";
 function MarketPlace() {
   return (
     <div className="market">
-      <NavBar />
+      <NavBar activeid={"active"} />
       <ToolBar />
       <FeatureCarousel />
       <JumboTron />
