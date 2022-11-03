@@ -1,15 +1,11 @@
-import React from "react";
 import AccountBody from "../JSX/AccountBody";
-import Footer from "../Common/Footer";
-import NavBar from "../Common/Nav";
+import BaseLayout from "../Common/BaseLayout";
 
 function AccountSettings() {
   return (
-    <div>
-      <NavBar />
+    <BaseLayout>
       <AccountBody />
-      <Footer />
-    </div>
+    </BaseLayout>
   );
 }
 

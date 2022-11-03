@@ -4,17 +4,16 @@ import Footer from "../Common/Footer";
 import JumboTron from "../JSX/JumboTron";
 import NavBar from "../Common/Nav";
 import SinglebuyBody from "../JSX/SinglebuyBody";
+import BaseLayout from "../Common/BaseLayout";
 
 function SingleBuy() {
   const myStyle = { paddingBottom: "90px" };
   return (
-    <div>
-      <NavBar style={myStyle} />
+    <BaseLayout navProp={myStyle} footerProp={"mt-n10 pt-10 bg-dark"}>
       <SinglebuyBody />
       <FeatureCarousel />
       <JumboTron />
-      <Footer className="mt-n10 pt-10 bg-dark" />
-    </div>
+    </BaseLayout>
   );
 }
 

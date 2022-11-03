@@ -56,7 +56,7 @@ export default function Web3Provider({ children }) {
       getAccount();
       web3Api.provider.on("accountsChanged", getAccount);
     }
-  }, [web3Api.web3, web3Api.provider]);
+  }, [web3Api]);
 
 }
 
