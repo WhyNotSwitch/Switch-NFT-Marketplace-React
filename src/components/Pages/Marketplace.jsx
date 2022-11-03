@@ -6,6 +6,7 @@ import FeatureCarousel from "../JSX/FeatureCarousel";
 import NavBar from "../Common/Nav";
 import Footer from "../Common/Footer";
 import JumboTron from "../JSX/JumboTron";
+import BacktoTop from "../JSX/BacktoTop";
 
 function MarketPlace() {
   return (
@@ -15,6 +16,7 @@ function MarketPlace() {
       <FeatureCarousel />
       <JumboTron />
       <Footer className="mt-n10 pt-10 bg-dark" />
+      <BacktoTop />
     </div>
   );
 }

@@ -64,6 +64,9 @@
   backdrop-filter: blur(15px);
   background-color: #fff7;
 }
+li a:active {
+  color: #fe696a !important;
+}
 .page {
   display: flex;
   flex-direction: column;
