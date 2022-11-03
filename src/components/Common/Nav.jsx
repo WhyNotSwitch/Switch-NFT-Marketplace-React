@@ -124,7 +124,7 @@ function NavBar(props) {
             </div>
             {/* <!-- Primary menu--> */}
             <ul className="navbar-nav">
-              <li className="nav-item active">
+              <li className="nav-item" id="my-link">
                 <Link className="nav-link" to={BaseUrl}>
                   Home
                 </Link>

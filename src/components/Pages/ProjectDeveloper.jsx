@@ -5,6 +5,7 @@ import JumboTron from "../JSX/JumboTron";
 import Footer from "../Common/Footer";
 import FeatureCarousel from "../JSX/FeatureCarousel";
 import ProjectdeveloperBody from "../JSX/ProjectdeveloperBody";
+import BacktoTop from "../JSX/BacktoTop";
 
 function ProjectDeveloper() {
   const myStyle = { paddingBottom: "90px" };
@@ -16,6 +17,7 @@ function ProjectDeveloper() {
       <FeatureCarousel />
       <JumboTron />
       <Footer className="mt-n10 pt-10 bg-dark" />
+      <BacktoTop />
     </div>
   );
 }
