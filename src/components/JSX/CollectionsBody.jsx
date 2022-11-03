@@ -18,6 +18,7 @@ function CollectionsBody() {
   const CollectionElements = nums.map((num) => {
     return (
       <CollectionsCard
+        key={num.id}
         Area={num.Area}
         img={require(`../img/Switch/n${num.id}.jpg`)}
         ThmbNl={require(`../img/nft/thumbnails/01.png`)}

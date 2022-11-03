@@ -8,7 +8,7 @@ import NavBar from "../Common/Nav";
 function Collections() {
   return (
     <div>
-      <NavBar />
+      <NavBar classid={"active"} />
       <CollectionsBody />
       <FeatureCarousel />
       <JumboTron />
