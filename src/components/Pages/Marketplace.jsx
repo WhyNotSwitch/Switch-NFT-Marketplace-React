@@ -1,22 +1,18 @@
-import React from "react";
-import "../CSS/theme.min.css";
-import "../CSS/styles.css";
 import ToolBar from "../JSX/Toolbar";
 import FeatureCarousel from "../JSX/FeatureCarousel";
-import NavBar from "../Common/Nav";
-import Footer from "../Common/Footer";
 import JumboTron from "../JSX/JumboTron";
+import BaseLayout from "../Common/BaseLayout";
 import BacktoTop from "../JSX/BacktoTop";
 
 function MarketPlace() {
   return (
     <div className="market">
-      <NavBar activeid={"active"} />
-      <ToolBar />
-      <FeatureCarousel />
-      <JumboTron />
-      <Footer className="mt-n10 pt-10 bg-dark" />
-      <BacktoTop />
+      <BaseLayout navProp={activeid={"active"}} footerProp={"mt-n10 pt-10 bg-dark"}>
+        <ToolBar />
+        <FeatureCarousel />
+        <JumboTron />
+        <BacktoTop />
+      </BaseLayout>
     </div>
   );
 }

@@ -1,18 +1,14 @@
-import React from "react";
-import Footer from "../Common/Footer";
-import NavBar from "../Common/Nav";
+import BaseLayout from "../Common/BaseLayout";
 import BacktoTop from "../JSX/BacktoTop";
 import SigninBody from "../JSX/SigninBody";
 
 function SigninModal() {
   const myStyle = { paddingBottom: "90px" };
   return (
-    <div>
-      <NavBar style={myStyle} />
+    <BaseLayout navProp={myStyle}>
       <SigninBody />
-      <Footer />
       <BacktoTop />
-    </div>
+    </BaseLayout>
   );
 }
 

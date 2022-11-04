@@ -1,48 +1,18 @@
-import Button from "./Button";
+import { Link } from "react-router-dom";
+import "../CSS/styles.css";
 import "../CSS/theme.min.css";
 import navLogo from "../img/Switch/Switch Electric PNG croped.png";
-import "../CSS/styles.css";
 import BaseUrl from "./BaseUrl";
-import { Link } from "react-router-dom";
+import Button from "./Button";
 
-import { useEffect, useState, React } from "react";
-import Web3 from "web3";
-import detectEthereumProvider from "@metamask/detect-provider";
+import { useWeb3 } from "../Web3/provider";
 
 function NavBar(props) {
-  const [account, setAccount] = useState(null);
-  const [web3Api, setWeb3Api] = useState({
-    provider: null,
-    web3: null,
-  });
-
-  useEffect(() => {
-    const loadProvider = async () => {
-      const provider = await detectEthereumProvider();
-
-      if (provider) {
-        const web3 = new Web3(provider);
-        setWeb3Api({
-          web3,
-          provider,
-        });
-      } else {
-        console.log("Please install Metamask");
-      }
-    };
-
-    loadProvider();
-  }, []);
-
-  useEffect(() => {
-    const getAccount = async () => {
-      const accounts = await web3Api.web3.eth.getAccounts();
-      setAccount(accounts[0] ?? null);
-    };
-    web3Api.web3 && getAccount();
-    web3Api.provider &&
-      web3Api.provider.on("accountsChanged", async () => getAccount());
-  }, [web3Api.web3, web3Api.provider]);
+  const { requireInstall, isLoading, account, connect } = useWeb3();
+  const short = account
+    ? `${account.substring(0, 5)}...${account.substring(38)}`
+    : "no account";
+  console.log(short);
 
   return (
     <div style={props.style}>
@@ -97,15 +67,27 @@ function NavBar(props) {
                 <i className="navbar-tool-icon ci-user"></i>
               </div>
             </Link>
-            <Link
-              className="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2"
-              //to={`${BaseUrl}/signout`}
-              onClick={() =>
-                web3Api.provider.request({ method: "eth_requestAccounts" })
-              }
-            >
-              {account ? account : "Connect Metamask"}
-            </Link>
+            {account ? (
+              <Link className="btn btn-sm btn-outline-dark disabled rounded-1 ms-lg-4 ms-2" >
+                {short}
+              </Link>
+            ) : requireInstall ? (
+              <Link
+                className="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2"
+                onClick={() =>
+                  window.open("https://metamask.io/download/", "_blank")
+                }
+              >
+                Install Metamask
+              </Link>
+            ) : (
+              <Link
+                onClick={connect}
+                className="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2"
+              >
+                Connect Metamask
+              </Link>
+            )}
           </div>
           <div
             className="collapse navbar-collapse me-auto order-lg-2"

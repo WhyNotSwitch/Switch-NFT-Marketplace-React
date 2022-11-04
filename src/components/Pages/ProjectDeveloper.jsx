@@ -1,24 +1,20 @@
-import React from "react";
 import Banner from "../JSX/Banner";
-import NavBar from "../Common/Nav";
 import JumboTron from "../JSX/JumboTron";
-import Footer from "../Common/Footer";
 import FeatureCarousel from "../JSX/FeatureCarousel";
 import ProjectdeveloperBody from "../JSX/ProjectdeveloperBody";
+import BaseLayout from "../Common/BaseLayout";
 import BacktoTop from "../JSX/BacktoTop";
 
 function ProjectDeveloper() {
   const myStyle = { paddingBottom: "90px" };
   return (
-    <div>
-      <NavBar style={myStyle} />
+    <BaseLayout navProp={myStyle} footerProp={"mt-n10 pt-10 bg-dark"}>
       <ProjectdeveloperBody />
       <Banner />
       <FeatureCarousel />
       <JumboTron />
-      <Footer className="mt-n10 pt-10 bg-dark" />
       <BacktoTop />
-    </div>
+    </BaseLayout>
   );
 }
 
