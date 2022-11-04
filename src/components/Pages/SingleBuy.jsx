@@ -1,8 +1,5 @@
-import React from "react";
 import FeatureCarousel from "../JSX/FeatureCarousel";
-import Footer from "../Common/Footer";
 import JumboTron from "../JSX/JumboTron";
-import NavBar from "../Common/Nav";
 import SinglebuyBody from "../JSX/SinglebuyBody";
 import BaseLayout from "../Common/BaseLayout";
 
