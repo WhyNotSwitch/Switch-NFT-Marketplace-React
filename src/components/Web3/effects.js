@@ -1,5 +1,4 @@
 import detectEthereumProvider from "@metamask/detect-provider";
-import { useMemo } from "react";
 import Web3 from "web3";
 import { loadMarketContract, loadNFTContract } from "./useContract";
 
@@ -11,7 +10,7 @@ import { loadMarketContract, loadNFTContract } from "./useContract";
 // logs error on connection fail
 // ############################################################
 
-export const loadProvider = async (web3Api, setWeb3Api) => {
+export const loadProvider = async (setWeb3Api) => {
   const provider = await detectEthereumProvider();
 
   if (provider) {
@@ -19,16 +18,16 @@ export const loadProvider = async (web3Api, setWeb3Api) => {
     const MarketContract = await loadMarketContract(web3);
     const NFTContract = await loadNFTContract(web3);
 
-    setWeb3Api({
-      ...web3Api,
+    setWeb3Api((_web3Api_) => ({
+      ..._web3Api_,
       MarketContract,
       NFTContract,
       isLoading: false,
       provider,
       web3,
-    });
+    }));
   } else {
-    setWeb3Api((api) => ({ ...api, isLoading: false }));
+    setWeb3Api((_web3Api_) => ({ ..._web3Api_, isLoading: false }));
     console.error("Please install Metamask");
   }
 };
@@ -37,7 +36,7 @@ export const loadProvider = async (web3Api, setWeb3Api) => {
 //
 // ############################################################
 
-export const getAccount = async (web3Api, setWeb3Api) => {
-  const accounts = await web3Api.web3.eth.getAccounts();
-  setWeb3Api({ ...web3Api, account: accounts[0] });
+export const getAccount = async (web3, setWeb3Api) => {
+  const accounts = await web3.eth.getAccounts();
+  setWeb3Api((_web3Api_) => ({ ..._web3Api_, account: accounts[0] }));
 };

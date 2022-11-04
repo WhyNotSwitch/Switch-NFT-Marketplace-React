@@ -14,13 +14,13 @@ export function Web3Provider({ children }) {
   const [web3Api, setWeb3Api] = useState({});
 
   useEffect(() => {
-    loadProvider(web3Api, setWeb3Api);
-  },[]);
+    loadProvider(setWeb3Api);
+  }, []);
 
   useEffect(() => {
     if (web3Api.web3 && web3Api.provider) {
-      getAccount(web3Api, setWeb3Api);
-      web3Api.provider.on("accountsChanged", () => getAccount(web3Api, setWeb3Api));
+      getAccount(web3Api.web3, setWeb3Api);
+      web3Api.provider.on("accountsChanged", () => getAccount(web3Api.web3, setWeb3Api));
     }
   }, [web3Api.web3, web3Api.provider]);
 
