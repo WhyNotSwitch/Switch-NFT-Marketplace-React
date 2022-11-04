@@ -5,7 +5,7 @@ import SignoutBody from "../JSX/SignoutBody";
 function SignOut() {
   const myStyle = { paddingBottom: "90px" };
   return (
-    <BaseLayout navProp={myStyle} >
+    <BaseLayout navProp={{ style: myStyle }}>
       <SignoutBody />
       <BacktoTop />
     </BaseLayout>

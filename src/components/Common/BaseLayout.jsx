@@ -4,9 +4,9 @@ import NavBar from "./Nav";
 function BaseLayout({ children, navProp, footerProp }) {
   return (
     <>
-      <NavBar style={navProp} />
+      <NavBar {...navProp} />
       {children}
-      <Footer className={footerProp} />
+      <Footer {...footerProp} />
     </>
   );
 }

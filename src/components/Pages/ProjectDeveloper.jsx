@@ -8,7 +8,10 @@ import BacktoTop from "../JSX/BacktoTop";
 function ProjectDeveloper() {
   const myStyle = { paddingBottom: "90px" };
   return (
-    <BaseLayout navProp={myStyle} footerProp={"mt-n10 pt-10 bg-dark"}>
+    <BaseLayout
+      navProp={{ style: myStyle }}
+      footerProp={{ className: "mt-n10 pt-10 bg-dark" }}
+    >
       <ProjectdeveloperBody />
       <Banner />
       <FeatureCarousel />

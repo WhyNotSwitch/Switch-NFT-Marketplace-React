@@ -7,7 +7,10 @@ import BacktoTop from "../JSX/BacktoTop";
 function MarketPlace() {
   return (
     <div className="market">
-      <BaseLayout navProp={activeid={"active"}} footerProp={"mt-n10 pt-10 bg-dark"}>
+      <BaseLayout
+        navProp={{ activeid: "active" }}
+        footerProp={{ className: "mt-n10 pt-10 bg-dark" }}
+      >
         <ToolBar />
         <FeatureCarousel />
         <JumboTron />
