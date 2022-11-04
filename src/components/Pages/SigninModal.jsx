@@ -3,9 +3,8 @@ import BacktoTop from "../JSX/BacktoTop";
 import SigninBody from "../JSX/SigninBody";
 
 function SigninModal() {
-  const myStyle = { paddingBottom: "90px" };
   return (
-    <BaseLayout navProp={{ style: myStyle }}>
+    <BaseLayout navProp={{ style: { paddingBottom: "90px" } }}>
       <SigninBody />
       <BacktoTop />
     </BaseLayout>

@@ -5,10 +5,9 @@ import BaseLayout from "../Common/BaseLayout";
 import BacktoTop from "../JSX/BacktoTop";
 
 function SingleBuy() {
-  const myStyle = { paddingBottom: "90px" };
   return (
     <BaseLayout
-      navProp={{ style: myStyle }}
+      navProp={{ style: { paddingBottom: "90px" } }}
       footerProp={{ className: "mt-n10 pt-10 bg-dark" }}
     >
       <SinglebuyBody />

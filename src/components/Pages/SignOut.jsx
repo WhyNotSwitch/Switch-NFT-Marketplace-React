@@ -3,9 +3,8 @@ import BacktoTop from "../JSX/BacktoTop";
 import SignoutBody from "../JSX/SignoutBody";
 
 function SignOut() {
-  const myStyle = { paddingBottom: "90px" };
   return (
-    <BaseLayout navProp={{ style: myStyle }}>
+    <BaseLayout navProp={{ style: { paddingBottom: "90px" } }}>
       <SignoutBody />
       <BacktoTop />
     </BaseLayout>
