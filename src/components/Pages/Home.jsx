@@ -13,7 +13,7 @@ import BaseLayout from "../Common/BaseLayout";
 function Home() {
   return (
     <div className="page">
-      <BaseLayout footerProp={"mt-n10 pt-10 bg-dark"}>
+      <BaseLayout navProp={className={"active"}} footerProp={"mt-n10 pt-10 bg-dark"}>
         {/* <!-- Hero--> */}
         <Hero />
         {/* <!-- Product carousel (Recent Drops)--> */}

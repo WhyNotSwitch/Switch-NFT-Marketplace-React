@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import Nft1 from "../img/Switch/n1.jpg";
 import Nft2 from "../img/Switch/n2.jpg";

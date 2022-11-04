@@ -1,5 +1,3 @@
-import React from "react";
-
 function MetaData() {
   return (
     <ul className="list-unstyled row row-cols-sm-2 row-cols-1 gy-3 gx-4 mb-4 pb-md-2">

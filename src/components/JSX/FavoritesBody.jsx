@@ -1,4 +1,3 @@
-import React from "react";
 import MyCard from "../Common/MyCard";
 import SideBar from "./SideBar";
 

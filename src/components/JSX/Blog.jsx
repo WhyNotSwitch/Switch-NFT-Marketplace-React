@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/styles.css";
 import Blog1 from "../img/nft/blog/01.jpg";
 import Blog2 from "../img/nft/blog/02.jpg";
@@ -8,7 +7,7 @@ function Blog(props) {
   return (
     <div className={`pt-4 bg-secondary ${props.className}`}>
       {/* <!-- Blog recent posts--> */}
-      <section className="container py-lg-5 py-5 ">
+      <section className="container py-lg-5 py-5">
         <div className="d-flex align-items-center justify-content-between mb-sm-4 mb-2 pb-2">
           <h2 className="h3 mb-0">Resources for getting started</h2>
           <a
@@ -27,8 +26,8 @@ function Blog(props) {
           {/* <!-- Carousel item--> */}
 
           {/* <!-- Carousel item--> */}
-          <div className="row row-cols-md-3 ">
-            <article className="col col-sm-1">
+          <div className="row">
+            <article className="col col-lg-4 col-sm-12">
               <a className="d-block mb-3" href="/Switch-NFT-Marketplace-React">
                 <img className="rounded-3" src={Blog2} alt="Blog" />
               </a>
@@ -49,7 +48,7 @@ function Blog(props) {
             </article>
 
             {/* <!-- Carousel item--> */}
-            <article className="col-sm-1">
+            <article className="col col-lg-4 col-sm-12">
               <a className="d-block mb-3" href="Switch-NFT-Marketplace-React">
                 <img className="rounded-3" src={Blog1} alt="Blog" />
               </a>
@@ -70,7 +69,7 @@ function Blog(props) {
             </article>
 
             {/* <!-- Carousel item--> */}
-            <article className="col-sm-1">
+            <article className="col col-lg-4 col-sm-12">
               <a className="d-block mb-3" href="Switch-NFT-Marketplace-React">
                 <img className="rounded-3" src={Blog3} alt="Blog" />
               </a>

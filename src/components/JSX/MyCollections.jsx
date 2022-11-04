@@ -1,4 +1,3 @@
-import React from "react";
 import MyCollectionsBody from "./MyCollectionsBody";
 import NavBar from "../Common/Nav";
 import PageTitle from "../Common/PageTitle";

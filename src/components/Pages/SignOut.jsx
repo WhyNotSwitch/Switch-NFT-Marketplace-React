@@ -1,4 +1,5 @@
 import BaseLayout from "../Common/BaseLayout";
+import BacktoTop from "../JSX/BacktoTop";
 import SignoutBody from "../JSX/SignoutBody";
 
 function SignOut() {
@@ -6,6 +7,7 @@ function SignOut() {
   return (
     <BaseLayout navProp={myStyle} >
       <SignoutBody />
+      <BacktoTop />
     </BaseLayout>
   );
 }

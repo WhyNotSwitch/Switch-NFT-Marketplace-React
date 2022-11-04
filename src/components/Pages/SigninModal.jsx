@@ -1,4 +1,5 @@
 import BaseLayout from "../Common/BaseLayout";
+import BacktoTop from "../JSX/BacktoTop";
 import SigninBody from "../JSX/SigninBody";
 
 function SigninModal() {
@@ -6,6 +7,7 @@ function SigninModal() {
   return (
     <BaseLayout navProp={myStyle}>
       <SigninBody />
+      <BacktoTop />
     </BaseLayout>
   );
 }

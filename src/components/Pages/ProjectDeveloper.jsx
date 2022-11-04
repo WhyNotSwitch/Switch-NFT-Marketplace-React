@@ -3,7 +3,7 @@ import JumboTron from "../JSX/JumboTron";
 import FeatureCarousel from "../JSX/FeatureCarousel";
 import ProjectdeveloperBody from "../JSX/ProjectdeveloperBody";
 import BaseLayout from "../Common/BaseLayout";
-
+import BacktoTop from "../JSX/BacktoTop";
 
 function ProjectDeveloper() {
   const myStyle = { paddingBottom: "90px" };
@@ -13,6 +13,7 @@ function ProjectDeveloper() {
       <Banner />
       <FeatureCarousel />
       <JumboTron />
+      <BacktoTop />
     </BaseLayout>
   );
 }

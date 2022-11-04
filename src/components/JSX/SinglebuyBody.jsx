@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "../CSS/styles.css";
 import MyCard from "../Common/MyCard";
 import Nft6 from "../img/Switch/n6.jpg";

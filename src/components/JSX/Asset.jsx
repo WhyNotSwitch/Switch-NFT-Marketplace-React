@@ -1,5 +1,3 @@
-import React from "react";
-
 function Asset() {
   return (
     <div className="" id="asset" role="tabpanel">

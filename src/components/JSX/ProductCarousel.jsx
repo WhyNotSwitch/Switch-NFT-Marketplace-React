@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/theme.min.css";
 import MyCard from "../Common/MyCard";
 import { Link } from "react-router-dom";

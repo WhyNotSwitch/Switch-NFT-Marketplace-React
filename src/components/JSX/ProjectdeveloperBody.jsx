@@ -1,4 +1,3 @@
-import React from "react";
 import { useState } from "react";
 import SwitchLg from "../img/Switch/switch.jpg";
 import Avatar from "../img/nft/vendor/avatar.png";
@@ -229,7 +228,7 @@ function ProjectdeveloperBody() {
               <div className="d-flex flex-md-row flex-column align-items-md-center flex-shrink-0 ms-md-4 ps-md-2 pb-1">
                 <label
                   className="form-label mb-md-0 me-md-2 pe-md-1 fs-sm fw-normal text-nowrap"
-                  for="sorting"
+                  htmlFor="sorting"
                 >
                   Sort by:
                 </label>
@@ -238,9 +237,7 @@ function ProjectdeveloperBody() {
                   id="sorting"
                   style={{ minWidth: "222px" }}
                 >
-                  <option selected disabled>
-                    Newest
-                  </option>
+                  <option value="selected disabled">Newest</option>
                   <option>Oldest</option>
                 </select>
               </div>

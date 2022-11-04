@@ -20,7 +20,7 @@ function NavBar(props) {
         className="navbar d-block fixed-top navbar-expand-lg navbar-light w-100"
         id="header"
       >
-        <div className="container">
+        <div className="container" id="nav-parent">
           <Link
             className="navbar-brand d-none d-sm-block me-4 order-lg-1"
             to={BaseUrl}
@@ -106,18 +106,24 @@ function NavBar(props) {
             </div>
             {/* <!-- Primary menu--> */}
             <ul className="navbar-nav">
-              <li className="nav-item active">
-                <Link className="nav-link" to={BaseUrl}>
+              <li className="nav-item">
+                <Link className={`nav-link ${props.className}`} to={BaseUrl}>
                   Home
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={`${BaseUrl}/marketplace`}>
+                <Link
+                  className={`nav-link ${props.activeid}`}
+                  to={`${BaseUrl}/marketplace`}
+                >
                   Marketplace
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to={`${BaseUrl}/collections`}>
+                <Link
+                  className={`nav-link ${props.classid}`}
+                  to={`${BaseUrl}/collections`}
+                >
                   Collections
                 </Link>
               </li>

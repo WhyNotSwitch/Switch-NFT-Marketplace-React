@@ -1,5 +1,3 @@
-import React from "react";
-
 function Revenue() {
   return (
     <div className="" id="revenues" role="tabpanel">

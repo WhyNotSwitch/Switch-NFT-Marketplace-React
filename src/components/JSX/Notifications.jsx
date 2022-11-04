@@ -1,4 +1,3 @@
-import React from "react";
 import Footer from "../Common/Footer";
 import NavBar from "../Common/Nav";
 import NotificationsBody from "./NotificationsBody";

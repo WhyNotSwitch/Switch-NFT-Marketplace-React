@@ -1,4 +1,3 @@
-import React from "react";
 import Nft9 from "../img/Switch/n9.jpg";
 import Nft10 from "../img/Switch/n10.jpg";
 import Nft11 from "../img/Switch/n11.jpg";

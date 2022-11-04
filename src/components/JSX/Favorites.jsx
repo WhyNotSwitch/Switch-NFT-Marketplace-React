@@ -1,4 +1,3 @@
-import React from "react";
 import FavoritesBody from "./FavoritesBody";
 import Footer from "../Common/Footer";
 import NavBar from "../Common/Nav";

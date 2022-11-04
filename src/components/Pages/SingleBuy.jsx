@@ -2,6 +2,7 @@ import FeatureCarousel from "../JSX/FeatureCarousel";
 import JumboTron from "../JSX/JumboTron";
 import SinglebuyBody from "../JSX/SinglebuyBody";
 import BaseLayout from "../Common/BaseLayout";
+import BacktoTop from "../JSX/BacktoTop";
 
 function SingleBuy() {
   const myStyle = { paddingBottom: "90px" };
@@ -10,6 +11,7 @@ function SingleBuy() {
       <SinglebuyBody />
       <FeatureCarousel />
       <JumboTron />
+      <BacktoTop />
     </BaseLayout>
   );
 }

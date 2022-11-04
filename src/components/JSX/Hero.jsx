@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/theme.min.css";
 import "../CSS/styles.css";
 import Nft1 from "../img/Switch/n1.jpg";

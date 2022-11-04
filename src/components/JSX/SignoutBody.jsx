@@ -1,4 +1,3 @@
-import React from "react";
 import Torus from "../img/nft/connect-wallet/torusmin.svg";
 import WalletConnect from "../img/nft/connect-wallet/walletconnectmin.svg";
 import Coinbase from "../img/nft/connect-wallet/coinbasemin.svg";

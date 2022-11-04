@@ -6,7 +6,7 @@ import BaseLayout from "../Common/BaseLayout";
 
 function Collections() {
   return (
-    <BaseLayout footerProp={"mt-n10 pt-10 bg-dark"}>
+    <BaseLayout navProp={classid={"active"}} footerProp={"mt-n10 pt-10 bg-dark"}>
       <CollectionsBody />
       <FeatureCarousel />
       <JumboTron />

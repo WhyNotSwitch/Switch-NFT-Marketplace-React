@@ -1,4 +1,3 @@
-import React from "react";
 import "../CSS/styles.css";
 import Button from "./Button";
 
