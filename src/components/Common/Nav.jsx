@@ -8,12 +8,10 @@ import Button from "./Button";
 import { useWeb3 } from "../Web3/provider";
 
 function NavBar(props) {
-  const { requireInstall, isLoading, account, connect } = useWeb3();
+  const { requireInstall, networkStatus, statusColor, account, connect } = useWeb3();
   const short = account
     ? `${account.substring(0, 5)}...${account.substring(38)}`
     : "no account";
-  console.log(short);
-
   return (
     <div style={props.style}>
       <header
@@ -68,9 +66,19 @@ function NavBar(props) {
               </div>
             </Link>
             {account ? (
-              <Link className="btn btn-sm btn-outline-dark disabled rounded-1 ms-lg-4 ms-2" >
-                {short}
-              </Link>
+              <>
+                <Link className="d-flex flex-column btn btn-sm btn-outline disabled rounded-100 ms-lg-4 ms-2">
+                  {short}
+                  <span className="font-weight-bold"
+                    style={{
+                      alignSelf: "center",
+                      color: statusColor,
+                    }}
+                  >
+                    {networkStatus}
+                  </span>
+                </Link>
+              </>
             ) : requireInstall ? (
               <Link
                 className="btn btn-sm btn-accent rounded-1 ms-lg-4 ms-2"

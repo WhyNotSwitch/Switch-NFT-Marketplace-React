@@ -61,8 +61,7 @@
   );
 }
 #header {
-  backdrop-filter: blur(15px);
-  background-color: #fff7;
+  background-color: #fff;
 }
 
 .page {
