@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
-import { getAccount, loadProvider } from "./effects";
+import { loadProvider, getAccount, getNetwork } from "./effects";
 
 const Web3Context = createContext(null);
 
@@ -17,10 +17,23 @@ export function Web3Provider({ children }) {
     loadProvider(setWeb3Api);
   }, []);
 
+  // ############################################################
+  //
+  // This effect gets wallet accounts from metamask for our web3
+  // interactions. Also detects account switches, retrieves latest
+  // account value and passes them to the web3Api object
+  // ############################################################
+
   useEffect(() => {
     if (web3Api.web3 && web3Api.provider) {
       getAccount(web3Api.web3, setWeb3Api);
-      web3Api.provider.on("accountsChanged", () => getAccount(web3Api.web3, setWeb3Api));
+      getNetwork(web3Api.web3, setWeb3Api);
+      web3Api.provider.on("accountsChanged", () =>
+        getAccount(web3Api.web3, setWeb3Api)
+      );
+      web3Api.provider.on("chainChanged", () =>
+        getNetwork(web3Api.web3, setWeb3Api)
+      );
     }
   }, [web3Api.web3, web3Api.provider]);
 
@@ -33,24 +46,23 @@ export function Web3Provider({ children }) {
   // ############################################################
 
   const _web3Api = useMemo(() => {
-    const { web3, provider, isLoading } = web3Api;
     return {
       ...web3Api,
-      requireInstall: !isLoading && !web3,
-      connect: provider
-        ? async () => {
-            try {
-              await provider.request({ method: "eth_requestAccounts" });
-            } catch {
-              console.log("failed to connect to wallet");
-              window.location.reload();
-            }
-          }
-        : () => console.error("couldn't connect to metamask, reload browser"),
+      requireInstall: !web3Api.isLoading && !web3Api.web3,
+      connect: async () => {
+        try {
+          await web3Api.provider.request({ method: "eth_requestAccounts" });
+        } catch {
+          console.error("failed to connect to wallet");
+        }
+      },
     };
   }, [web3Api]);
 
-  // returns the actual web3 context for wrapping all components
+  // ############################################################
+  //
+  // Returns the actual web3 context for wrapping all components
+  // ############################################################
   return (
     <Web3Context.Provider value={_web3Api}>{children}</Web3Context.Provider>
   );
