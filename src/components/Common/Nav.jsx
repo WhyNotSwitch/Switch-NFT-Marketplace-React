@@ -6,9 +6,11 @@ import BaseUrl from "./BaseUrl";
 import Button from "./Button";
 
 import { useWeb3 } from "../Web3/provider";
+//import { signUp } from "../Web3/Utils/auth";
 
 function NavBar(props) {
-  const { requireInstall, networkStatus, statusColor, account, connect } = useWeb3();
+  const { requireInstall, networkStatus, statusColor, account, connect, web3 } =
+    useWeb3();
   const short = account
     ? `${account.substring(0, 5)}...${account.substring(38)}`
     : "no account";
@@ -67,9 +69,11 @@ function NavBar(props) {
             </Link>
             {account ? (
               <>
-                <Link className="d-flex flex-column btn btn-sm btn-outline disabled rounded-100 ms-lg-4 ms-2">
+                <Link className="d-flex flex-column btn btn-sm btn-outline disabled  ms-lg-4 ms-2">
                   {short}
-                  <span className="font-weight-bold"
+                  <span
+                    className="font-weight-bold"
+                    //onClick={() =>signUp(web3, account)}
                     style={{
                       alignSelf: "center",
                       color: statusColor,

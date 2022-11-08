@@ -46,14 +46,14 @@ export const getAccount = async (web3, setWeb3Api) => {
 // ############################################################
 
 export const getNetwork = async (web3, setWeb3Api) => {
-  const networkId = await web3.eth.net.getId();
+  const chainID = await web3.eth.getChainId();
   const networkStatus =
-    networkId === 4689
-      ? "IoTeX Mainnet"
-      : networkId === 4690
-      ? "IoTeX Testnet ⚠"
-      : "Use IoTeX Mainnet ⚠";
+    chainID === 4689
+      ? "IoTeX Mainnet \u2713"
+      : chainID === 4690
+      ? "IoTeX Testnet \u26A0"
+      : "Use IoTeX Mainnet \u26A0";
   const statusColor =
-    networkId === 4689 ? "#0a7d" : networkId === 4690 ? "#f50d" : "#f00d";
+    chainID === 4689 ? "#0c7d" : chainID === 4690 ? "#f50d" : "#f00d";
   setWeb3Api((_web3Api_) => ({ ..._web3Api_, networkStatus, statusColor }));
 };
