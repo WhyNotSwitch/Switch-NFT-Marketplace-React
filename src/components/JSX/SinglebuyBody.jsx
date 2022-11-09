@@ -11,6 +11,7 @@ import Revenue from "./Revenue";
 import Details from "./Details";
 import Provenance from "./Provenance";
 import BaseUrl from "../Common/BaseUrl";
+//import Example from "../JSX/OrderModal"
 
 function SinglebuyBody() {
   const nums = [11, 12, 15, 16];
@@ -53,6 +54,7 @@ function SinglebuyBody() {
 
   return (
     <div>
+      {/* <Example></Example> */}
       <div className="page-title-overlap bg-accent pt-4">
         <div className="container d-lg-flex justify-content-between py-2 py-lg-3">
           <div className="order-lg-2 mb-3 mb-lg-0 pt-lg-2">

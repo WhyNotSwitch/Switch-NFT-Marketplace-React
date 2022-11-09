@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 import { loadProvider, getAccount, getNetwork } from "./effects";
+import { approveMarketplace } from "../Web3/functions";
 
 const Web3Context = createContext(null);
 
@@ -36,6 +37,24 @@ export function Web3Provider({ children }) {
       );
     }
   }, [web3Api.web3, web3Api.provider]);
+
+
+
+  // ############################################################
+  //
+  // This effect approves marketplace contract to operate user 
+  // tokens 
+  // ############################################################
+
+  useEffect(() => {
+    if (web3Api.NFTContract && web3Api.account) {
+       approveMarketplace(web3Api.NFTContract, web3Api.account)
+      web3Api.provider.on("accountsChanged", () =>
+        approveMarketplace(web3Api.NFTContract, web3Api.account)
+      );
+    }
+  }, [web3Api.NFTContract, web3Api.account]);
+
 
   // ############################################################
   //
