@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Switch-NFT-Marketplace-React/static/css/main.c233458f.css",
-    "main.js": "/Switch-NFT-Marketplace-React/static/js/main.cd380b8d.js",
+    "main.css": "/Switch-NFT-Marketplace-React/static/css/main.3ada9050.css",
+    "main.js": "/Switch-NFT-Marketplace-React/static/js/main.3f792658.js",
     "static/js/787.dfe2ae56.chunk.js": "/Switch-NFT-Marketplace-React/static/js/787.dfe2ae56.chunk.js",
     "static/media/hero-bg.png": "/Switch-NFT-Marketplace-React/static/media/hero-bg.0aca7d6e6c01231deb97.png",
     "static/media/n1.jpg": "/Switch-NFT-Marketplace-React/static/media/n1.bf19ee071bc90554a79a.jpg",
@@ -42,12 +42,12 @@
     "static/media/torusmin.svg": "/Switch-NFT-Marketplace-React/static/media/torusmin.5bf7e14e1be364acd301ea40eac5b59a.svg",
     "static/media/coinbasemin.svg": "/Switch-NFT-Marketplace-React/static/media/coinbasemin.9f1ec5aad9fc788c60857081879c3227.svg",
     "static/media/formaticmin.svg": "/Switch-NFT-Marketplace-React/static/media/formaticmin.c2be4114883283db2674554e80506bf8.svg",
-    "main.c233458f.css.map": "/Switch-NFT-Marketplace-React/static/css/main.c233458f.css.map",
-    "main.cd380b8d.js.map": "/Switch-NFT-Marketplace-React/static/js/main.cd380b8d.js.map",
+    "main.3ada9050.css.map": "/Switch-NFT-Marketplace-React/static/css/main.3ada9050.css.map",
+    "main.3f792658.js.map": "/Switch-NFT-Marketplace-React/static/js/main.3f792658.js.map",
     "787.dfe2ae56.chunk.js.map": "/Switch-NFT-Marketplace-React/static/js/787.dfe2ae56.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c233458f.css",
-    "static/js/main.cd380b8d.js"
+    "static/css/main.3ada9050.css",
+    "static/js/main.3f792658.js"
   ]
 }
