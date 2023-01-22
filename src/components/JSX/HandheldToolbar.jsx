@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BaseUrl from "../Common/BaseUrl";
 
 function HandheldToolbar() {
   return (
@@ -17,7 +16,7 @@ function HandheldToolbar() {
         </a>
         <Link
           className="d-table-cell handheld-toolbar-item"
-          to={`${BaseUrl}/signin`}
+          to="/signin"
           data-bs-toggle="modal"
         >
           <span className="handheld-toolbar-icon">
@@ -39,7 +38,7 @@ function HandheldToolbar() {
         </a>
         <Link
           className="d-table-cell handheld-toolbar-item"
-          to={`${BaseUrl}/signout`}
+          to="/signout"
         >
           <span className="handheld-toolbar-icon">
             <i className="ci-wallet"></i>

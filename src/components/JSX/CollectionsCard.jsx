@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BaseUrl from "../Common/BaseUrl";
 
 function CollectionsCard(props) {
   return (
@@ -19,7 +18,7 @@ function CollectionsCard(props) {
                 by
                 <Link
                   className="ms-1 fw-medium text-accent stretched-link"
-                  to={`${BaseUrl}/project-developer`}
+                  to="/project-developer"
                 >
                   @Developer's name
                 </Link>

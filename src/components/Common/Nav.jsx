@@ -2,7 +2,6 @@ import { Link } from "react-router-dom";
 import "../CSS/styles.css";
 import "../CSS/theme.min.css";
 import navLogo from "../img/Switch/Switch Electric PNG croped.png";
-import BaseUrl from "./BaseUrl";
 import Button from "./Button";
 
 import { useWeb3 } from "../Web3/provider";
@@ -23,11 +22,11 @@ function NavBar(props) {
         <div className="container" id="nav-parent">
           <Link
             className="navbar-brand d-none d-sm-block me-4 order-lg-1"
-            to={BaseUrl}
+            to="/"
           >
             <img src={navLogo} width="142" alt="Switch" />
           </Link>
-          <Link className="navbar-brand d-sm-none me-2 order-lg-1" to={BaseUrl}>
+          <Link className="navbar-brand d-sm-none me-2 order-lg-1" to="/">
             <img
               src={require("../img/Switch/Switch Electric PNG croped.png")}
               width="74"
@@ -59,7 +58,7 @@ function NavBar(props) {
             </a>
             <Link
               className="navbar-tool ms-lg-2"
-              to={`${BaseUrl}/signin`}
+              to="/signin"
               data-bs-toggle="modal"
             >
               <span className="navbar-tool-tooltip">Account</span>
@@ -119,14 +118,14 @@ function NavBar(props) {
             {/* <!-- Primary menu--> */}
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className={`nav-link ${props.className}`} to={BaseUrl}>
+                <Link className={`nav-link ${props.className}`} to="/">
                   Home
                 </Link>
               </li>
               <li className="nav-item">
                 <Link
                   className={`nav-link ${props.activeid}`}
-                  to={`${BaseUrl}/marketplace`}
+                  to="/marketplace"
                 >
                   Marketplace
                 </Link>
@@ -134,7 +133,7 @@ function NavBar(props) {
               <li className="nav-item">
                 <Link
                   className={`nav-link ${props.classid}`}
-                  to={`${BaseUrl}/collections`}
+                  to="/collections"
                 >
                   Collections
                 </Link>

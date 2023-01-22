@@ -2,7 +2,6 @@ import "../CSS/styles.css";
 import CollectionsCard from "./CollectionsCard";
 import { Dropdown } from "react-bootstrap";
 import { Link } from "react-router-dom";
-import BaseUrl from "../Common/BaseUrl";
 
 function CollectionsBody() {
   const nums = [
@@ -35,7 +34,7 @@ function CollectionsBody() {
               <nav aria-label="breadcrumb">
                 <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                   <li className="breadcrumb-item">
-                    <Link className="text-nowrap" to={BaseUrl}>
+                    <Link className="text-nowrap" to="/">
                       <i className="ci-home"></i>Home
                     </Link>
                   </li>
@@ -97,7 +96,7 @@ function CollectionsBody() {
                     <Dropdown.Item>
                       <Link
                         className="dropdown-item active"
-                        to={`${BaseUrl}/my-collections`}
+                        to="/my-collections"
                         style={{ whiteSpace: "normal" }}
                       >
                         Recently added
@@ -106,7 +105,7 @@ function CollectionsBody() {
                     <Dropdown.Item>
                       <Link
                         className="dropdown-item"
-                        to={`${BaseUrl}/my-collections`}
+                        to="/my-collections"
                         style={{ whiteSpace: "normal" }}
                       >
                         Oldest
@@ -126,7 +125,7 @@ function CollectionsBody() {
               <div className="border-start">
                 <Link
                   className="btn border-0 p-4 fw-medium"
-                  to={`${BaseUrl}/my-collections`}
+                  to="/my-collections"
                 >
                   <i className="ci-arrow-left"></i>
                 </Link>
@@ -135,7 +134,7 @@ function CollectionsBody() {
               <div className="border-start">
                 <Link
                   className="btn border-0 p-4 fw-medium"
-                  to={`${BaseUrl}/my-collections`}
+                  to="/my-collections"
                 >
                   <i className="ci-arrow-right"></i>
                 </Link>
@@ -630,7 +629,7 @@ function CollectionsBody() {
         >
           <ul className="pagination">
             <li className="page-item">
-              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
+              <Link className="page-link" to="/my-collections">
                 <i className="ci-arrow-left me-2"></i>Prev
               </Link>
             </li>
@@ -648,22 +647,22 @@ function CollectionsBody() {
               </span>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
+              <Link className="page-link" to="/my-collections">
                 2
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
+              <Link className="page-link" to="/my-collections">
                 3
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
+              <Link className="page-link" to="/my-collections">
                 4
               </Link>
             </li>
             <li className="page-item d-none d-sm-block">
-              <Link className="page-link" to={`${BaseUrl}/my-collections`}>
+              <Link className="page-link" to="/my-collections">
                 5
               </Link>
             </li>
@@ -672,7 +671,7 @@ function CollectionsBody() {
             <li className="page-item">
               <Link
                 className="page-link"
-                to={`${BaseUrl}/my-collections`}
+                to="/my-collections"
                 aria-label="Next"
               >
                 Next<i className="ci-arrow-right ms-2"></i>

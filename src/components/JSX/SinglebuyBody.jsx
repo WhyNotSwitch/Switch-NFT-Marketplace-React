@@ -10,7 +10,6 @@ import Asset from "./Asset";
 import Revenue from "./Revenue";
 import Details from "./Details";
 import Provenance from "./Provenance";
-import BaseUrl from "../Common/BaseUrl";
 //import Example from "../JSX/OrderModal"
 
 function SinglebuyBody() {
@@ -61,12 +60,12 @@ function SinglebuyBody() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                 <li className="breadcrumb-item">
-                  <Link className="text-nowrap" to={BaseUrl}>
+                  <Link className="text-nowrap" to="/">
                     <i className="ci-home"></i>Home
                   </Link>
                 </li>
                 <li className="breadcrumb-item text-nowrap">
-                  <Link to={`${BaseUrl}/marketplace`}>Marketplace</Link>
+                  <Link to="marketplace">Marketplace</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-nowrap active"
@@ -170,7 +169,7 @@ function SinglebuyBody() {
                             />
                             <Link
                               className="nav-link-style stretched-link fs-sm"
-                              to={`${BaseUrl}/project-developer`}
+                              to="project-developer"
                             >
                               Switch Electric
                             </Link>
@@ -194,7 +193,7 @@ function SinglebuyBody() {
                             />
                             <Link
                               className="nav-link-style stretched-link fs-sm"
-                              to={`${BaseUrl}/single-buy`}
+                              to="single-buy"
                             >
                               Enugu, Nigeria
                             </Link>
@@ -206,7 +205,7 @@ function SinglebuyBody() {
                   <div className="col">
                     <Link
                       className="btn btn-lg btn-accent d-block w-100"
-                      to={`${BaseUrl}/single-buy`}
+                      to="single-buy"
                     >
                       Purchase NFT
                     </Link>
@@ -302,7 +301,7 @@ function SinglebuyBody() {
           <h2 className="h3 mb-sm-0">More from this Location</h2>
           <Link
             className="btn btn-outline-accent ms-sm-3"
-            to={`${BaseUrl}/single-buy`}
+            to="single-buy"
           >
             View collection<i className="ci-arrow-right ms-2"></i>
           </Link>

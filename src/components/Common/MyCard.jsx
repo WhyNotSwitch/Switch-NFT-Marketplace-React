@@ -1,13 +1,12 @@
 import Button from "./Button";
 import { Link } from "react-router-dom";
-import BaseUrl from "./BaseUrl";
 
 function MyCard(props) {
   return (
     <div className={props.className}>
       <article className={props.artClass}>
         <div className="card-img-top position-relative overflow-hidden">
-          <Link className="d-block" to={`${BaseUrl}/marketplace/single-buy`}>
+          <Link className="d-block" to="/marketplace/single-buy">
             <img src={props.img} alt="Product" />
           </Link>
           {/* <!-- Wishlist button--> */}
@@ -26,7 +25,7 @@ function MyCard(props) {
           <h3 className="product-title mb-2 fs-base">
             <Link
               className="d-block text-truncate"
-              to={`${BaseUrl}/marketplace/single-buy`}
+              to="/marketplace/single-buy"
             >
               {`Switch Project ${props.id}`}
             </Link>
@@ -47,7 +46,7 @@ function MyCard(props) {
             />
             <Link
               className="nav-link-style fs-sm stretched-link"
-              to={`${BaseUrl}/project-developer`}
+              to="/project-developer"
             >
               @Switch Electric
             </Link>

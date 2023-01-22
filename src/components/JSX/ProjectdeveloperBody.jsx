@@ -6,7 +6,6 @@ import Created from "./Created";
 import DevCollections from "./DevCollections";
 import Liked from "./Liked";
 import Activity from "./Activity";
-import BaseUrl from "../Common/BaseUrl";
 
 function ProjectdeveloperBody() {
   const [activeTab, setActiveTab] = useState("created");
@@ -36,12 +35,12 @@ function ProjectdeveloperBody() {
             <nav aria-label="breadcrumb">
               <ol className="breadcrumb breadcrumb-light flex-lg-nowrap justify-content-center justify-content-lg-start">
                 <li className="breadcrumb-item">
-                  <Link className="text-nowrap" to={BaseUrl}>
+                  <Link className="text-nowrap" to="/">
                     <i className="ci-home"></i>Home
                   </Link>
                 </li>
                 <li className="breadcrumb-item text-nowrap">
-                  <Link to={`${BaseUrl}/marketplace`}>Marketplace</Link>
+                  <Link to="/marketplace">Marketplace</Link>
                 </li>
                 <li
                   className="breadcrumb-item text-nowrap active"
