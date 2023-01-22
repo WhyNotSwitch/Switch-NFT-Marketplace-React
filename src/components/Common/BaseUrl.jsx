@@ -1,3 +1,3 @@
-const BaseUrl = "/Switch-NFT-Marketplace-React";
+const BaseUrl = "/";
 
 export default BaseUrl;
