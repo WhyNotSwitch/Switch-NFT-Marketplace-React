@@ -1,4 +1,5 @@
 # NFT Marketplace
+![image](https://user-images.githubusercontent.com/52095470/213907955-04ba89e0-a37d-4489-870c-6e4ed2fb8c58.png)
 
 Our Solar Asset Marketplace is an end-to-end platform for solar asset financing, optimized for cryptocurrency and blockchain technology. This platform is a decentralized, open source global market where anyone can buy and sell Solar power assets as `ERC1155` NFTs.
 This technology allows for the decentralization of the electricity production, which means that the platform will eliminate middlemen in favor of 
