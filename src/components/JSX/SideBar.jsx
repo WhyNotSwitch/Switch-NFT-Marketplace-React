@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import BaseUrl from "../Common/BaseUrl";
 
 function SideBar() {
   return (
@@ -21,7 +20,7 @@ function SideBar() {
             <li className="border-bottom mb-0">
               <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                to={`${BaseUrl}/account-settings`}
+                to="/account-settings"
               >
                 <i className="ci-settings opacity-60 me-2"></i>Profile Settings
               </Link>
@@ -29,7 +28,7 @@ function SideBar() {
             <li className="border-bottom mb-0">
               <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                to={`${BaseUrl}/my-items`}
+                to="/my-items"
               >
                 <i className="ci-image opacity-60 me-2"></i>My Items
                 <span className="fs-sm text-muted ms-auto">5</span>
@@ -38,7 +37,7 @@ function SideBar() {
             <li className="border-bottom mb-0">
               <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                to={`${BaseUrl}/my-collections`}
+                to="/my-collections"
               >
                 <i className="ci-view-list opacity-60 me-2"></i>My Collections
                 <span className="fs-sm text-muted ms-auto">2</span>
@@ -47,7 +46,7 @@ function SideBar() {
             <li className="border-bottom mb-0">
               <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                to={`${BaseUrl}/favorites`}
+                to="/favorites"
               >
                 <i className="ci-heart opacity-60 me-2"></i>Favorites
                 <span className="fs-sm text-muted ms-auto">3</span>
@@ -56,7 +55,7 @@ function SideBar() {
             <li className="border-bottom mb-0">
               <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                to={`${BaseUrl}/notifications`}
+                to="/notifications"
               >
                 <i className="ci-bell opacity-60 me-2"></i>Notifications
               </Link>
@@ -64,7 +63,7 @@ function SideBar() {
             <li className="border-bottom mb-0">
               <Link
                 className="nav-link-style d-flex align-items-center px-4 py-3"
-                to={`${BaseUrl}/signout`}
+                to="/signout"
               >
                 <i className="ci-sign-out opacity-60 me-2"></i>Sign out
               </Link>
