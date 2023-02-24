@@ -139,7 +139,7 @@ function NavBar(props) {
                 </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#nav">
+                <a className="nav-link" href="https://github.com/WhyNotSwitch/Whitepaper/raw/master/litepaper/SwitchElectric_ProjectTokenization_Litepaper.pdf">
                   Whitepaper
                 </a>
               </li>
